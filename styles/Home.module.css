@@ -1,129 +1,165 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
 }
 
-.main {
+.header {
+  padding: 0 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--background-color);
+  z-index: 2;
+  transition: all 0.1s ease-in-out;
+}
+
+.hero {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 4rem 3rem;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  font-weight: 800;
+  max-width: 1000px;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.menu {
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 2rem 0 0;
+  font-size: 1.1em;
+}
+
+.menu a {
+  position: relative;
+}
+
+.menu a:hover:before {
+  content: '👉 ';
+  position: absolute;
+  left: -19px;
+  top: -1px;
+}
+
+.section {
+  color: var(--background-color);
+  background: var(--color);
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section:nth-child(2n) {
+  color: var(--color);
+  background: var(--background-color);
+}
+
+.section > div {
+  width: 40%;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  max-width: 800px;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.section p {
   max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.actions {
+  margin: 3rem 0;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.action {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1em;
+  text-decoration: underline;
+  font-weight: 700;
+  position: relative;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.action:hover:before {
+  content: '👉 ';
+  position: absolute;
+  left: -22px;
+  top: 2px;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: 4rem;
+  }
 }
 
-@media (max-width: 600px) {
-  .grid {
+@media screen and (max-width: 850px) {
+  .section {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .section > div {
     width: 100%;
-    flex-direction: column;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: 3.5rem;
   }
-  .code {
-    background: #111;
+
+  .menu {
+    flex-wrap: wrap;
   }
-  .logo img {
-    filter: invert(1);
+
+  .menu li {
+    margin: 1rem;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
   }
 }

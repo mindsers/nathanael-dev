@@ -1,0 +1,41 @@
+.container {
+  padding: 0 5rem;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4em;
+  width: 700px;
+  margin: 7rem auto;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  margin: 5rem 0;
+}
+
+.sectionColumn {
+  width: 50%;
+}
+
+.insights {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 2em;
+  margin: 5rem 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.insights p {
+  max-width: 50%;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.insights p:nth-child(2) {
+  align-self: flex-start;
+}
