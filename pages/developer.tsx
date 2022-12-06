@@ -1,4 +1,4 @@
-import { GetStaticPropsContext, NextPage } from 'next'
+import { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
 
@@ -67,13 +67,3 @@ const DeveloperPage: NextPage = () => {
 }
 
 export default DeveloperPage
-
-export async function getStaticProps({ locale }: GetStaticPropsContext) {
-  return {
-    props: {
-      // You can get the messages from anywhere you like. The recommended
-      // pattern is to put them in JSON files separated by language.
-      messages: (await import(`../messages/${locale}.ts`)).default,
-    },
-  }
-}

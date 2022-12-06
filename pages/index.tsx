@@ -1,6 +1,6 @@
-import type { GetStaticPropsContext, NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
@@ -8,18 +8,16 @@ import ExpertSVG from '../components/illustrations/ExpertSVG'
 import SocialSVG from '../components/illustrations/SocialSVG'
 import ExperienceSVG from '../components/illustrations/ExperienceSVG'
 import Header from '../components/Header'
-import { useEffect, useState } from 'react'
-import { useTranslations } from 'next-intl'
 
 function Home() {
   const [menuOpacity, setMenuOpacity] = useState(0)
   const t = useTranslations('Home')
 
-  function updateOpacity() {
-    setMenuOpacity(window.pageYOffset - window.innerHeight + 130)
-  }
-
   useEffect(() => {
+    function updateOpacity() {
+      setMenuOpacity(window.pageYOffset - window.innerHeight + 130)
+    }
+
     window.addEventListener('scroll', updateOpacity, { passive: true })
 
     return () => window.removeEventListener('scroll', updateOpacity)
@@ -116,13 +114,3 @@ function Home() {
 }
 
 export default Home
-
-export async function getStaticProps({ locale }: GetStaticPropsContext) {
-  return {
-    props: {
-      // You can get the messages from anywhere you like. The recommended
-      // pattern is to put them in JSON files separated by language.
-      messages: (await import(`../messages/${locale}.ts`)).default,
-    },
-  }
-}
