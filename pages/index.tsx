@@ -13,7 +13,7 @@ import { useTranslations } from 'next-intl'
 
 function Home() {
   const [menuOpacity, setMenuOpacity] = useState(0)
-  const t = useTranslations(Home.name)
+  const t = useTranslations('Home')
 
   function updateOpacity() {
     setMenuOpacity(window.pageYOffset - window.innerHeight + 130)

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './Header.module.css'
 
 export function Header() {
-  const t = useTranslations(Header.name)
+  const t = useTranslations('Header')
   return (
     <div className={styles.menu}>
       <p className={styles.logo}>Nathanaël Cherrier</p>
