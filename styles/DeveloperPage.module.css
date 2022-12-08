@@ -1,5 +1,6 @@
 .container {
-  padding: 0 5rem;
+  color: var(--color);
+  background: var(--background-color);
 }
 
 .title {
@@ -14,10 +15,42 @@
 .section {
   display: flex;
   margin: 5rem 0;
+  padding: 0 5rem;
+}
+
+.sectionLight {
+  display: flex;
+  margin: 5rem 0;
+  padding: 0 5rem;
+  color: var(--background-color);
+  background: var(--color);
+}
+
+.section h2,
+.sectionLight h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.section h3,
+.sectionLight h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9em;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .sectionColumn {
   width: 50%;
+}
+
+.svgContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .insights {
@@ -38,4 +71,61 @@
 
 .insights p:nth-child(2) {
   align-self: flex-start;
+}
+
+.sectionResume {
+  max-width: 900px;
+  margin: auto;
+}
+
+.sectionResume h2 {
+  text-align: center;
+}
+
+.sectionResume h3 {
+  margin: 0;
+}
+
+.sectionResume .skillLabel {
+  font-weight: bold;
+}
+
+.sectionResume .meta {
+  font-size: 0.9em;
+  margin: 0 0 10px;
+  color: gray;
+}
+
+.sectionResume > div {
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sectionResume > div:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.sectionResume p {
+  text-align: justify;
+}
+
+.sectionResume .actions {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.sectionResume .actions:hover {
+  background-color: unset;
+}
+
+.socials {
+  text-align: center;
+  fill: var(--color);
+}
+
+.socials .socialLink {
+  display: inline-block;
+  margin: 5px;
 }

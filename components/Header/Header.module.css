@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 0 5rem;
 }
 
 .menu nav {
@@ -27,11 +28,11 @@
   font-size: 1.6em;
 }
 
-.menu a {
+.menu nav a {
   position: relative;
 }
 
-.menu a:hover:before {
+.menu nav a:hover:before {
   content: '👉 ';
   position: absolute;
   left: -18px;

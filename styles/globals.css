@@ -31,6 +31,20 @@ a {
   text-decoration: none;
 }
 
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  color: var(--background-color);
+  background: var(--color);
+  border-radius: 3px;
+}
+
+a.button.inverse {
+  color: var(--color);
+  background: var(--background-color);
+}
+
 * {
   box-sizing: border-box;
 }

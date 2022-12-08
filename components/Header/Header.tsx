@@ -7,13 +7,15 @@ export function Header() {
   const t = useTranslations('Header')
   return (
     <div className={styles.menu}>
-      <p className={styles.logo}>Nathanaël Cherrier</p>
+      <p className={styles.logo}>
+        <Link href={'/'}>Nathanaël Cherrier</Link>
+      </p>
       <nav>
         <ul>
-          {/* <li>
+          <li>
             <Link href={`/developer/`}>{t('menu.developer')}</Link>
           </li>
-          <li>
+          {/* <li>
             <a>{t('menu.entrepreneur')}</a>
           </li>
           <li>
