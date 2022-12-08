@@ -1,12 +1,16 @@
 :root {
   --color: #222;
   --background-color: white;
+  --accent-background-color: rgb(230, 230, 230);
+  --accent-color: #444;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color: white;
     --background-color: black;
+    --accent-background-color: #222;
+    --accent-color: rgb(230, 230, 230);
   }
 }
 
