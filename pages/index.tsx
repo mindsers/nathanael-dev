@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
@@ -44,10 +45,10 @@ function Home() {
           </div>
           <div>
             <ul className={styles.menu}>
-              {/* <li>
+              <li>
                 <Link href={`/developer/`}>{t('menu.developer')}</Link>
               </li>
-              <li>
+              {/* <li>
                 <a>{t('menu.entrepreneur')}</a>
               </li>
               <li>
