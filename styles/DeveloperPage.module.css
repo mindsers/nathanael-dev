@@ -120,12 +120,27 @@
   background-color: unset;
 }
 
-.socials {
+.sectionResume .call2ActionText {
   text-align: center;
+  margin-top: 50px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--color);
 }
 
 .socials .socialLink {
   display: inline-block;
   margin: 5px;
+}
+
+.socials .verticalSeparator {
+  display: inline-block;
+  height: 50px;
+  width: 1px;
+  background-color: var(--color);
+  margin: 0 20px;
 }

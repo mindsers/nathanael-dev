@@ -45,6 +45,10 @@ const DeveloperPage: NextPage = () => {
                 <path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z" />
               </svg>
             </Link>
+            <div className={styles.verticalSeparator} />
+            <Link href="https://en.malt.fr/profile/nathanaelcherrier" className="button">
+              Work with me!
+            </Link>
           </div>
         </header>
         <section className={styles.section}>
@@ -128,7 +132,7 @@ const DeveloperPage: NextPage = () => {
             </div>
             <div>
               <h3>Formateur Javascript · ORT Lyon</h3>
-              <p className={styles.meta}>févr. 2017 - juin 2018 · 1 an 5 mois</p>
+              <p className={styles.meta}>févr. 2017 - févr. 2018 · 1 an</p>
               <p>
                 Formateur d'une classe de 14 élèves en 3Csi (Concepteur de systèmes d’Information -
                 Bac +3). Ecriture des supports de cours. Examens & évaluation des notions acquises.
@@ -170,12 +174,15 @@ const DeveloperPage: NextPage = () => {
                 WordPress · Photoshop · InDesign
               </p>
             </div>
+            <p className={styles.call2ActionText}>
+              Need a website or an application? I can help you build your next project.
+            </p>
             <div className={styles.actions}>
               <Link href="https://linkedin.com/in/mindsers/" className="button inverse">
                 See more on LinkedIn
               </Link>
-              <Link href="https://linkedin.com/in/mindsers/" className="button inverse">
-                Work with me
+              <Link href="https://en.malt.fr/profile/nathanaelcherrier" className="button inverse">
+                Get a quote!
               </Link>
             </div>
           </div>
