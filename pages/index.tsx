@@ -71,11 +71,11 @@ function Home() {
             <div>
               <h2>{t('experienceSection.title')}</h2>
               {t.rich('experienceSection.text')}
-              {/* <p className={styles.actions}>
+              <p className={styles.actions}>
                 <Link className={styles.action} href={`/developer/`}>
                   {t('experienceSection.linkText')}
                 </Link>
-              </p> */}
+              </p>
             </div>
             <div className={styles.svgContainer}>
               <ExperienceSVG />

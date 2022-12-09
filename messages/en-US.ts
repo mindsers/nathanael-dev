@@ -31,7 +31,7 @@ export default {
         <p>
           I am now a <strong>Senior lead freelance developer</strong> with over 7 years of professional experience with JavaScript and Swift.
         </p>`,
-      linkText: `I develop your project`,
+      linkText: `Learn about my coding skills`,
     },
     menu: {
       coach: `Coach`,
