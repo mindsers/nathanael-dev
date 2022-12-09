@@ -51,14 +51,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .insights {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 2em;
-  margin: 5rem 0;
-  height: 100px;
+  margin: 1rem 0;
+  height: 200px;
   display: flex;
   justify-content: space-around;
 }
@@ -71,6 +72,56 @@
 
 .insights p:nth-child(2) {
   align-self: flex-start;
+}
+
+@media screen and (max-width: 1280px) {
+  .insights {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .insights {
+    font-size: 1.65em;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: 3em;
+    margin: 6rem auto;
+    width: 100%;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+  .section:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .sectionColumn,
+  .svgContainer {
+    width: 100%;
+  }
+
+  .insights {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section,
+  .sectionLight {
+    padding: 0 2rem;
+  }
+
+  .title {
+    font-size: 2em;
+    margin: 5rem auto;
+    width: 100%;
+  }
 }
 
 .sectionResume {
