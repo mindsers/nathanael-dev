@@ -109,6 +109,32 @@ export default {
         </p>
       `,
     },
+    TJMSection: {
+      insight: `
+        <p>Une facturation au forfait adapté à votre projet</p>
+        <p>Ou un TJM de 700€ pour les missions de longue durée en régie</p>
+      `,
+      text: `
+        <p>
+          Que ce soit pour la mise en place de votre site e-commerce avec Shopify,
+          le développement d'un plugin métier pour votre CMS, ou la conception
+          d'une application complète "from scratch", je vous propose une
+          prestation clés en main budgétée dès le départ.
+        </p>
+        <p>
+          Pour les gros projets de développement web ou mobile, <strong>je peux également monter
+          une équipe de développeurs qualifiés</strong> pour vous proposer une solution de qualité
+          dans un temps et un prix raisonnable.
+        </p>
+        <p>
+          Si vous préférez travailler avec moi en régie (prestation dans les équipes du client),
+          la tarification appliquée sera un taux journalier moyen de 700 euros. Je peux ainsi <strong>intégrer vos équipes
+          de développement en tant que Senior Lead Développeur</strong>
+          et vous aider à atteindre vos objectifs.
+        </p>
+      `,
+      callToAction: `Me contacter pour un devis`,
+    },
     experience: {
       title: `Expériences Précédentes`,
       callToAction: {

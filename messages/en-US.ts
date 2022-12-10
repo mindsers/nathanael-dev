@@ -92,15 +92,40 @@ export default {
       text: `
         <p>
           I design, code and maintain applications using JavaScript since 2015 and the ES6
-          tsunami in the JavaScript world. I&apos;m used to work on small app using VanillaJS
+          tsunami in the JavaScript world. I'm used to work on small app using VanillaJS
           and larger cloud native application that need to scale.
         </p>
         <p>
           I believe that JavaScript is the language who can suit most of the issue my client
-          enconter. That&apos;s why I learnt and tried to master it either on the frontend and
+          enconter. That's why I learnt and tried to master it either on the frontend and
           the backend side of things.
         </p>
       `,
+    },
+    TJMSection: {
+      insight: `
+        <p>A flat rate pricing adapted to your project</p>
+        <p>Or a €700 daily rate for long term mission</p>
+      `,
+      text: `
+        <p>
+          Whether it's setting up your e-commerce site with Shopify, developing a
+          business plugin for your CMS, or designing a complete application
+          "from scratch", I offer you a budgeted turnkey service, from the start.
+        </p>
+        <p>
+          For large web or mobile development projects, <strong>I can also set up
+          a team of qualified developers</strong> to offer you a quality solution
+          in a reasonable time and price.
+        </p>
+        <p>
+          If you prefer to work with me in management (service in the client's teams),
+          the pricing applied will be an average daily rate of 700 euros.
+          I can thus <strong>integrate your development teams as a Senior
+          Lead Developer</strong> and help you achieve your goals.
+        </p>
+      `,
+      callToAction: `Ask for a quote`,
     },
     experience: {
       title: `Previous Experiences`,

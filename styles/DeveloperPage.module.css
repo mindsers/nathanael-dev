@@ -74,6 +74,12 @@
   align-self: flex-start;
 }
 
+.actions {
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1280px) {
   .insights {
     height: 250px;

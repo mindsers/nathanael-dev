@@ -9,6 +9,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import { FreelanceSVG } from '../components/illustrations/FreelanceSVG'
 import { MobileSVG } from '../components/illustrations/MobileSVG'
 import { WebSVG } from '../components/illustrations/WebSVG'
 
@@ -49,7 +50,7 @@ function DeveloperPage({ experiences, locale }: InferGetStaticPropsType<typeof g
               </svg>
             </Link>
             <div className={styles.verticalSeparator} />
-            <Link href="https://en.malt.fr/profile/nathanaelcherrier" className="button">
+            <Link href={t('experience.callToAction.maltURL')} className="button">
               {t('callToAction1')}
             </Link>
           </div>
@@ -114,6 +115,20 @@ function DeveloperPage({ experiences, locale }: InferGetStaticPropsType<typeof g
                 {t('experience.callToAction.button')}
               </Link>
             </div>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <div className={styles.sectionColumn}>
+            <div className={styles.insights}>{t.rich('TJMSection.insight')}</div>
+            {t.rich('TJMSection.text')}
+            <p className={styles.actions}>
+              <a className={'button'} href={t('experience.callToAction.maltURL')}>
+                {t('TJMSection.callToAction')}
+              </a>
+            </p>
+          </div>
+          <div className={styles.svgContainer}>
+            <FreelanceSVG />
           </div>
         </section>
         <Footer />
