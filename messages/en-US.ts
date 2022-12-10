@@ -55,4 +55,64 @@ export default {
   Footer: {
     copyright: `2022 Nathanaël Cherrier. All rights reserved.`,
   },
+  DeveloperPage: {
+    title: `A full stack developer specialized in frontend and mobile dev`,
+    meta: {
+      title: `Nathanaël Cherrier – Senior Lead Developer, Freelance Coder, JavaScript enthousiast`,
+      desc: `Nathanaël is a software engineer, passionate about code that can help you build whatever you want using web and mobile technology. Ask for a quote!`,
+    },
+    callToAction1: `Work with me!`,
+    mobileSection: {
+      insight: `
+        <p>5 iOS app developed for leading tech companies</p>
+        <p>Master Swift in backend and frontend app</p>
+      `,
+      text: `
+        <p>
+          I'm primarily an iOS application developer. I first learned Objective-C and then
+          switched to Swift when Apple released it.
+        </p>
+        <p>
+          Let's make things clear: I know JavaScript but when it comes to mobile application, I
+          believe in the superiority of native languages like Swift and Java. That's why I
+          recommend my client to go for native technologies rather than hybrid languages.
+        </p>
+        <p>
+          I really love this language (Swift) which was build on the best of python, C/C++ and
+          JavaScript with all the Objective-C legacy. It is so great that I decided to learn it
+          as a backend language too.
+        </p>
+      `,
+    },
+    webSection: {
+      insight: `
+        <p>More than 7 years of experience</p>
+        <p>Master JavaScript in backend and frontend app</p>
+      `,
+      text: `
+        <p>
+          I design, code and maintain applications using JavaScript since 2015 and the ES6
+          tsunami in the JavaScript world. I&apos;m used to work on small app using VanillaJS
+          and larger cloud native application that need to scale.
+        </p>
+        <p>
+          I believe that JavaScript is the language who can suit most of the issue my client
+          enconter. That&apos;s why I learnt and tried to master it either on the frontend and
+          the backend side of things.
+        </p>
+      `,
+    },
+    experience: {
+      title: `Previous Experiences`,
+      callToAction: {
+        text: `Need a website or an application? I can help you build your next project.`,
+        button: `Get a quote!`,
+        fallback: `See more on LinkedIn`,
+        maltURL: `https://en.malt.fr/profile/nathanaelcherrier`,
+      },
+      skills: `Skills :`,
+      duration: `{years, plural, =0 {} =1 {1 year} other {# years}} {months, plural, =0 {} =1 {1 month} other {# months}}`,
+      fallback: `⚠️ Unable to show the experience list currently. Retry later. ⚠️`,
+    },
+  },
 }

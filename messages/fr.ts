@@ -63,4 +63,63 @@ export default {
   Footer: {
     copyright: `2022 Nathanaël Cherrier. Tous droits réservés.`,
   },
+  DeveloperPage: {
+    title: `Un développeur fullstack spécialisé dans le développement frontend et mobile`,
+    meta: {
+      title: `Nathanaël Cherrier – Sénior Lead Développeur, Codeur freelance, fan de Swift et JavaScript`,
+      desc: `Nathanaël est un ingénieur logiciel, passionné de code qui peut vous aider à counstruire tout ce que vous voulez en utilisant les technologies web et mobile. Demandez votre devis !`,
+    },
+    callToAction1: `Travaillez avec moi !`,
+    mobileSection: {
+      insight: `
+        <p>5 applications iOS dévelopé pour des entreprises leader de l'IT</p>
+        <p>Maitrise des applications Swift backend et iOS</p>
+      `,
+      text: `
+        <p>
+          Avant même le JavaScript, je suis développeur d'application pour iOS. J'ai commencé par apprendre l'Objective-C et puis
+          j'ai changé pour Swift lorsqu'Apple l'a annoncé officiellement.
+        </p>
+        <p>
+          Mettons les choses au clair dès maintenant : je sais coder en JavaScript mais lorsque l'on parle de développement mobile, je
+          crois en la superiorité des langages et solutions natives comme Swift ou Java. C'est pour cette raison que je
+          recommande ces solutions natives à mes clients plutôt que d'utiliser des technologies hybride.
+        </p>
+        <p>
+          J'apprécie tant le langage Swift (qui a été bati sur le meilleur de Python, C/C++, JavaScript et l'héritage de l'Objective-C)
+          que j'ai décidé d'apprendre à l'utiliser également au backend, afin de proposer à mes clients une solution
+          complête basée sur ce langage.
+        </p>
+      `,
+    },
+    webSection: {
+      insight: `
+        <p>Plus de 7 ans d'expériences</p>
+        <p>Maitrise des applications JavaScript backend et frontend</p>
+      `,
+      text: `
+        <p>
+          Je conçois, développes et maintiens des applications JavaScript depuis 2015 et l'avènnement du tsunami
+          ES6 dans le monde du web. Je suis habitué à travailler autant sur des sites web simples utilisant du VanillaJS
+          que d'énormes applications React/Angular qui supportent des contraintes de traffic importantes.
+        </p>
+        <p>
+          Je pense que JavaScript est le langage le plus polyvalant qui permet de répondre à la plupart des besoins de mes clients
+          C'est pour cela que j'ai choisi de le maitriser autant au front qu'au back.
+        </p>
+      `,
+    },
+    experience: {
+      title: `Expériences Précédentes`,
+      callToAction: {
+        text: `Vous avez besoin d'une application ou d'un site web ? Je peux vous aider à construire vos prochains projets.`,
+        button: `Demander un devis !`,
+        fallback: `En voir plus sur LinkedIn`,
+        maltURL: `https://www.malt.fr/profile/nathanaelcherrier`,
+      },
+      skills: `Compétences :`,
+      duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
+      fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
+    },
+  },
 }

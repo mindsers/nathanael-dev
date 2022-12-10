@@ -1,4 +1,10 @@
-import { NextPage } from 'next'
+import {
+  NextPage,
+  GetStaticPropsContext,
+  GetStaticPropsResult,
+  InferGetStaticPropsType,
+} from 'next'
+import { useTranslations } from 'next-intl'
 import Head from 'next/head'
 import Link from 'next/link'
 import Footer from '../components/Footer'
@@ -8,24 +14,21 @@ import { WebSVG } from '../components/illustrations/WebSVG'
 
 import styles from '../styles/DeveloperPage.module.css'
 
-const DeveloperPage: NextPage = () => {
+function DeveloperPage({ experiences, locale }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const t = useTranslations('DeveloperPage')
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Nathanaël Cherrier – Developer, Coder</title>
-        <meta
-          name="description"
-          content="Nathanaël is a software engineer, passionate about code, business and coffee."
-        />
+        <title>{t('meta.title')}</title>
+        <meta name="description" content={t('meta.desc')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <header>
           <Header />
-          <h1 className={styles.title}>
-            A full stack developer specialized in frontend and mobile dev
-          </h1>
+          <h1 className={styles.title}>{t('title')}</h1>
           <div className={styles.socials}>
             <Link href="https://linkedin.com/in/mindsers/" className={styles.socialLink}>
               <svg xmlns="http://www.w3.org/2000/svg" height={30} viewBox="0 0 448 512">
@@ -47,26 +50,14 @@ const DeveloperPage: NextPage = () => {
             </Link>
             <div className={styles.verticalSeparator} />
             <Link href="https://en.malt.fr/profile/nathanaelcherrier" className="button">
-              Work with me!
+              {t('callToAction1')}
             </Link>
           </div>
         </header>
         <section className={styles.section}>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>
-              <p>More than 7 years of experience</p>
-              <p>Master JavaScript in backend and frontend app</p>
-            </div>
-            <p>
-              I design, code and maintain applications using JavaScript since 2015 and the ES6
-              tsunami in the JavaScript world. I&apos;m used to work on small app using VanillaJS
-              and larger cloud native application that need to scale.
-            </p>
-            <p>
-              I believe that JavaScript is the language who can suit most of the issue my client
-              enconter. That&apos;s why I learnt and tried to master it either on the frontend and
-              the backend side of things.
-            </p>
+            <div className={styles.insights}>{t.rich('webSection.insight')}</div>
+            {t.rich('webSection.text')}
           </div>
           <div className={styles.svgContainer}>
             <WebSVG />
@@ -77,112 +68,50 @@ const DeveloperPage: NextPage = () => {
             <MobileSVG />
           </div>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>
-              <p>5 iOS app developed for leading tech companies</p>
-              <p>Master Swift in backend and frontend app</p>
-            </div>
-            <p>
-              I'm primarily an iOS application developer. I first learned Objective-C and then
-              switched to Swift when Apple released it.
-            </p>
-            <p>
-              Let's make things clear: I know JavaScript but when it comes to mobile application, I
-              believe in the superiority of native languages like Swift and Java. That's why I
-              recommend my client to go for native technologies rather than hybrid languages.
-            </p>
-            <p>
-              I really love this language (Swift) which was build on the best of python, C/C++ and
-              JavaScript with all the Objective-C legacy. It is so great that I decided to learn it
-              as a backend language too.
-            </p>
+            <div className={styles.insights}>{t.rich('mobileSection.insight')}</div>
+            {t.rich('mobileSection.text')}
           </div>
         </section>
         <section className={styles.sectionLight}>
           <div className={styles.sectionResume}>
-            <h2>Previous Experiences</h2>
-            <div>
-              <h3>Lead Software Engineer · Ferpection</h3>
-              <p className={styles.meta}>sept. 2018 - mars 2023 · 4 ans 7 mois</p>
-              <p>
-                Dévelopement de la plateforme de recherche en test utilisateur ansi que les outils
-                interne avec les technos: ES6+, ReactJS, VictoryJS
-              </p>
-              <p>
-                <span className={styles.skillLabel}>Compétences :</span> Anglais · React.js · Apollo
-                GraphQL · Architecture logicielle · JavaScript
-              </p>
-            </div>
-            <div>
-              <h3>Javascript & iOS Software Engineer, DevOps · Econocom</h3>
-              <p className={styles.meta}>nov. 2015 - août 2018 · 2 ans 10 mois</p>
-              <p>
-                Dev : Référent mobilité et technologies Javascript du centre de service Econocom,
-                j'interviens sur les phases de conception, de chiffrage, d'architecture et de
-                développement des projets iOS et des projets front/back/full Javascript.
-              </p>
-              <p>
-                DevOps: Mise en place des plateformes d'intégration / déploiement continue.
-                Automatisation des tâches. Accompagnement des développeurs sur les technologies Git,
-                Docker, GitLab CI, etc...
-              </p>
-              <p>
-                <span className={styles.skillLabel}>Compétences :</span> Anglais · React.js · Apollo
-                GraphQL · Architecture logicielle · JavaScript
-              </p>
-            </div>
-            <div>
-              <h3>Formateur Javascript · ORT Lyon</h3>
-              <p className={styles.meta}>févr. 2017 - févr. 2018 · 1 an</p>
-              <p>
-                Formateur d'une classe de 14 élèves en 3Csi (Concepteur de systèmes d’Information -
-                Bac +3). Ecriture des supports de cours. Examens & évaluation des notions acquises.
-              </p>
-              <p>
-                <span className={styles.skillLabel}>Technologies enseignées :</span> Javascript
-                ES3-5 · Javascript ES6+ · jQuery · AngularJS · NodeJS · Docker · ExpressJS · Pug
-                (Jade)
-              </p>
-            </div>
-            <div>
-              <h3>Web Developer, Software & Embedded System Developer · Winciel</h3>
-              <p className={styles.meta}>août 2013 - oct. 2015 · 2 ans 3 mois</p>
-              <p>
-                Développement de modules Php, C, M.Access, Vb, autour de la solution principale
-                vendu par l'entreprise. Développement d'applications spécifiques pour certains
-                clients. Co-développement sur un projet concernant le création d'un système embarqué
-                pour les chaudières d'immeuble.
-              </p>
-              <p>
-                <span className={styles.skillLabel}>Compétences :</span> PHP · Javascript · Java ·
-                C11 · Python
-              </p>
-            </div>
-            <div>
-              <h3>Web Developer, Web Designer · Crédit Agricole</h3>
-              <p className={styles.meta}>févr. 2012 - mars. 2013 · 1 an 2 mois</p>
-              <p>
-                Déploiement et amélioration du site dédiée aux sociétaires. Création du site
-                https://societaire-reunion.fr
-              </p>
-              <p>
-                Création d'une bibliothèque de bannière publicitaire, de site web en collaboration
-                avec le service marketing, d'affiche publicitaire destinées a l'impression.
-                Modification et participation à la vie du site https://ca-reunion.fr
-              </p>
-              <p>
-                <span className={styles.skillLabel}>Compétences :</span> PHP · Javascript ·
-                WordPress · Photoshop · InDesign
-              </p>
-            </div>
-            <p className={styles.call2ActionText}>
-              Need a website or an application? I can help you build your next project.
-            </p>
+            <h2>{t('experience.title')}</h2>
+            {experiences.map((exp, index) => {
+              const start = new Date(exp.start)
+              const end = new Date(exp.end)
+
+              const interval = end.getTime() - start.getTime()
+              const months = Math.floor((interval / 1000 / 3600 / 24 / 30) % 12) + 1
+              const years = Math.floor(interval / 1000 / 3600 / 24 / 30 / 12)
+
+              return (
+                <div key={index}>
+                  <h3>
+                    {exp.title} · {exp.company}
+                  </h3>
+                  <p className={styles.meta}>
+                    {formatDate(start, locale)} - {formatDate(end, locale)} ·{' '}
+                    {t('experience.duration', { years, months })}
+                  </p>
+                  {exp.description.map((paragraph, pIndex) => (
+                    <p key={pIndex}>{paragraph}</p>
+                  ))}
+                  <p>
+                    <span className={styles.skillLabel}>{t('experience.skills')}</span>{' '}
+                    {exp.skills.join(' · ')}
+                  </p>
+                </div>
+              )
+            })}
+            {experiences.length < 1 && (
+              <p className={styles.call2ActionText}>{t('experience.fallback')}</p>
+            )}
+            <p className={styles.call2ActionText}>{t('experience.callToAction.text')}</p>
             <div className={styles.actions}>
               <Link href="https://linkedin.com/in/mindsers/" className="button inverse">
-                See more on LinkedIn
+                {t('experience.callToAction.fallback')}
               </Link>
-              <Link href="https://en.malt.fr/profile/nathanaelcherrier" className="button inverse">
-                Get a quote!
+              <Link href={t('experience.callToAction.maltURL')} className="button inverse">
+                {t('experience.callToAction.button')}
               </Link>
             </div>
           </div>
@@ -194,3 +123,187 @@ const DeveloperPage: NextPage = () => {
 }
 
 export default DeveloperPage
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  if (locale === 'fr') {
+    return {
+      props: {
+        locale,
+        experiences: [
+          {
+            title: `Lead Software Engineer`,
+            company: `Ferpection`,
+            description: [
+              ` Dévelopement de la plateforme de recherche en test utilisateur ansi que les outils interne avec les technos: ES6+, ReactJS, VictoryJS`,
+            ],
+            skills: [
+              'Anglais',
+              'React.js',
+              'Apollo GraphQL',
+              'Architecture logicielle',
+              'JavaScript',
+            ],
+            start: new Date(2018, 8).toISOString(),
+            end: new Date(2023, 2).toISOString(),
+          },
+          {
+            title: `Javascript & iOS Software Engineer, DevOps`,
+            company: `Econocom`,
+            description: [
+              `Dev : Référent mobilité et technologies Javascript du centre de service Econocom,
+              j'interviens sur les phases de conception, de chiffrage, d'architecture et de
+              développement des projets iOS et des projets front/back/full Javascript.`,
+              `DevOps: Mise en place des plateformes d'intégration / déploiement continue.
+              Automatisation des tâches. Accompagnement des développeurs sur les technologies Git,
+              Docker, GitLab CI, etc...`,
+            ],
+            skills: ['Angular', 'Swift', 'Objective-C', 'Architecture logicielle', 'JavaScript'],
+            start: new Date(2015, 10).toISOString(),
+            end: new Date(2018, 7).toISOString(),
+          },
+          {
+            title: `Formateur Javascript`,
+            company: `ORT Lyon`,
+            description: [
+              `Formateur d'une classe de 14 élèves en 3Csi (Concepteur de systèmes d’Information -
+                Bac +3). Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
+            ],
+            skills: [
+              'Javascript ES3-5',
+              'Javascript ES6+',
+              'jQuery',
+              'AngularJS',
+              'NodeJS',
+              'Docker',
+              'ExpressJS',
+              'Pug (Jade)',
+            ],
+            start: new Date(2017, 1).toISOString(),
+            end: new Date(2018, 0).toISOString(),
+          },
+          {
+            title: `Web Developer, Software & Embedded System Developer`,
+            company: `Winciel`,
+            description: [
+              `Développement de modules Php, C, M.Access, Vb, autour de la solution principale
+              vendu par l'entreprise. Développement d'applications spécifiques pour certains
+              clients. Co-développement sur un projet concernant le création d'un système embarqué
+              pour les chaudières d'immeuble.`,
+            ],
+            skills: ['PHP', 'Javascript', 'Java', 'C11', 'Python'],
+            start: new Date(2013, 7).toISOString(),
+            end: new Date(2015, 9).toISOString(),
+          },
+          {
+            title: `Web Developer, Web Designer`,
+            company: `Crédit Agricole`,
+            description: [
+              `Déploiement et amélioration du site dédiée aux sociétaires. Création du site
+              https://societaire-reunion.fr`,
+              `Création d'une bibliothèque de bannière publicitaire, de site web en collaboration
+              avec le service marketing, d'affiche publicitaire destinées a l'impression.
+              Modification et participation à la vie du site https://ca-reunion.fr`,
+            ],
+            skills: ['PHP', 'Javascript', 'WordPress', 'Photoshop', 'InDesign'],
+            start: new Date(2012, 1).toISOString(),
+            end: new Date(2013, 2).toISOString(),
+          },
+        ],
+      },
+    }
+  }
+
+  return {
+    props: {
+      locale,
+      experiences: [
+        {
+          title: `Lead Software Engineer`,
+          company: `Ferpection`,
+          description: [
+            `Built the frontend of the user research platform and some of the internal tools used at Ferpection.`,
+            `Built no-code automations using Zapier.`,
+          ],
+          skills: [
+            'English',
+            'React.js',
+            'Apollo GraphQL',
+            'Software Architecture',
+            'JavaScript',
+            'VictoryJS',
+            'Docker',
+          ],
+          start: new Date(2018, 8).toISOString(),
+          end: new Date(2023, 2).toISOString(),
+        },
+        {
+          title: `Javascript & iOS Software Engineer, DevOps`,
+          company: `Econocom`,
+          description: [
+            `Dev : Mobility and Javascript technologies referent at the Econocom service center, I work on the design, costing, architecture and development phases of iOS projects and front/back/full Javascript projects.`,
+            `DevOps: Implementation of continuous integration / deployment platforms. Automation of tasks. Support for developers on Git, Docker, GitLab CI technologies, etc...`,
+          ],
+          skills: [
+            'Angular',
+            'Swift',
+            'Objective-C',
+            'Software Architecture',
+            'JavaScript',
+            'DevOps',
+            'Docker',
+          ],
+          start: new Date(2015, 10).toISOString(),
+          end: new Date(2018, 7).toISOString(),
+        },
+        {
+          title: `Formateur Javascript`,
+          company: `ORT Lyon`,
+          description: [
+            `Trainer of a class of 14 students in Bachelor of Science (Computer Science).
+            Writing of course materials. Reviews & evaluation of acquired knowledge.`,
+          ],
+          skills: [
+            'Javascript ES3-5',
+            'Javascript ES6+',
+            'jQuery',
+            'AngularJS',
+            'NodeJS',
+            'Docker',
+            'ExpressJS',
+            'Pug (Jade)',
+          ],
+          start: new Date(2017, 1).toISOString(),
+          end: new Date(2018, 0).toISOString(),
+        },
+        {
+          title: `Web Developer, Software & Embedded System Developer`,
+          company: `Winciel`,
+          description: [
+            `Development of Php, C, M.Access, Vb modules, around the main solution sold by the company. Development of specific applications for certain customers. Co-development on a project concerning the creation of an embedded system for building boilers.`,
+          ],
+          skills: ['PHP', 'Javascript', 'Java', 'C11', 'Python'],
+          start: new Date(2013, 7).toISOString(),
+          end: new Date(2015, 9).toISOString(),
+        },
+        {
+          title: `Web Developer, Web Designer`,
+          company: `Crédit Agricole`,
+          description: [
+            `Deployment and improvement of the site dedicated to members. Creation of the website https://societaire-reunion.fr`,
+            `Creation of a library of advertising banners, websites in collaboration with the marketing department, advertising posters intended for printing. Modification and participation in the life of the site https://ca-reunion.fr`,
+          ],
+          skills: ['PHP', 'Javascript', 'WordPress', 'Photoshop', 'InDesign'],
+          start: new Date(2012, 1).toISOString(),
+          end: new Date(2013, 2).toISOString(),
+        },
+      ],
+    },
+  }
+}
+
+function formatDate(date: Date, locale = 'fr') {
+  return date.toLocaleDateString(locale, {
+    month: 'short',
+    year: 'numeric',
+  })
+}
