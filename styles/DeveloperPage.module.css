@@ -143,10 +143,6 @@
   text-align: center;
 }
 
-.sectionResume h3 {
-  margin: 0;
-}
-
 .sectionResume .skillLabel {
   font-weight: bold;
 }
@@ -157,18 +153,29 @@
   color: gray;
 }
 
-.sectionResume > div {
+.sectionCard {
   padding: 10px 20px;
   margin: 15px 0;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
+  background-color: #252525;
 }
 
-.sectionResume > div:hover {
+@media (prefers-color-scheme: dark) {
+  .sectionCard {
+    background-color: #f8f8f8;
+  }
+}
+
+.sectionCard:hover {
   background-color: var(--accent-color);
 }
 
-.sectionResume p {
+.sectionCard h3 {
+  margin: 0;
+}
+
+.sectionCard p {
   text-align: justify;
 }
 
@@ -187,7 +194,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .sectionResume > div {
+  .sectionCard {
     padding: 1px 10px;
   }
 
@@ -214,4 +221,80 @@
   width: 1px;
   background-color: var(--color);
   margin: 0 20px;
+}
+
+.feedbackSection {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 0 60px 0;
+}
+
+.feedbackSection h2 {
+  text-align: center;
+}
+
+.feedbackSection .sectionCard p:not(.author) {
+  transition: all 0.5s ease-in-out;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.feedbackSection .sectionCard:hover p:not(.author) {
+  color: #d6ad60;
+}
+
+.threeColumnGrid {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-areas:
+    'feedback1 feedback1 feedback2 feedback2'
+    'feedback3 feedback4 feedback4 feedback5'
+    'feedback6 feedback6 feedback7 feedback7';
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.threeColumnGrid .sectionCard {
+  margin: 0;
+}
+
+.sectionCard .author {
+  font-family: 'Playfair Display', serif;
+}
+
+@media screen and (max-width: 1250px) {
+  .threeColumnGrid {
+    grid-template-areas:
+      'feedback1 feedback1 feedback2 feedback2'
+      'feedback3 feedback3 feedback4 feedback4'
+      'feedback5 feedback5 feedback6 feedback6'
+      'feedback7 feedback7 feedback7 feedback7';
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .threeColumnGrid {
+    grid-template-areas:
+      'feedback2 feedback2 feedback2 feedback2'
+      'feedback3 feedback3 feedback5 feedback5'
+      'feedback6 feedback6 feedback6 feedback6'
+      'feedback4 feedback4 feedback1 feedback1'
+      'feedback7 feedback7 feedback7 feedback7';
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .threeColumnGrid {
+    grid-template-areas:
+      'feedback1 feedback1 feedback1 feedback1'
+      'feedback2 feedback2 feedback2 feedback2'
+      'feedback3 feedback3 feedback3 feedback3'
+      'feedback4 feedback4 feedback4 feedback4'
+      'feedback5 feedback5 feedback5 feedback5'
+      'feedback6 feedback6 feedback6 feedback6'
+      'feedback7 feedback7 feedback7 feedback7';
+  }
+}
+
+@media screen and (max-width: 500px) {
 }

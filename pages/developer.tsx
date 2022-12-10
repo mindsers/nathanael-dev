@@ -85,7 +85,7 @@ function DeveloperPage({ experiences, locale }: InferGetStaticPropsType<typeof g
               const years = Math.floor(interval / 1000 / 3600 / 24 / 30 / 12)
 
               return (
-                <div key={index}>
+                <div className={styles.sectionCard} key={index}>
                   <h3>
                     {exp.title} · {exp.company}
                   </h3>
@@ -129,6 +129,114 @@ function DeveloperPage({ experiences, locale }: InferGetStaticPropsType<typeof g
           </div>
           <div className={styles.svgContainer}>
             <FreelanceSVG />
+          </div>
+        </section>
+        <section className={styles.sectionLight}>
+          <div className={styles.feedbackSection}>
+            <h2>Some feedback</h2>
+            <div className={styles.threeColumnGrid}>
+              <div className={styles.sectionCard} style={{ gridArea: 'feedback1' }} key={''}>
+                <p>
+                  "Nathanaël a effectué le développement de mon site internet, la migration des
+                  données et l'installation de serveur sécurisé dans le cloud.
+                </p>
+                <p>
+                  La prestation a été effectuée rapidement, la communication a été facile et mes
+                  attentes bien prises en compte même pour des changements de dernière minute.
+                </p>
+                <p>Nathanaël sait s'adapter au client!"</p>
+                <p className={styles.author}>
+                  <strong>Maëva · CEO Travel & Food</strong>
+                </p>
+              </div>
+              <div className={styles.sectionCard} style={{ gridArea: 'feedback2' }} key={''}>
+                <p>
+                  "Nathanaël est un développeur comme on n'en fait plus : passionné, précis, et
+                  d'une grande maturité. Très pédagogue, il a su m'encadrer pendant mon stage, et me
+                  permettre de monter en compétence rapidement et efficacement.
+                </p>
+                <p>
+                  En ne perdant jamais de vue les bonnes pratiques, il permet à toute l'équipe
+                  d'atteindre un code de qualité, et d'utiliser au mieux tous les outils.
+                </p>
+                <p>
+                  Ressource pour toute l'équipe et même pour d'autres équipes, il prend le temps de
+                  toujours faire bien, et a à cœur la réussite des projets."
+                </p>
+                <p className={styles.author}>
+                  <strong>Clementine · Software Engineer</strong>
+                </p>
+              </div>
+              <div className={styles.sectionCard} style={{ gridArea: 'feedback3' }} key={''}>
+                <p>
+                  "Développeur Rare, qui regarde et comprend comment fonctionne les différentes
+                  technos et frameworks. Pourquoi choisir un développeur qui utilise bêtement une
+                  techno quand on peut en choisir un qui la comprend pleinement ?"
+                </p>
+                <p className={styles.author}>
+                  <strong>Sasha · Frontend Developer</strong>
+                </p>
+              </div>
+              <div className={styles.sectionCard} style={{ gridArea: 'feedback4' }} key={''}>
+                <p>
+                  "Nathanaël est une personne passionnée par son métier, pédagogue et très
+                  sympathique. J'ai travaillé avec lui sur plusieurs projets. Il témoigne d'une
+                  grande curiosité, même en design.
+                </p>
+                <p>
+                  Son calme, ses connaissances approfondies et sa bonne humeur en font un collègue
+                  apprécié.
+                </p>
+                <p>Une collaboration designer-développeur comme on en souhaite !"</p>
+                <p className={styles.author}>
+                  <strong>Sayuli · UX Designer</strong>
+                </p>
+              </div>
+              <div className={styles.sectionCard} style={{ gridArea: 'feedback5' }} key={''}>
+                <p>
+                  "Nathanaël est un développeur passionné avec un très haut niveau d'exigence et des
+                  capacités hors norme. J'ai été ravi de travailler avec lui."
+                </p>
+                <p className={styles.author}>
+                  <strong>Antonio · Senior Developer</strong>
+                </p>
+              </div>
+              <div className={styles.sectionCard} style={{ gridArea: 'feedback6' }} key={''}>
+                <p>
+                  "Un honneur d’avoir pu travailler avec lui. Une personne avec qui j’ai énormément
+                  appris.
+                </p>
+                <p>
+                  Que cela soit sur le plan technique ou organisationnel, Nathanael m’a fait
+                  évoluer.
+                </p>
+                <p>
+                  Une personne très professionnelle qui va au bout de ses missions et que j’ai eu
+                  plaisir à rencontrer et qui enrichit une équipe. Toujours de bons conseils pour
+                  aller de l’avant sur un projet."
+                </p>
+                <p className={styles.author}>
+                  <strong>Paul · Backend Developer</strong>
+                </p>
+              </div>
+              <div className={styles.sectionCard} style={{ gridArea: 'feedback7' }} key={''}>
+                <p>
+                  "Travailler avec Nathanaël est un immense plaisir : curieux, passionné, garant des
+                  bonnes pratiques, il pousse toute une équipe à son meilleur.{' '}
+                </p>
+                <p>
+                  Rapidement au sein d'Econocom, il est devenu indispensable sur tous les sujets
+                  transverses comme l'intégration continue, le versionning, les tests automatisés.
+                </p>
+                <p>
+                  Excellent développeur iOS et JS, n'hésitez pas à lire son blog qui est une pépite
+                  technique."
+                </p>
+                <p className={styles.author}>
+                  <strong>Coline · Lead Developer</strong>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <Footer />
