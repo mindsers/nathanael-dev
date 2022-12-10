@@ -147,5 +147,9 @@ export default {
       duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
       fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
     },
+    feedbacks: {
+      fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
+      title: `Quelques avis`,
+    },
   },
 }

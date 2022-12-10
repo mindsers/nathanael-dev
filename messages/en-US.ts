@@ -139,5 +139,9 @@ export default {
       duration: `{years, plural, =0 {} =1 {1 year} other {# years}} {months, plural, =0 {} =1 {1 month} other {# months}}`,
       fallback: `⚠️ Unable to show the experience list currently. Retry later. ⚠️`,
     },
+    feedbacks: {
+      fallback: `⚠️ Unable to show the feedback list currently. Retry later. ⚠️`,
+      title: `Some feedback`,
+    },
   },
 }
