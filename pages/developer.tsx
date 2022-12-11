@@ -283,80 +283,103 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
       ],
       feedbacks: [
         {
-          text: [
-            `"Nathanaël a effectué le développement de mon site internet, la migration des
-            données et l'installation de serveur sécurisé dans le cloud.`,
-            `La prestation a été effectuée rapidement, la communication a été facile et mes
-            attentes bien prises en compte même pour des changements de dernière minute.`,
-            `Nathanaël sait s'adapter au client!"`,
-          ],
+          text: needFrench
+            ? [
+                `"Nathanaël a effectué le développement de mon site internet, la migration des données et l'installation de serveur sécurisé dans le cloud.`,
+                `La prestation a été effectuée rapidement, la communication a été facile et mes attentes bien prises en compte même pour des changements de dernière minute.`,
+                `Nathanaël sait s'adapter au client!"`,
+              ]
+            : [
+                `Nathanaël carried out the development of my website, the migration of data and the installation of a secure server in the cloud.`,
+                `The service was carried out quickly, communication was easy and my expectations were well taken into account, even for last minute changes.`,
+                `Nathanaël knows how to adapt to the customer!"`,
+              ],
           author: `Maëva`,
           role: `CEO Travel & Food`,
         },
         {
-          text: [
-            `"Nathanaël est un développeur comme on n'en fait plus : passionné, précis, et
-            d'une grande maturité. Très pédagogue, il a su m'encadrer pendant mon stage, et me
-            permettre de monter en compétence rapidement et efficacement.`,
-            `En ne perdant jamais de vue les bonnes pratiques, il permet à toute l'équipe
-            d'atteindre un code de qualité, et d'utiliser au mieux tous les outils.`,
-            `Ressource pour toute l'équipe et même pour d'autres équipes, il prend le temps de
-            toujours faire bien, et a à cœur la réussite des projets."`,
-          ],
+          text: needFrench
+            ? [
+                `"Nathanaël est un développeur comme on n'en fait plus : passionné, précis, et d'une grande maturité. Très pédagogue, il a su m'encadrer pendant mon stage, et me permettre de monter en compétence rapidement et efficacement.`,
+                `En ne perdant jamais de vue les bonnes pratiques, il permet à toute l'équipe d'atteindre un code de qualité, et d'utiliser au mieux tous les outils.`,
+                `Ressource pour toute l'équipe et même pour d'autres équipes, il prend le temps de toujours faire bien, et a à cœur la réussite des projets."`,
+              ]
+            : [
+                `"Nathanaël is a developer like no other: passionate, precise, and very mature. Very pedagogical, he knew how to supervise me during my internship, and allowed me to develop my skills quickly and efficiently.`,
+                `By never losing sight of good practices, he allows the whole team to achieve quality code, and to make the best use of all the tools.`,
+                `A resource for the whole team and even for other teams, he takes the time to always do well, and takes the success of projects to heart."`,
+              ],
           author: `Clementine`,
           role: `Software Engineer`,
         },
         {
-          text: [
-            `"Développeur Rare, qui regarde et comprend comment fonctionne les différentes
-            technos et frameworks. Pourquoi choisir un développeur qui utilise bêtement une
-            techno quand on peut en choisir un qui la comprend pleinement ?"`,
-          ],
+          text: needFrench
+            ? [
+                `"Développeur rare, qui regarde et comprend comment fonctionnent les différentes technos et les frameworks. Pourquoi choisir un développeur qui utilise bêtement une techno quand on peut en choisir un qui la comprend pleinement ?"`,
+              ]
+            : [
+                `Rare developer, who watches and understands how different technologies and frameworks work. Why choose a developer who stupidly uses technology when you can choose one who fully understands it?`,
+              ],
           author: `Sasha`,
           role: `Frontend Developer`,
         },
         {
-          text: [
-            `"Nathanaël est une personne passionnée par son métier, pédagogue et très
+          text: needFrench
+            ? [
+                `"Nathanaël est une personne passionnée par son métier, pédagogue et très
             sympathique. J'ai travaillé avec lui sur plusieurs projets. Il témoigne d'une
             grande curiosité, même en design.`,
-            `Son calme, ses connaissances approfondies et sa bonne humeur en font un collègue
+                `Son calme, ses connaissances approfondies et sa bonne humeur en font un collègue
             apprécié.`,
-            `Une collaboration designer-développeur comme on en souhaite !"`,
-          ],
+                `Une collaboration designer-développeur comme on en souhaite !"`,
+              ]
+            : [
+                `"Nathanaël is a person passionate about his job, a teacher and very friendly. I worked with him on several projects. He shows great curiosity, even in design.`,
+                `His calm, in-depth knowledge and good humor make him a valued colleague.`,
+                `A designer-developer collaboration as we wish!"`,
+              ],
           author: `Sayuli`,
           role: `UX Designer`,
         },
         {
-          text: [
-            `"Nathanaël est un développeur passionné avec un très haut niveau d'exigence et des
+          text: needFrench
+            ? [
+                `"Nathanaël est un développeur passionné avec un très haut niveau d'exigence et des
             capacités hors norme. J'ai été ravi de travailler avec lui."`,
-          ],
+              ]
+            : [
+                `"Nathanaël is a passionate developer with very high standards and exceptional abilities. I was delighted to work with him."`,
+              ],
           author: `Antonio`,
           role: `Senior Developer`,
         },
         {
-          text: [
-            `"Un honneur d’avoir pu travailler avec lui. Une personne avec qui j’ai énormément
-            appris.`,
-            `Que cela soit sur le plan technique ou organisationnel, Nathanael m’a fait
-            évoluer.`,
-            `Une personne très professionnelle qui va au bout de ses missions et que j’ai eu
-            plaisir à rencontrer et qui enrichit une équipe. Toujours de bons conseils pour
-            aller de l’avant sur un projet."`,
-          ],
+          text: needFrench
+            ? [
+                `"Un honneur d’avoir pu travailler avec lui. Une personne avec qui j’ai énormément appris.`,
+                `Que cela soit sur le plan technique ou organisationnel, Nathanael m’a fait évoluer.`,
+                `Une personne très professionnelle qui va au bout de ses missions et que j’ai eu plaisir à rencontrer et qui enrichit une équipe. Toujours de bons conseils pour aller de l’avant sur un projet."`,
+              ]
+            : [
+                `"An honor to have been able to work with him. A person with whom I learned a lot.`,
+                `Whether on a technical or organizational level, Nathanaël made me evolve.`,
+                `A very professional person who goes to the end of his missions and whom I had the pleasure of meeting and who enriches a team. Always good advice to move forward on a project."`,
+              ],
           author: `Paul`,
           role: `Backend Developer`,
         },
         {
-          text: [
-            `"Travailler avec Nathanaël est un immense plaisir : curieux, passionné, garant des
-            bonnes pratiques, il pousse toute une équipe à son meilleur.`,
-            `Rapidement au sein d'Econocom, il est devenu indispensable sur tous les sujets
-            transverses comme l'intégration continue, le versionning, les tests automatisés.`,
-            `Excellent développeur iOS et JS, n'hésitez pas à lire son blog qui est une pépite
-            technique."`,
-          ],
+          text: needFrench
+            ? [
+                `"Travailler avec Nathanaël est un immense plaisir : curieux, passionné, garant des bonnes pratiques, il pousse toute une équipe à son meilleur.`,
+                `Rapidement au sein d'Econocom, il est devenu indispensable sur tous les sujets transverses comme l'intégration continue, le versionning, les tests automatisés.`,
+                `Excellent développeur iOS et JS, n'hésitez pas à lire son blog qui est une pépite technique."`,
+              ]
+            : [
+                `"Working with Nathanaël is an immense pleasure: curious, passionate, guarantor of good practices, he pushes an entire team to its best.`,
+                `Quickly within Econocom, he became essential on all cross-functional topics such as continuous integration, versioning, automated testing.`,
+                `Excellent iOS and JS developer, do not hesitate to read his blog which is a technical nugget."`,
+              ],
           author: `Coline`,
           role: `Lead Developer`,
         },
