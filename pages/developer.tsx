@@ -170,173 +170,9 @@ function DeveloperPage({
 export default DeveloperPage
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
-  if (locale === 'fr') {
-    return {
-      props: {
-        locale,
-        experiences: [
-          {
-            title: `Lead Software Engineer`,
-            company: `Ferpection`,
-            description: [
-              ` Dévelopement de la plateforme de recherche en test utilisateur ansi que les outils interne avec les technos: ES6+, ReactJS, VictoryJS`,
-            ],
-            skills: [
-              'Anglais',
-              'React.js',
-              'Apollo GraphQL',
-              'Architecture logicielle',
-              'JavaScript',
-            ],
-            start: new Date(2018, 8).toISOString(),
-            end: new Date(2023, 2).toISOString(),
-          },
-          {
-            title: `Javascript & iOS Software Engineer, DevOps`,
-            company: `Econocom`,
-            description: [
-              `Dev : Référent mobilité et technologies Javascript du centre de service Econocom,
-              j'interviens sur les phases de conception, de chiffrage, d'architecture et de
-              développement des projets iOS et des projets front/back/full Javascript.`,
-              `DevOps: Mise en place des plateformes d'intégration / déploiement continue.
-              Automatisation des tâches. Accompagnement des développeurs sur les technologies Git,
-              Docker, GitLab CI, etc...`,
-            ],
-            skills: ['Angular', 'Swift', 'Objective-C', 'Architecture logicielle', 'JavaScript'],
-            start: new Date(2015, 10).toISOString(),
-            end: new Date(2018, 7).toISOString(),
-          },
-          {
-            title: `Formateur Javascript`,
-            company: `ORT Lyon`,
-            description: [
-              `Formateur d'une classe de 14 élèves en 3Csi (Concepteur de systèmes d’Information -
-                Bac +3). Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
-            ],
-            skills: [
-              'Javascript ES3-5',
-              'Javascript ES6+',
-              'jQuery',
-              'AngularJS',
-              'NodeJS',
-              'Docker',
-              'ExpressJS',
-              'Pug (Jade)',
-            ],
-            start: new Date(2017, 1).toISOString(),
-            end: new Date(2018, 0).toISOString(),
-          },
-          {
-            title: `Web Developer, Software & Embedded System Developer`,
-            company: `Winciel`,
-            description: [
-              `Développement de modules Php, C, M.Access, Vb, autour de la solution principale
-              vendu par l'entreprise. Développement d'applications spécifiques pour certains
-              clients. Co-développement sur un projet concernant le création d'un système embarqué
-              pour les chaudières d'immeuble.`,
-            ],
-            skills: ['PHP', 'Javascript', 'Java', 'C11', 'Python'],
-            start: new Date(2013, 7).toISOString(),
-            end: new Date(2015, 9).toISOString(),
-          },
-          {
-            title: `Web Developer, Web Designer`,
-            company: `Crédit Agricole`,
-            description: [
-              `Déploiement et amélioration du site dédiée aux sociétaires. Création du site
-              https://societaire-reunion.fr`,
-              `Création d'une bibliothèque de bannière publicitaire, de site web en collaboration
-              avec le service marketing, d'affiche publicitaire destinées a l'impression.
-              Modification et participation à la vie du site https://ca-reunion.fr`,
-            ],
-            skills: ['PHP', 'Javascript', 'WordPress', 'Photoshop', 'InDesign'],
-            start: new Date(2012, 1).toISOString(),
-            end: new Date(2013, 2).toISOString(),
-          },
-        ],
-        feedbacks: [
-          {
-            text: [
-              `"Nathanaël a effectué le développement de mon site internet, la migration des
-              données et l'installation de serveur sécurisé dans le cloud.`,
-              `La prestation a été effectuée rapidement, la communication a été facile et mes
-              attentes bien prises en compte même pour des changements de dernière minute.`,
-              `Nathanaël sait s'adapter au client!"`,
-            ],
-            author: `Maëva`,
-            role: `CEO Travel & Food`,
-          },
-          {
-            text: [
-              `"Nathanaël est un développeur comme on n'en fait plus : passionné, précis, et
-              d'une grande maturité. Très pédagogue, il a su m'encadrer pendant mon stage, et me
-              permettre de monter en compétence rapidement et efficacement.`,
-              `En ne perdant jamais de vue les bonnes pratiques, il permet à toute l'équipe
-              d'atteindre un code de qualité, et d'utiliser au mieux tous les outils.`,
-              `Ressource pour toute l'équipe et même pour d'autres équipes, il prend le temps de
-              toujours faire bien, et a à cœur la réussite des projets."`,
-            ],
-            author: `Clementine`,
-            role: `Software Engineer`,
-          },
-          {
-            text: [
-              `"Développeur Rare, qui regarde et comprend comment fonctionne les différentes
-              technos et frameworks. Pourquoi choisir un développeur qui utilise bêtement une
-              techno quand on peut en choisir un qui la comprend pleinement ?"`,
-            ],
-            author: `Sasha`,
-            role: `Frontend Developer`,
-          },
-          {
-            text: [
-              `"Nathanaël est une personne passionnée par son métier, pédagogue et très
-              sympathique. J'ai travaillé avec lui sur plusieurs projets. Il témoigne d'une
-              grande curiosité, même en design.`,
-              `Son calme, ses connaissances approfondies et sa bonne humeur en font un collègue
-              apprécié.`,
-              `Une collaboration designer-développeur comme on en souhaite !"`,
-            ],
-            author: `Sayuli`,
-            role: `UX Designer`,
-          },
-          {
-            text: [
-              `"Nathanaël est un développeur passionné avec un très haut niveau d'exigence et des
-              capacités hors norme. J'ai été ravi de travailler avec lui."`,
-            ],
-            author: `Antonio`,
-            role: `Senior Developer`,
-          },
-          {
-            text: [
-              `"Un honneur d’avoir pu travailler avec lui. Une personne avec qui j’ai énormément
-              appris.`,
-              `Que cela soit sur le plan technique ou organisationnel, Nathanael m’a fait
-              évoluer.`,
-              `Une personne très professionnelle qui va au bout de ses missions et que j’ai eu
-              plaisir à rencontrer et qui enrichit une équipe. Toujours de bons conseils pour
-              aller de l’avant sur un projet."`,
-            ],
-            author: `Paul`,
-            role: `Backend Developer`,
-          },
-          {
-            text: [
-              `"Travailler avec Nathanaël est un immense plaisir : curieux, passionné, garant des
-              bonnes pratiques, il pousse toute une équipe à son meilleur.`,
-              `Rapidement au sein d'Econocom, il est devenu indispensable sur tous les sujets
-              transverses comme l'intégration continue, le versionning, les tests automatisés.`,
-              `Excellent développeur iOS et JS, n'hésitez pas à lire son blog qui est une pépite
-              technique."`,
-            ],
-            author: `Coline`,
-            role: `Lead Developer`,
-          },
-        ],
-      },
-    }
-  }
+  const needFrench = locale === 'fr'
+  const englishSkillLabel = needFrench ? 'Anglais' : 'English'
+  const architectureSkillLabel = needFrench ? 'Architecture logicielle' : 'Software Architecture'
 
   return {
     props: {
@@ -345,18 +181,20 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
         {
           title: `Lead Software Engineer`,
           company: `Ferpection`,
-          description: [
-            `Built the frontend of the user research platform and some of the internal tools used at Ferpection.`,
-            `Built no-code automations using Zapier.`,
-          ],
+          description: needFrench
+            ? [
+                ` Dévelopement de la plateforme de recherche en test utilisateur ansi que les outils interne avec les technos: ES6+, ReactJS, VictoryJS`,
+              ]
+            : [
+                `Built the frontend of the user research platform and some of the internal tools used at Ferpection.`,
+                `Built no-code automations using Zapier.`,
+              ],
           skills: [
-            'English',
+            englishSkillLabel,
             'React.js',
             'Apollo GraphQL',
-            'Software Architecture',
+            architectureSkillLabel,
             'JavaScript',
-            'VictoryJS',
-            'Docker',
           ],
           start: new Date(2018, 8).toISOString(),
           end: new Date(2023, 2).toISOString(),
@@ -364,29 +202,35 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
         {
           title: `Javascript & iOS Software Engineer, DevOps`,
           company: `Econocom`,
-          description: [
-            `Dev : Mobility and Javascript technologies referent at the Econocom service center, I work on the design, costing, architecture and development phases of iOS projects and front/back/full Javascript projects.`,
-            `DevOps: Implementation of continuous integration / deployment platforms. Automation of tasks. Support for developers on Git, Docker, GitLab CI technologies, etc...`,
-          ],
-          skills: [
-            'Angular',
-            'Swift',
-            'Objective-C',
-            'Software Architecture',
-            'JavaScript',
-            'DevOps',
-            'Docker',
-          ],
+          description: needFrench
+            ? [
+                `Dev : Référent mobilité et technologies Javascript du centre de service Econocom,
+            j'interviens sur les phases de conception, de chiffrage, d'architecture et de
+            développement des projets iOS et des projets front/back/full Javascript.`,
+                `DevOps: Mise en place des plateformes d'intégration / déploiement continue.
+            Automatisation des tâches. Accompagnement des développeurs sur les technologies Git,
+            Docker, GitLab CI, etc...`,
+              ]
+            : [
+                `Dev : Mobility and Javascript technologies referent at the Econocom service center, I work on the design, costing, architecture and development phases of iOS projects and front/back/full Javascript projects.`,
+                `DevOps: Implementation of continuous integration / deployment platforms. Automation of tasks. Support for developers on Git, Docker, GitLab CI technologies, etc...`,
+              ],
+          skills: ['Angular', 'Swift', 'Objective-C', architectureSkillLabel, 'JavaScript'],
           start: new Date(2015, 10).toISOString(),
           end: new Date(2018, 7).toISOString(),
         },
         {
-          title: `Formateur Javascript`,
+          title: needFrench ? `Formateur Javascript` : `JavaScript Trainer`,
           company: `ORT Lyon`,
-          description: [
-            `Trainer of a class of 14 students in Bachelor of Science (Computer Science).
+          description: needFrench
+            ? [
+                `Formateur d'une classe de 14 élèves en 3Csi (Concepteur de systèmes d’Information -
+              Bac +3). Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
+              ]
+            : [
+                `Trainer of a class of 14 students in Bachelor of Science (Computer Science).
             Writing of course materials. Reviews & evaluation of acquired knowledge.`,
-          ],
+              ],
           skills: [
             'Javascript ES3-5',
             'Javascript ES6+',
@@ -403,26 +247,120 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
         {
           title: `Web Developer, Software & Embedded System Developer`,
           company: `Winciel`,
-          description: [
-            `Development of Php, C, M.Access, Vb modules, around the main solution sold by the company. Development of specific applications for certain customers. Co-development on a project concerning the creation of an embedded system for building boilers.`,
-          ],
-          skills: ['PHP', 'Javascript', 'Java', 'C11', 'Python'],
+          description: needFrench
+            ? [
+                `Développement de modules Php, C, M.Access, Vb, autour de la solution principale
+            vendu par l'entreprise. Développement d'applications spécifiques pour certains
+            clients. Co-développement sur un projet concernant le création d'un système embarqué
+            pour les chaudières d'immeuble.`,
+              ]
+            : [
+                `Development of Php, C, M.Access, Vb modules, around the main solution sold by the company. Development of specific applications for certain customers. Co-development on a project concerning the creation of an embedded system for building boilers.`,
+              ],
+          skills: ['PHP', 'JavaScript', 'Java', 'C11', 'Python'],
           start: new Date(2013, 7).toISOString(),
           end: new Date(2015, 9).toISOString(),
         },
         {
           title: `Web Developer, Web Designer`,
           company: `Crédit Agricole`,
-          description: [
-            `Deployment and improvement of the site dedicated to members. Creation of the website https://societaire-reunion.fr`,
-            `Creation of a library of advertising banners, websites in collaboration with the marketing department, advertising posters intended for printing. Modification and participation in the life of the site https://ca-reunion.fr`,
-          ],
-          skills: ['PHP', 'Javascript', 'WordPress', 'Photoshop', 'InDesign'],
+          description: needFrench
+            ? [
+                `Déploiement et amélioration du site dédiée aux sociétaires. Création du site
+            https://societaire-reunion.fr`,
+                `Création d'une bibliothèque de bannière publicitaire, de site web en collaboration
+            avec le service marketing, d'affiche publicitaire destinées a l'impression.
+            Modification et participation à la vie du site https://ca-reunion.fr`,
+              ]
+            : [
+                `Deployment and improvement of the site dedicated to members. Creation of the website https://societaire-reunion.fr`,
+                `Creation of a library of advertising banners, websites in collaboration with the marketing department, advertising posters intended for printing. Modification and participation in the life of the site https://ca-reunion.fr`,
+              ],
+          skills: ['PHP', 'JavaScript', 'WordPress', 'Photoshop', 'InDesign'],
           start: new Date(2012, 1).toISOString(),
           end: new Date(2013, 2).toISOString(),
         },
       ],
-      feedbacks: [],
+      feedbacks: [
+        {
+          text: [
+            `"Nathanaël a effectué le développement de mon site internet, la migration des
+            données et l'installation de serveur sécurisé dans le cloud.`,
+            `La prestation a été effectuée rapidement, la communication a été facile et mes
+            attentes bien prises en compte même pour des changements de dernière minute.`,
+            `Nathanaël sait s'adapter au client!"`,
+          ],
+          author: `Maëva`,
+          role: `CEO Travel & Food`,
+        },
+        {
+          text: [
+            `"Nathanaël est un développeur comme on n'en fait plus : passionné, précis, et
+            d'une grande maturité. Très pédagogue, il a su m'encadrer pendant mon stage, et me
+            permettre de monter en compétence rapidement et efficacement.`,
+            `En ne perdant jamais de vue les bonnes pratiques, il permet à toute l'équipe
+            d'atteindre un code de qualité, et d'utiliser au mieux tous les outils.`,
+            `Ressource pour toute l'équipe et même pour d'autres équipes, il prend le temps de
+            toujours faire bien, et a à cœur la réussite des projets."`,
+          ],
+          author: `Clementine`,
+          role: `Software Engineer`,
+        },
+        {
+          text: [
+            `"Développeur Rare, qui regarde et comprend comment fonctionne les différentes
+            technos et frameworks. Pourquoi choisir un développeur qui utilise bêtement une
+            techno quand on peut en choisir un qui la comprend pleinement ?"`,
+          ],
+          author: `Sasha`,
+          role: `Frontend Developer`,
+        },
+        {
+          text: [
+            `"Nathanaël est une personne passionnée par son métier, pédagogue et très
+            sympathique. J'ai travaillé avec lui sur plusieurs projets. Il témoigne d'une
+            grande curiosité, même en design.`,
+            `Son calme, ses connaissances approfondies et sa bonne humeur en font un collègue
+            apprécié.`,
+            `Une collaboration designer-développeur comme on en souhaite !"`,
+          ],
+          author: `Sayuli`,
+          role: `UX Designer`,
+        },
+        {
+          text: [
+            `"Nathanaël est un développeur passionné avec un très haut niveau d'exigence et des
+            capacités hors norme. J'ai été ravi de travailler avec lui."`,
+          ],
+          author: `Antonio`,
+          role: `Senior Developer`,
+        },
+        {
+          text: [
+            `"Un honneur d’avoir pu travailler avec lui. Une personne avec qui j’ai énormément
+            appris.`,
+            `Que cela soit sur le plan technique ou organisationnel, Nathanael m’a fait
+            évoluer.`,
+            `Une personne très professionnelle qui va au bout de ses missions et que j’ai eu
+            plaisir à rencontrer et qui enrichit une équipe. Toujours de bons conseils pour
+            aller de l’avant sur un projet."`,
+          ],
+          author: `Paul`,
+          role: `Backend Developer`,
+        },
+        {
+          text: [
+            `"Travailler avec Nathanaël est un immense plaisir : curieux, passionné, garant des
+            bonnes pratiques, il pousse toute une équipe à son meilleur.`,
+            `Rapidement au sein d'Econocom, il est devenu indispensable sur tous les sujets
+            transverses comme l'intégration continue, le versionning, les tests automatisés.`,
+            `Excellent développeur iOS et JS, n'hésitez pas à lire son blog qui est une pépite
+            technique."`,
+          ],
+          author: `Coline`,
+          role: `Lead Developer`,
+        },
+      ],
     },
   }
 }
