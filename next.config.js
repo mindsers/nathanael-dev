@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'standalone',
+  trailingSlash: true,
   i18n: {
     locales: ['en-US', 'fr'],
     defaultLocale: 'en-US',

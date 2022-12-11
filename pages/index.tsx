@@ -30,6 +30,10 @@ function Home() {
         <title>{t('meta.title')}</title>
         <meta name="description" content={t('meta.desc')} />
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="alternate" hrefLang="fr" href="/fr/" />
+        <link rel="alternate" hrefLang="en" href="/" />
+        <link rel="alternate" hrefLang="x-default" href="/" />
       </Head>
 
       <main className={styles.main}>

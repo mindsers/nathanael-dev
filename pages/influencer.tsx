@@ -14,6 +14,10 @@ const InfluencerPage: NextPage = () => {
           content="Nathanaël is a software engineer, passionate about code, business and coffee."
         />
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="alternate" hrefLang="fr" href="/fr/influencer" />
+        <link rel="alternate" hrefLang="en" href="/influencer" />
+        <link rel="alternate" hrefLang="x-default" href="/influencer" />
       </Head>
 
       <main className={styles.main}>
