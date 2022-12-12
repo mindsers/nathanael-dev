@@ -63,10 +63,10 @@ function Home() {
               </li>
               <li>
                 <a>{t('menu.blogger')}</a>
-              </li>
+              </li> */}
               <li>
                 <Link href={`/influencer/`}>{t('menu.influencer')}</Link>
-              </li> */}
+              </li>
             </ul>
           </div>
         </section>
@@ -89,11 +89,11 @@ function Home() {
             <div>
               <h2>{t('communitySection.title')}</h2>
               {t.rich('communitySection.text')}
-              {/* <p className={styles.actions}>
+              <p className={styles.actions}>
                 <Link className={styles.action} href={`/influencer/`}>
                   {t('communitySection.linkText')}
                 </Link>
-              </p> */}
+              </p>
             </div>
             <div className={styles.svgContainer}>
               <SocialSVG />

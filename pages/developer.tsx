@@ -13,7 +13,7 @@ import { FreelanceSVG } from '../components/illustrations/FreelanceSVG'
 import { MobileSVG } from '../components/illustrations/MobileSVG'
 import { WebSVG } from '../components/illustrations/WebSVG'
 
-import styles from '../styles/DeveloperPage.module.css'
+import styles from '../styles/activities.module.css'
 
 function DeveloperPage({
   experiences,
