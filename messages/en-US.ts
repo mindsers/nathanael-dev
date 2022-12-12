@@ -144,4 +144,11 @@ export default {
       title: `Some feedback`,
     },
   },
+  InfluencerPage: {
+    title: `An influencer with a strong and engaged community, passionate about coding and coffee`,
+    meta: {
+      title: `Nathanaël Cherrier – Tech influencer sharing about coding and coffee`,
+      desc: `Nathanaël is a tech influencer with a highly engaged community, passionate about code and coffee. Let's promote you brand!`,
+    },
+  },
 }

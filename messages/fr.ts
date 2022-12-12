@@ -152,4 +152,11 @@ export default {
       title: `Quelques avis`,
     },
   },
+  InfluencerPage: {
+    title: `Un influenceur avec une communauté forte et engagée, passionné de code et de café`,
+    meta: {
+      title: `Nathanaël Cherrier – Influenceur tech qui partage sur le codage et le café`,
+      desc: `Nathanaël est un influenceur tech avec une communauté très engagée, passionné de code et de café. Faisons la promotion de votre marque !`,
+    },
+  },
 }
