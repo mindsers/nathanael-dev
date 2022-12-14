@@ -159,8 +159,8 @@ export default {
       desc: `Nathanaël est un influenceur tech avec une communauté très engagée, passionné de code et de café. Faisons la promotion de votre marque !`,
     },
     callToAction: `Faites du marketing d'influence`,
-  },
-  brands: {
-    title: `Marques partnaires`,
+    brands: {
+      title: `Marques partnaires`,
+    },
   },
 }
