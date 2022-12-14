@@ -1,12 +1,12 @@
 import { NextPage } from 'next'
 import { useTranslations } from 'next-intl'
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { CommunitySVG } from '../components/illustrations/CommunitySVG'
 import { InstagramSVG } from '../components/illustrations/InstagramSVG'
-import { BenQLogo } from '../components/logos/BenQLogo'
 
 import styles from '../styles/activities.module.css'
 
@@ -73,8 +73,8 @@ const InfluencerPage: NextPage = () => {
               </p>
             </div>
             <p>
-              I code since 2005 and I do it profesionnally since 2013. That's what I share with my
-              community: my developer/entrepreneur journey.
+              I code since 2005 and I do it profesionnally since 2013. That&apos;s what I share with
+              my community: my developer/entrepreneur journey.
             </p>
             <p>
               They see where I work, how my setup evolves, my frustrations fixing bug and how my
@@ -130,43 +130,43 @@ const InfluencerPage: NextPage = () => {
             <div className={styles.brandGrid}>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <img className={styles.logo} src="/f1.svg" />
+                  <Image className={styles.logo} src="/f1.svg" alt="Formula 1" />
                 </span>
                 Formula 1
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <img className={styles.logo} src="/aws.svg" />
+                  <Image className={styles.logo} src="/aws.svg" alt="Amazon Web Services" />
                 </span>
                 Amazon Web Services
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <img className={styles.logo} src="/benq.svg" />
+                  <Image className={styles.logo} src="/benq.svg" alt="BenQ Lighting" />
                 </span>
                 BenQ Lighting
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <img className={styles.logo} src="/rapyd.svg" />
+                  <Image className={styles.logo} src="/rapyd.svg" alt="Rapyd" />
                 </span>
                 Rapyd
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <img className={styles.logo} src="/ocushield.png" />
+                  <Image className={styles.logo} src="/ocushield.png" alt="Ocushield" />
                 </span>
                 Ocushield
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <img className={styles.logo} src="/whoosh.jpg" />
+                  <Image className={styles.logo} src="/whoosh.jpg" alt="Whoosh!" />
                 </span>
                 Whoosh!
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <img className={styles.logo} src="/gridstudio.jpg" />
+                  <Image className={styles.logo} src="/gridstudio.jpg" alt="GridStudio CC" />
                 </span>
                 GridStudio CC
               </div>
