@@ -150,6 +150,9 @@ export default {
       title: `Nathanaël Cherrier – Tech influencer sharing about coding and coffee`,
       desc: `Nathanaël is a tech influencer with a highly engaged community, passionate about code and coffee. Let's promote you brand!`,
     },
-    callToAction: `Do influencer marketing`,
+    callToAction: `Use my influence`,
+    brands: {
+      title: `Brand partners`,
+    },
   },
 }

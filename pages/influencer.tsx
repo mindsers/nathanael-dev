@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { CommunitySVG } from '../components/illustrations/CommunitySVG'
 import { InstagramSVG } from '../components/illustrations/InstagramSVG'
+import { BenQLogo } from '../components/logos/BenQLogo'
 
 import styles from '../styles/activities.module.css'
 
@@ -114,7 +115,65 @@ const InfluencerPage: NextPage = () => {
             </p>
             <p className={styles.actions}>
               <a className={'button'} href="">
-                Ask for a quote
+                Advertize in my community
+              </a>
+            </p>
+          </div>
+        </section>
+        <section className={styles.sectionLight}>
+          <div className={styles.brandSection}>
+            <h2>{t('brands.title')}</h2>
+            <p>
+              I worked with brands that are leaders in their industry either on one-shot or
+              long-term contracts.
+            </p>
+            <div className={styles.brandGrid}>
+              <div className={styles.brandContainer}>
+                <span className={styles.logoContainer}>
+                  <img className={styles.logo} src="/f1.svg" />
+                </span>
+                Formula 1
+              </div>
+              <div className={styles.brandContainer}>
+                <span className={styles.logoContainer}>
+                  <img className={styles.logo} src="/aws.svg" />
+                </span>
+                Amazon Web Services
+              </div>
+              <div className={styles.brandContainer}>
+                <span className={styles.logoContainer}>
+                  <img className={styles.logo} src="/benq.svg" />
+                </span>
+                BenQ Lighting
+              </div>
+              <div className={styles.brandContainer}>
+                <span className={styles.logoContainer}>
+                  <img className={styles.logo} src="/rapyd.svg" />
+                </span>
+                Rapyd
+              </div>
+              <div className={styles.brandContainer}>
+                <span className={styles.logoContainer}>
+                  <img className={styles.logo} src="/ocushield.png" />
+                </span>
+                Ocushield
+              </div>
+              <div className={styles.brandContainer}>
+                <span className={styles.logoContainer}>
+                  <img className={styles.logo} src="/whoosh.jpg" />
+                </span>
+                Whoosh!
+              </div>
+              <div className={styles.brandContainer}>
+                <span className={styles.logoContainer}>
+                  <img className={styles.logo} src="/gridstudio.jpg" />
+                </span>
+                GridStudio CC
+              </div>
+            </div>
+            <p className={styles.actions}>
+              <a className={'button inverse'} href="">
+                Add your logo
               </a>
             </p>
           </div>
