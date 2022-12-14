@@ -160,4 +160,7 @@ export default {
     },
     callToAction: `Faites du marketing d'influence`,
   },
+  brands: {
+    title: `Marques partnaires`,
+  },
 }
