@@ -158,5 +158,6 @@ export default {
       title: `Nathanaël Cherrier – Influenceur tech qui partage sur le codage et le café`,
       desc: `Nathanaël est un influenceur tech avec une communauté très engagée, passionné de code et de café. Faisons la promotion de votre marque !`,
     },
+    callToAction: `Faites du marketing d'influence`,
   },
 }
