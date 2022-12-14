@@ -130,9 +130,9 @@ function DeveloperPage({
             <div className={styles.insights}>{t.rich('TJMSection.insight')}</div>
             {t.rich('TJMSection.text')}
             <p className={styles.actions}>
-              <a className={'button'} href={t('experience.callToAction.maltURL')}>
+              <Link className={'button'} href={t('experience.callToAction.maltURL')}>
                 {t('TJMSection.callToAction')}
-              </a>
+              </Link>
             </p>
           </div>
           <div className={styles.svgContainer}>
