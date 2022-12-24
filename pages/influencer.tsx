@@ -8,6 +8,14 @@ import Header from '../components/Header'
 import { CommunitySVG } from '../components/illustrations/CommunitySVG'
 import { InstagramSVG } from '../components/illustrations/InstagramSVG'
 
+import f1Logo from '../public/f1.svg'
+import awsLogo from '../public/aws.svg'
+import benqLogo from '../public/benq.svg'
+import rapydLogo from '../public/rapyd.svg'
+import ocushieldLogo from '../public/ocushield.png'
+import whooshLogo from '../public/whoosh.jpg'
+import gridstudioLogo from '../public/gridstudio.jpg'
+
 import styles from '../styles/activities.module.css'
 
 const InfluencerPage: NextPage = () => {
@@ -130,43 +138,43 @@ const InfluencerPage: NextPage = () => {
             <div className={styles.brandGrid}>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <Image className={styles.logo} src="/f1.svg" alt="Formula 1" />
+                  <Image className={styles.logo} src={f1Logo} alt="Formula 1" />
                 </span>
                 Formula 1
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <Image className={styles.logo} src="/aws.svg" alt="Amazon Web Services" />
+                  <Image className={styles.logo} src={awsLogo} alt="Amazon Web Services" />
                 </span>
                 Amazon Web Services
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <Image className={styles.logo} src="/benq.svg" alt="BenQ Lighting" />
+                  <Image className={styles.logo} src={benqLogo} alt="BenQ Lighting" />
                 </span>
                 BenQ Lighting
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <Image className={styles.logo} src="/rapyd.svg" alt="Rapyd" />
+                  <Image className={styles.logo} src={rapydLogo} alt="Rapyd" />
                 </span>
                 Rapyd
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <Image className={styles.logo} src="/ocushield.png" alt="Ocushield" />
+                  <Image className={styles.logo} src={ocushieldLogo} alt="Ocushield" />
                 </span>
                 Ocushield
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <Image className={styles.logo} src="/whoosh.jpg" alt="Whoosh!" />
+                  <Image className={styles.logo} src={whooshLogo} alt="Whoosh!" />
                 </span>
                 Whoosh!
               </div>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
-                  <Image className={styles.logo} src="/gridstudio.jpg" alt="GridStudio CC" />
+                  <Image className={styles.logo} src={gridstudioLogo} alt="GridStudio CC" />
                 </span>
                 GridStudio CC
               </div>
