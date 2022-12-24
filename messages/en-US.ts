@@ -13,12 +13,12 @@ export default {
         <p>
           All in all, more than twelve thousand people follow my adventures as a tech entrepreneur and developer.
         </p>`,
-      linkText: `Let's work on your influencer marketing`,
+      linkText: `Use my influence for your marketing`,
     },
     coachingSection: {
       title: `Need to talk to a pro?`,
       text: `Embarking on development or even a professional retraining can be scary. Need JavaScript coaching or ask a professional questions? Can I help you.`,
-      linkText: `Schedule a coaching session`,
+      linkText: `Schedule a one-time coaching session`,
     },
     experienceSection: {
       title: `More than 15 years in mobile and web industry`,

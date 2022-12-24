@@ -103,9 +103,11 @@ function Home() {
             <div>
               <h2>{t('coachingSection.title')}</h2>
               <p>{t('coachingSection.text')}</p>
-              {/* <p className={styles.actions}>
-                <a className={styles.action}>{t('coachingSection.linkText')}</a>
-              </p> */}
+              <p className={styles.actions}>
+                <Link className={styles.action} href="https://calendly.com/ncherrier/coaching">
+                  {t('coachingSection.linkText')}
+                </Link>
+              </p>
             </div>
             <div className={styles.svgContainer}>
               <ExpertSVG />
