@@ -206,7 +206,9 @@ const InfluencerPage: NextPage = () => {
                 </li>
                 <li className={styles.priceLine}>
                   <div>
-                    <strong>Instagram Story on @mindsers.codes</strong>
+                    <p>
+                      <strong>Instagram Story on @mindsers.codes</strong>
+                    </p>
                   </div>
                   <div>from 100€</div>
                 </li>

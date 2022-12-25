@@ -355,7 +355,7 @@
 .pricingSection .twoColumnGrid {
   display: grid;
   grid-template-columns: 48% 48%;
-  grid-gap: 4%;
+  grid-gap: 0% 4%;
   margin: 40px 0;
 }
 
@@ -367,9 +367,9 @@
 .pricingSection .priceLine {
   display: grid;
   grid-template-columns: 78% 18%;
-  grid-gap: 4%;
+  grid-gap: 0% 4%;
   align-items: center;
-  margin: 50px 0;
+  margin: 10px 0;
 }
 
 .pricingSection .instagram strong {
@@ -388,13 +388,9 @@
   font-size: 0.8em;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .pricingSection .twoColumnGrid {
     grid-template-columns: 100%;
     grid-gap: 0%;
-  }
-
-  .pricingSection .priceLine {
-    margin: 20px 0;
   }
 }
