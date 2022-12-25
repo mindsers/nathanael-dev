@@ -331,6 +331,7 @@
 .brandSection .logoContainer {
   display: inline-flex;
   background-color: white;
+  border: 1px solid var(--background-color);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
