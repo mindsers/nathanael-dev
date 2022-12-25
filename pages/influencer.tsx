@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { CommunitySVG } from '../components/illustrations/CommunitySVG'
@@ -95,9 +96,9 @@ const InfluencerPage: NextPage = () => {
               loves great workplaces, productivity/coding tips.
             </p>
             <p className={styles.actions}>
-              <a className={'button'} href="">
+              <Link className={'button'} href={quoteURL}>
                 Advertize on my Instagram
-              </a>
+              </Link>
             </p>
           </div>
           <div className={styles.svgContainer}>
@@ -123,9 +124,9 @@ const InfluencerPage: NextPage = () => {
               that help its members to navigate to the upper level.
             </p>
             <p className={styles.actions}>
-              <a className={'button'} href={quoteURL}>
+              <Link className={'button'} href={quoteURL}>
                 Advertize in my community
-              </a>
+              </Link>
             </p>
           </div>
         </section>
@@ -181,9 +182,9 @@ const InfluencerPage: NextPage = () => {
               </div>
             </div>
             <p className={styles.actions}>
-              <a className={'button inverse'} href={quoteURL}>
+              <Link className={'button inverse'} href={quoteURL}>
                 Add your logo
-              </a>
+              </Link>
             </p>
           </div>
         </section>
@@ -193,7 +194,7 @@ const InfluencerPage: NextPage = () => {
               <h2>Pricing</h2>
             </header>
             <div className={styles.twoColumnGrid}>
-              <ul>
+              <ul className={styles.instagram}>
                 <li className={styles.priceLine}>
                   <div>
                     <p>
@@ -219,7 +220,7 @@ const InfluencerPage: NextPage = () => {
                   <div>from 210€</div>
                 </li>
               </ul>
-              <ul>
+              <ul className={styles.mindsersBlog}>
                 <li className={styles.priceLine}>
                   <div>
                     <p>
@@ -232,7 +233,7 @@ const InfluencerPage: NextPage = () => {
                 <li className={styles.priceLine}>
                   <div>
                     <p>
-                      <strong>Guest posting on Mindsers Blog</strong>
+                      <strong>Guest post on Mindsers Blog</strong>
                     </p>
                     <p>A sponsored post written by the client and not the blog's team.</p>
                   </div>
@@ -252,19 +253,19 @@ const InfluencerPage: NextPage = () => {
                 </li>
               </ul>
             </div>
-            <p>
+            <p className={styles.details}>
               Prices are indicative. They will be adapted depending on your project, its complexity,
               the number of deliverable, etc. All projects includes stats reporting.
             </p>
-            <p>
-              Projects are accepted only if they match our editorial line and if it brings value to
+            <p className={styles.details}>
+              Projects are accepted only if they match our editorial line and if they bring value to
               the readers/followers. The editorial team has full power to refuse any request that,
               they think, does not meet those requirements.
             </p>
             <p className={styles.actions}>
-              <a className={'button'} href={quoteURL}>
+              <Link className={'button'} href={quoteURL}>
                 Get a quote!
-              </a>
+              </Link>
             </p>
           </div>
         </section>

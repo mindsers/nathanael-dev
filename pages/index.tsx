@@ -104,7 +104,7 @@ function Home() {
               <h2>{t('coachingSection.title')}</h2>
               <p>{t('coachingSection.text')}</p>
               <p className={styles.actions}>
-                <Link className={styles.action} href="https://calendly.com/ncherrier/coaching">
+                <Link className={styles.action} href="https://calendly.com/ncherrier/mentoring">
                   {t('coachingSection.linkText')}
                 </Link>
               </p>

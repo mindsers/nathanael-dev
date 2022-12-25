@@ -356,6 +356,7 @@
   display: grid;
   grid-template-columns: 48% 48%;
   grid-gap: 4%;
+  margin: 20px 0;
 }
 
 .pricingSection ul {
@@ -368,5 +369,32 @@
   grid-template-columns: 78% 18%;
   grid-gap: 4%;
   align-items: center;
-  margin: 15px 0;
+  margin: 50px 0;
+}
+
+.pricingSection .instagram strong {
+  color: #e1306c;
+}
+
+.pricingSection .twitter strong {
+  color: #1da1f2;
+}
+
+.pricingSection .mindsersBlog strong {
+  color: #2779b0;
+}
+
+.pricingSection .details {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 750px) {
+  .pricingSection .twoColumnGrid {
+    grid-template-columns: 100%;
+    grid-gap: 0%;
+  }
+
+  .pricingSection .priceLine {
+    margin: 20px 0;
+  }
 }
