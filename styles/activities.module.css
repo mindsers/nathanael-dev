@@ -356,7 +356,7 @@
   display: grid;
   grid-template-columns: 48% 48%;
   grid-gap: 4%;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .pricingSection ul {
