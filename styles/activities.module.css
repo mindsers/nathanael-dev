@@ -346,3 +346,26 @@
   height: auto;
   width: auto;
 }
+
+.pricingSection {
+  width: 100%;
+}
+
+.pricingSection .twoColumnGrid {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+}
+
+.pricingSection ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pricingSection .priceLine {
+  display: grid;
+  grid-template-columns: 78% 18%;
+  grid-gap: 4%;
+  align-items: center;
+  margin: 15px 0;
+}

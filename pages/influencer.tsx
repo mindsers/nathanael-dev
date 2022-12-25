@@ -20,6 +20,7 @@ import styles from '../styles/activities.module.css'
 
 const InfluencerPage: NextPage = () => {
   const t = useTranslations('InfluencerPage')
+  const quoteURL = 'https://tally.so/r/3xVvEG'
 
   return (
     <div className={styles.container}>
@@ -64,7 +65,7 @@ const InfluencerPage: NextPage = () => {
               </svg>
             </Link>
             <div className={styles.verticalSeparator} />
-            <Link href="" className="button">
+            <Link href={quoteURL} className="button">
               {t('callToAction')}
             </Link>
           </div>
@@ -77,7 +78,7 @@ const InfluencerPage: NextPage = () => {
                 <br /> on Instagram
               </p>
               <p>
-                more than 7 %<br /> engament rate
+                more than 3 %<br /> engament rate
               </p>
             </div>
             <p>
@@ -122,7 +123,7 @@ const InfluencerPage: NextPage = () => {
               that help its members to navigate to the upper level.
             </p>
             <p className={styles.actions}>
-              <a className={'button'} href="">
+              <a className={'button'} href={quoteURL}>
                 Advertize in my community
               </a>
             </p>
@@ -180,8 +181,89 @@ const InfluencerPage: NextPage = () => {
               </div>
             </div>
             <p className={styles.actions}>
-              <a className={'button inverse'} href="">
+              <a className={'button inverse'} href={quoteURL}>
                 Add your logo
+              </a>
+            </p>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <div className={styles.pricingSection}>
+            <header>
+              <h2>Pricing</h2>
+            </header>
+            <div className={styles.twoColumnGrid}>
+              <ul>
+                <li className={styles.priceLine}>
+                  <div>
+                    <p>
+                      <strong>Instagram Post on @mindsers.codes</strong>
+                    </p>
+                    <p>A single image post that appear in feed and shared in stories</p>
+                  </div>
+                  <div>from 180€</div>
+                </li>
+                <li className={styles.priceLine}>
+                  <div>
+                    <strong>Instagram Story on @mindsers.codes</strong>
+                  </div>
+                  <div>from 100€</div>
+                </li>
+                <li className={styles.priceLine}>
+                  <div>
+                    <p>
+                      <strong>Instagram Reel on @mindsers.codes</strong>
+                    </p>
+                    <p>A single video post that appear in feed and shared in stories</p>
+                  </div>
+                  <div>from 210€</div>
+                </li>
+              </ul>
+              <ul>
+                <li className={styles.priceLine}>
+                  <div>
+                    <p>
+                      <strong>Link insertion on Mindsers Blog</strong>
+                    </p>
+                    <p>Asking for updates on an existing post to insert a link.</p>
+                  </div>
+                  <div>from 50€</div>
+                </li>
+                <li className={styles.priceLine}>
+                  <div>
+                    <p>
+                      <strong>Guest posting on Mindsers Blog</strong>
+                    </p>
+                    <p>A sponsored post written by the client and not the blog's team.</p>
+                  </div>
+                  <div>from 150€</div>
+                </li>
+                <li className={styles.priceLine}>
+                  <div>
+                    <p>
+                      <strong>Sponsored post on Mindsers Blog</strong>
+                    </p>
+                    <p>
+                      A sponsored post written by the blog's team about the client's products or
+                      services.
+                    </p>
+                  </div>
+                  <div>from 300€</div>
+                </li>
+              </ul>
+            </div>
+            <p>
+              Prices are indicative. They will be adapted depending on your project, its complexity,
+              the number of deliverable, etc. All projects includes stats reporting.
+            </p>
+            <p>
+              Projects are accepted only if they match our editorial line and if it brings value to
+              the readers/followers. The editorial team has full power to refuse any request that,
+              they think, does not meet those requirements.
+            </p>
+            <p className={styles.actions}>
+              <a className={'button'} href={quoteURL}>
+                Get a quote!
               </a>
             </p>
           </div>
