@@ -161,81 +161,74 @@ export default {
     callToAction: `Faites du marketing d'influence`,
     brands: {
       title: `Marques partnaires`,
-      description: `I worked with brands that are leaders in their industry either on one-shot or long-term contracts.`,
-      callToAction: `Add your logo`,
+      description: `J'ai travaillé avec des marques qui sont leaders dans leur industrie sur des contrats ponctuels ou à long terme.`,
+      callToAction: `Ajoutez votre logo à la liste`,
     },
     pricing: {
-      title: `Pricing`,
-      legals1: `Prices are indicative. They will be adapted depending on your project, its complexity, the number of deliverable, etc. All projects includes stats reporting.`,
-      legals2: `Projects are accepted only if they match our editorial line and if they bring value to the readers/followers. The editorial team has full power to refuse any request that, they think, does not meet those requirements.`,
-      callToAction: `Get a quote!`,
-      price: `from €{price }`,
+      title: `Tarification`,
+      legals1: `Les prix sont indicatifs. Ils seront adaptés en fonction de votre projet, de sa complexité, du nombre de livrables, etc. Tous les projets incluent un reporting statistique.`,
+      legals2: `Les projets ne sont acceptés que s'ils correspondent à notre ligne éditoriale et s'ils apportent de la valeur aux lecteurs/followers. La rédaction a tout pouvoir pour refuser toute demande qui, selon elle, ne répond pas à ces exigences.`,
+      callToAction: `Demandez un devis !`,
+      price: `à partir de { price }€`,
       products: {
         sponsoredPost: {
-          title: `Sponsored post on Mindsers Blog`,
-          text: `A sponsored post written by the blog's team about the client's products or services.`,
+          title: `Article sponsorisé sur Mindsers Blog`,
+          text: `Un article sponsorisé écrit par l'équipe du blog sur les produits ou services du client.`,
         },
         guestPost: {
-          title: `Guest post on Mindsers Blog`,
-          text: `A sponsored post written by the client and not the blog's team.`,
+          title: `Article invité sur Mindsers Blog`,
+          text: `Un article sponsorisé écrit par le client et non par l'équipe du blog.`,
         },
         linkInsertion: {
-          title: `Link insertion on Mindsers Blog`,
-          text: `Asking for updates on an existing post to insert a link.`,
+          title: `Insertion de lien sur Mindsers Blog`,
+          text: `Demander des mises à jour sur un article existant pour insérer un lien.`,
         },
         instagramReel: {
-          title: `Instagram Reel on @mindsers.codes`,
-          text: `A single video post that appear in feed and shared in stories`,
+          title: `Instagram Reel sur @mindsers.codes`,
+          text: `Une seule publication vidéo qui apparaît dans le flux et partagée dans les histoires`,
         },
         instagramStory: {
-          title: `Instagram Story on @mindsers.codes`,
+          title: `Instagram Story sur @mindsers.codes`,
           text: ``,
         },
         instagramPost: {
-          title: `Instagram Post on @mindsers.codes`,
-          text: `A single image post that appear in feed and shared in stories`,
+          title: `Instagram Post sur @mindsers.codes`,
+          text: `Une seule publication d'image qui apparaît dans le fil et partagée dans les histoires`,
         },
       },
     },
     instagramSection: {
       insight: `
-        <p>+12k followers <br /> on Instagram</p>
-        <p>more than 3 %<br /> engament rate</p>
+        <p>+12k abonnés sur Instagram</p>
+        <p>plus de 3 % de taux d'engagement</p>
       `,
       text: `
         <p>
-          I code since 2005 and I do it profesionnally since 2013. That&apos;s what I share with
-          my community: my developer/entrepreneur journey.
+          Je code depuis 2005 et je le fais professionnellement depuis 2013. C'est ce que je partage avec ma communauté : mon parcours de développeur/entrepreneur.
         </p>
         <p>
-          They see where I work, how my setup evolves, my frustrations fixing bug and how my
-          carrier changes. Between all those I sometimes share my cafeinated drinks of the
-          moment.
+          Ils voient où je travaille, comment mon setup évolue, mes frustrations lorsque je dois corriger des bugs et comment ma carrière change dans le temps. Entre tous ça je partage parfois mes boissons caféinées du moment.
         </p>
         <p>
-          Instagram is where most of my community is. They are mostly geek of all levels who
-          loves great workplaces, productivity/coding tips.
+          Instagram est l'endroit où se trouve la majeure partie de ma communauté actuellement. Ce sont pour la plupart des geeks de tous niveaux qui aiment les beaux environnement de travail, les beaux setup, les astuces de productivité/codage.
         </p>
       `,
-      callToAction: `Advertize on my Instagram`,
+      callToAction: `Faites votre publicité sur mon Instagram`,
     },
     engagementSection: {
       insight: `
-        <p>4 levels of engagement</p>
-        <p>non social media dependent</p>
+        <p>4 niveaux d'engagement</p>
+        <p>indépendante des médias sociaux</p>
       `,
       text: `
         <p>
-          My community is built on an aquisition funnel that garanty the most value to the most
-          engaged members. It is designed to work on four levels and make you able to know where
-          you should advertize depending on your needs.
+          Ma communauté est construite sur un entonnoir d'acquisition qui garantit le plus de valeur aux membres les plus engagés. Il est conçu pour fonctionner sur quatre niveaux et vous permettre de savoir où vous devez faire de la publicité en fonction de vos besoins.
         </p>
         <p>
-          Each level has its own engagement level, advertizing price range and set of actions
-          that help its members to navigate to the upper level.
+          Chaque niveau a son propre niveau d'engagement, une gamme de prix publicitaires et un ensemble d'actions qui aident ses membres à naviguer vers le niveau supérieur.
         </p>
       `,
-      callToAction: `Advertize in my community`,
+      callToAction: `Faites votre publicité dans ma communauté`,
     },
   },
 }
