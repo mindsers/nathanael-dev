@@ -26,10 +26,10 @@ export function Header() {
           </li>
           <li>
             <a>{t('menu.blogger')}</a>
-          </li>
+          </li> */}
           <li>
             <Link href={`/influencer/`}>{t('menu.influencer')}</Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </div>

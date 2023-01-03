@@ -13,7 +13,7 @@ import { FreelanceSVG } from '../components/illustrations/FreelanceSVG'
 import { MobileSVG } from '../components/illustrations/MobileSVG'
 import { WebSVG } from '../components/illustrations/WebSVG'
 
-import styles from '../styles/DeveloperPage.module.css'
+import styles from '../styles/activities.module.css'
 
 function DeveloperPage({
   experiences,
@@ -130,9 +130,9 @@ function DeveloperPage({
             <div className={styles.insights}>{t.rich('TJMSection.insight')}</div>
             {t.rich('TJMSection.text')}
             <p className={styles.actions}>
-              <a className={'button'} href={t('experience.callToAction.maltURL')}>
+              <Link className={'button'} href={t('experience.callToAction.maltURL')}>
                 {t('TJMSection.callToAction')}
-              </a>
+              </Link>
             </p>
           </div>
           <div className={styles.svgContainer}>
