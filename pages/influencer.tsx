@@ -23,6 +23,35 @@ const InfluencerPage: NextPage = () => {
   const t = useTranslations('InfluencerPage')
   const quoteURL = 'https://tally.so/r/3xVvEG'
 
+  const instagramProducts = [
+    {
+      id: 'instagramPost',
+      price: 180,
+    },
+    {
+      id: 'instagramStory',
+      price: 100,
+    },
+    {
+      id: 'instagramReel',
+      price: 210,
+    },
+  ]
+  const blogProducts = [
+    {
+      id: 'linkInsertion',
+      price: 50,
+    },
+    {
+      id: 'guestPost',
+      price: 150,
+    },
+    {
+      id: 'sponsoredPost',
+      price: 300,
+    },
+  ]
+
   return (
     <div className={styles.container}>
       <Head>
@@ -73,31 +102,11 @@ const InfluencerPage: NextPage = () => {
         </header>
         <section className={styles.section}>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>
-              <p>
-                +12k followers
-                <br /> on Instagram
-              </p>
-              <p>
-                more than 3 %<br /> engament rate
-              </p>
-            </div>
-            <p>
-              I code since 2005 and I do it profesionnally since 2013. That&apos;s what I share with
-              my community: my developer/entrepreneur journey.
-            </p>
-            <p>
-              They see where I work, how my setup evolves, my frustrations fixing bug and how my
-              carrier changes. Between all those I sometimes share my cafeinated drinks of the
-              moment.
-            </p>
-            <p>
-              Instagram is where most of my community is. They are mostly geek of all levels who
-              loves great workplaces, productivity/coding tips.
-            </p>
+            <div className={styles.insights}>{t.rich('instagramSection.insight')}</div>
+            {t.rich('instagramSection.text')}
             <p className={styles.actions}>
               <Link className={'button'} href={quoteURL}>
-                Advertize on my Instagram
+                {t('instagramSection.callToAction')}
               </Link>
             </p>
           </div>
@@ -110,22 +119,11 @@ const InfluencerPage: NextPage = () => {
             <CommunitySVG />
           </div>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>
-              <p>4 levels of engagement</p>
-              <p>non social media dependent</p>
-            </div>
-            <p>
-              My community is built on an aquisition funnel that garanty the most value to the most
-              engaged members. It is designed to work on four levels and make you able to know where
-              you should advertize depending on your needs.
-            </p>
-            <p>
-              Each level has its own engagement level, advertizing price range and set of actions
-              that help its members to navigate to the upper level.
-            </p>
+            <div className={styles.insights}>{t.rich('engagementSection.insight')}</div>
+            {t.rich('engagementSection.text')}
             <p className={styles.actions}>
               <Link className={'button'} href={quoteURL}>
-                Advertize in my community
+                {t('engagementSection.callToAction')}
               </Link>
             </p>
           </div>
@@ -133,10 +131,7 @@ const InfluencerPage: NextPage = () => {
         <section className={styles.sectionLight}>
           <div className={styles.brandSection}>
             <h2>{t('brands.title')}</h2>
-            <p>
-              I worked with brands that are leaders in their industry either on one-shot or
-              long-term contracts.
-            </p>
+            <p>{t('brands.description')}</p>
             <div className={styles.brandGrid}>
               <div className={styles.brandContainer}>
                 <span className={styles.logoContainer}>
@@ -183,7 +178,7 @@ const InfluencerPage: NextPage = () => {
             </div>
             <p className={styles.actions}>
               <Link className={'button inverse'} href={quoteURL}>
-                Add your logo
+                {t('brands.callToAction')}
               </Link>
             </p>
           </div>
@@ -191,82 +186,41 @@ const InfluencerPage: NextPage = () => {
         <section className={styles.section}>
           <div className={styles.pricingSection}>
             <header>
-              <h2>Pricing</h2>
+              <h2>{t('pricing.title')}</h2>
             </header>
             <div className={styles.twoColumnGrid}>
               <ul className={styles.instagram}>
-                <li className={styles.priceLine}>
-                  <div>
-                    <p>
-                      <strong>Instagram Post on @mindsers.codes</strong>
-                    </p>
-                    <p>A single image post that appear in feed and shared in stories</p>
-                  </div>
-                  <div>from 180€</div>
-                </li>
-                <li className={styles.priceLine}>
-                  <div>
-                    <p>
-                      <strong>Instagram Story on @mindsers.codes</strong>
-                    </p>
-                  </div>
-                  <div>from 100€</div>
-                </li>
-                <li className={styles.priceLine}>
-                  <div>
-                    <p>
-                      <strong>Instagram Reel on @mindsers.codes</strong>
-                    </p>
-                    <p>A single video post that appear in feed and shared in stories</p>
-                  </div>
-                  <div>from 210€</div>
-                </li>
+                {instagramProducts.map(product => (
+                  <li key={product.id} className={styles.priceLine}>
+                    <div>
+                      <p>
+                        <strong>{t(`pricing.products.${product.id}.title`)}</strong>
+                      </p>
+                      <p>{t(`pricing.products.${product.id}.text`)}</p>
+                    </div>
+                    <div>{t('pricing.price', { price: product.price })}</div>
+                  </li>
+                ))}
               </ul>
               <ul className={styles.mindsersBlog}>
-                <li className={styles.priceLine}>
-                  <div>
-                    <p>
-                      <strong>Link insertion on Mindsers Blog</strong>
-                    </p>
-                    <p>Asking for updates on an existing post to insert a link.</p>
-                  </div>
-                  <div>from 50€</div>
-                </li>
-                <li className={styles.priceLine}>
-                  <div>
-                    <p>
-                      <strong>Guest post on Mindsers Blog</strong>
-                    </p>
-                    <p>A sponsored post written by the client and not the blog's team.</p>
-                  </div>
-                  <div>from 150€</div>
-                </li>
-                <li className={styles.priceLine}>
-                  <div>
-                    <p>
-                      <strong>Sponsored post on Mindsers Blog</strong>
-                    </p>
-                    <p>
-                      A sponsored post written by the blog's team about the client's products or
-                      services.
-                    </p>
-                  </div>
-                  <div>from 300€</div>
-                </li>
+                {blogProducts.map(product => (
+                  <li key={product.id} className={styles.priceLine}>
+                    <div>
+                      <p>
+                        <strong>{t(`pricing.products.${product.id}.title`)}</strong>
+                      </p>
+                      <p>{t(`pricing.products.${product.id}.text`)}</p>
+                    </div>
+                    <div>{t('pricing.price', { price: product.price })}</div>
+                  </li>
+                ))}
               </ul>
             </div>
-            <p className={styles.details}>
-              Prices are indicative. They will be adapted depending on your project, its complexity,
-              the number of deliverable, etc. All projects includes stats reporting.
-            </p>
-            <p className={styles.details}>
-              Projects are accepted only if they match our editorial line and if they bring value to
-              the readers/followers. The editorial team has full power to refuse any request that,
-              they think, does not meet those requirements.
-            </p>
+            <p className={styles.details}>{t('pricing.legals1')}</p>
+            <p className={styles.details}>{t('pricing.legals2')}</p>
             <p className={styles.actions}>
               <Link className={'button'} href={quoteURL}>
-                Get a quote!
+                {t('pricing.callToAction')}
               </Link>
             </p>
           </div>
