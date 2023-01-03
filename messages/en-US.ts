@@ -232,4 +232,13 @@ export default {
       callToAction: `Advertize in my community`,
     },
   },
+  CommunitySVG: {
+    socialMedia1: `social media`,
+    socialMedia2: `followers`,
+    mailingList1: `mailing list`,
+    mailingList2: `subscribers`,
+    paidMailingList1: `paid mailing list`,
+    paidMailingList2: `subscribers`,
+    blog: `blog readers`,
+  },
 }

@@ -169,7 +169,7 @@ export default {
       legals1: `Les prix sont indicatifs. Ils seront adaptés en fonction de votre projet, de sa complexité, du nombre de livrables, etc. Tous les projets incluent un reporting statistique.`,
       legals2: `Les projets ne sont acceptés que s'ils correspondent à notre ligne éditoriale et s'ils apportent de la valeur aux lecteurs/followers. La rédaction a tout pouvoir pour refuser toute demande qui, selon elle, ne répond pas à ces exigences.`,
       callToAction: `Demandez un devis !`,
-      price: `à partir de { price }€`,
+      price: `à partir de { price } €`,
       products: {
         sponsoredPost: {
           title: `Article sponsorisé sur Mindsers Blog`,
@@ -230,5 +230,14 @@ export default {
       `,
       callToAction: `Faites votre publicité dans ma communauté`,
     },
+  },
+  CommunitySVG: {
+    socialMedia1: `followers des ré-`,
+    socialMedia2: `seaux sociaux`,
+    mailingList1: `abonnés à la`,
+    mailingList2: `mailing liste`,
+    paidMailingList1: `abonnés payants à`,
+    paidMailingList2: `la mailing liste`,
+    blog: `lecteurs du blog`,
   },
 }

@@ -1,4 +1,8 @@
+import { useTranslations } from 'next-intl'
+
 export function CommunitySVG() {
+  const t = useTranslations('CommunitySVG')
+
   return (
     <svg
       height={350}
@@ -36,17 +40,17 @@ export function CommunitySVG() {
       <g>
         <text
           x="315px"
-          y="730px"
+          y="725px"
           style={{ fontFamily: 'Playfair Display', fontWeight: 600, fontSize: 36, fill: 'white' }}
         >
-          social media
+          {t('socialMedia1')}
         </text>
         <text
-          x="350px"
-          y="770px"
+          x="340px"
+          y="765px"
           style={{ fontFamily: 'Playfair Display', fontWeight: 600, fontSize: 36, fill: 'white' }}
         >
-          followers
+          {t('socialMedia2')}
         </text>
       </g>
       <g transform="matrix(0.752987,0,0,0.874187,33.8521,26.8697)">
@@ -74,10 +78,10 @@ export function CommunitySVG() {
       <g>
         <text
           x="170px"
-          y="400px"
+          y="390px"
           style={{ fontFamily: 'Playfair Display', fontWeight: 600, fontSize: 36, fill: '#222' }}
         >
-          paid mailing list
+          {t('paidMailingList1')}
         </text>
         <g transform="matrix(24,0,0,24,395.753,436.604)"></g>
         <text
@@ -85,7 +89,7 @@ export function CommunitySVG() {
           y="430px"
           style={{ fontFamily: 'Playfair Display', fontWeight: 600, fontSize: 36, fill: '#222' }}
         >
-          subscribers
+          {t('paidMailingList2')}
         </text>
       </g>
       <g>
@@ -94,7 +98,7 @@ export function CommunitySVG() {
           y="590px"
           style={{ fontFamily: 'Playfair Display', fontWeight: 600, fontSize: 36, fill: 'white' }}
         >
-          mailing list
+          {t('mailingList1')}
         </text>
         <g transform="matrix(24,0,0,24,367.34,626.222)"></g>
         <text
@@ -102,7 +106,7 @@ export function CommunitySVG() {
           y="625px"
           style={{ fontFamily: 'Playfair Display', fontWeight: 600, fontSize: 36, fill: 'white' }}
         >
-          subscribers
+          {t('mailingList2')}
         </text>
       </g>
       <g>
@@ -111,7 +115,7 @@ export function CommunitySVG() {
           y="900px"
           style={{ fontFamily: 'Playfair Display', fontWeight: 600, fontSize: 36, fill: 'white' }}
         >
-          blog readers
+          {t('blog')}
         </text>
       </g>
     </svg>
