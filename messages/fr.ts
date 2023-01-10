@@ -72,8 +72,8 @@ export default {
     callToAction1: `Travaillez avec moi !`,
     mobileSection: {
       insight: `
-        <p>5 applications iOS dévelopé pour des entreprises leader de l'IT</p>
-        <p>Maitrise des applications Swift backend et iOS</p>
+        <p>5 applications iOS développées pour des entreprises leader de l'IT</p>
+        <p>Maîtrise des applications Swift backend et iOS</p>
       `,
       text: `
         <p>
@@ -88,7 +88,7 @@ export default {
         <p>
           J'apprécie tant le langage Swift (qui a été bati sur le meilleur de Python, C/C++, JavaScript et l'héritage de l'Objective-C)
           que j'ai décidé d'apprendre à l'utiliser également au backend, afin de proposer à mes clients une solution
-          complête basée sur ce langage.
+          complète basée sur ce langage.
         </p>
       `,
     },
@@ -99,13 +99,13 @@ export default {
       `,
       text: `
         <p>
-          Je conçois, développes et maintiens des applications JavaScript depuis 2015 et l'avènnement du tsunami
+          Je conçois, développe et maintiens des applications JavaScript depuis 2015 et l'avènement du tsunami
           ES6 dans le monde du web. Je suis habitué à travailler autant sur des sites web simples utilisant du VanillaJS
           que d'énormes applications React/Angular qui supportent des contraintes de traffic importantes.
         </p>
         <p>
-          Je pense que JavaScript est le langage le plus polyvalant qui permet de répondre à la plupart des besoins de mes clients
-          C'est pour cela que j'ai choisi de le maitriser autant au front qu'au back.
+          Je pense que JavaScript est le langage le plus polyvalent qui permet de répondre à la plupart des besoins de mes clients.
+          C'est pour cela que j'ai choisi de le maîtriser autant au front qu'au back.
         </p>
       `,
     },
@@ -119,7 +119,7 @@ export default {
           Que ce soit pour la mise en place de votre site e-commerce avec Shopify,
           le développement d'un plugin métier pour votre CMS, ou la conception
           d'une application complète "from scratch", je vous propose une
-          prestation clés en main budgétée dès le départ.
+          prestation clé en main budgétée dès le départ.
         </p>
         <p>
           Pour les gros projets de développement web ou mobile, <strong>je peux également monter
@@ -173,44 +173,44 @@ export default {
       products: {
         sponsoredPost: {
           title: `Article sponsorisé sur Mindsers Blog`,
-          text: `Un article sponsorisé écrit par l'équipe du blog sur les produits ou services du client.`,
+          text: `Un article sponsorisé écrit par l'équipe du blog sur vos produits ou services.`,
         },
         guestPost: {
           title: `Article invité sur Mindsers Blog`,
-          text: `Un article sponsorisé écrit par le client et non par l'équipe du blog.`,
+          text: `Un article écrit par vos soins et non par l'équipe du blog.`,
         },
         linkInsertion: {
           title: `Insertion de lien sur Mindsers Blog`,
-          text: `Demander des mises à jour sur un article existant pour insérer un lien.`,
+          text: `Insertion d'un ou plusieurs liens sur un article déjà existant de mon blog.`,
         },
         instagramReel: {
           title: `Instagram Reel sur @mindsers.codes`,
-          text: `Une seule publication vidéo qui apparaît dans le flux et partagée dans les histoires`,
+          text: `Une vidéo sous forme de reel qui sera partagée en story.`,
         },
         instagramStory: {
           title: `Instagram Story sur @mindsers.codes`,
-          text: ``,
+          text: `Une ou plusieurs stories mentionnant vos services ou produits, possibilité de garder les stories en highlight.`,
         },
         instagramPost: {
           title: `Instagram Post sur @mindsers.codes`,
-          text: `Une seule publication d'image qui apparaît dans le fil et partagée dans les histoires`,
+          text: `Un post in-feed qui sera partagé en story.`,
         },
       },
     },
     instagramSection: {
       insight: `
         <p>+12k abonnés sur Instagram</p>
-        <p>plus de 3 % de taux d'engagement</p>
+        <p>plus de 5 % de taux d'engagement</p>
       `,
       text: `
         <p>
           Je code depuis 2005 et je le fais professionnellement depuis 2013. C'est ce que je partage avec ma communauté : mon parcours de développeur/entrepreneur.
         </p>
         <p>
-          Ils voient où je travaille, comment mon setup évolue, mes frustrations lorsque je dois corriger des bugs et comment ma carrière change dans le temps. Entre tous ça je partage parfois mes boissons caféinées du moment.
+          Ils voient où je travaille, comment mon setup évolue, mes frustrations lorsque je dois corriger des bugs et comment ma carrière change dans le temps. Entre tout ça je partage quotidiennement mes boissons caféinées.
         </p>
         <p>
-          Instagram est l'endroit où se trouve la majeure partie de ma communauté actuellement. Ce sont pour la plupart des geeks de tous niveaux qui aiment les beaux environnement de travail, les beaux setup, les astuces de productivité/codage.
+          Instagram est l'endroit où se trouve la majeure partie de ma communauté actuellement. Ce sont pour la plupart des geeks de tous niveaux qui aiment les beaux environnements de travail, les beaux setups, les astuces de productivité/codage et le café.
         </p>
       `,
       callToAction: `Faites votre publicité sur mon Instagram`,
@@ -225,7 +225,7 @@ export default {
           Ma communauté est construite sur un entonnoir d'acquisition qui garantit le plus de valeur aux membres les plus engagés. Il est conçu pour fonctionner sur quatre niveaux et vous permettre de savoir où vous devez faire de la publicité en fonction de vos besoins.
         </p>
         <p>
-          Chaque niveau a son propre niveau d'engagement, une gamme de prix publicitaires et un ensemble d'actions qui aident ses membres à naviguer vers le niveau supérieur.
+          Chaque niveau a son propre niveau d'engagement, une gamme de prix publicitaire et un ensemble d'actions qui aident ses membres à naviguer vers le niveau supérieur.
         </p>
       `,
       callToAction: `Faites votre publicité dans ma communauté`,

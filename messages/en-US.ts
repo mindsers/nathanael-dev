@@ -17,7 +17,7 @@ export default {
     },
     coachingSection: {
       title: `Need to talk to a pro?`,
-      text: `Embarking on development or even a professional retraining can be scary. Need JavaScript coaching or ask a professional questions? Can I help you.`,
+      text: `Starting from zero in development or even changing your career path can be scary. Need JavaScript coaching or ask a professional questions? I would be happy to help you.`,
       linkText: `Schedule a one-time coaching session`,
     },
     experienceSection: {
@@ -26,7 +26,7 @@ export default {
           My story with code started in 2005. Since then, I have navigated between back and front, web and mobile, desktop and embedded according to my personal and professional projects.
         </p>
         <p>
-          I chose during my professional career to specialize in Swift and JavaScript languages.
+          I chose to specialize in Swift and JavaScript languages during my professional career.
         </p>
         <p>
           I am now a <strong>Senior lead freelance developer</strong> with over 7 years of professional experience with JavaScript and Swift.
@@ -59,12 +59,12 @@ export default {
     title: `A full stack developer specialized in frontend and mobile dev`,
     meta: {
       title: `Nathanaël Cherrier – Senior Lead Developer, Freelance Coder, JavaScript enthousiast`,
-      desc: `Nathanaël is a software engineer, passionate about code that can help you build whatever you want using web and mobile technology. Ask for a quote!`,
+      desc: `Nathanaël is a software engineer, passionate about code who can help you build whatever you want using web and mobile technology. Ask for a quote!`,
     },
     callToAction1: `Work with me!`,
     mobileSection: {
       insight: `
-        <p>5 iOS app developed for leading tech companies</p>
+        <p>5 iOS apps developed for leading tech companies</p>
         <p>Master Swift in backend and frontend app</p>
       `,
       text: `
@@ -91,13 +91,13 @@ export default {
       `,
       text: `
         <p>
-          I design, code and maintain applications using JavaScript since 2015 and the ES6
-          tsunami in the JavaScript world. I'm used to work on small app using VanillaJS
-          and larger cloud native application that need to scale.
+          I have been designing, coding and maintaining applications using JavaScript since 2015 and the ES6
+          tsunami in the JavaScript world. I'm used to work on small apps using VanillaJS
+          and larger cloud native applications that need to scale up.
         </p>
         <p>
-          I believe that JavaScript is the language who can suit most of the issue my client
-          enconter. That's why I learnt and tried to master it either on the frontend and
+          I believe that JavaScript is the language that can suit most of the issues my client
+          are facing. That's why I learnt and tried to master it either on the frontend and
           the backend side of things.
         </p>
       `,
@@ -121,7 +121,7 @@ export default {
         <p>
           If you prefer to work with me in management (service in the client's teams),
           the pricing applied will be an average daily rate of 700 euros.
-          I can thus <strong>integrate your development teams as a Senior
+          I can thus <strong>integrate your development team as a Senior
           Lead Developer</strong> and help you achieve your goals.
         </p>
       `,
@@ -148,7 +148,7 @@ export default {
     title: `An influencer with a strong and engaged community, passionate about tech and coffee`,
     meta: {
       title: `Nathanaël Cherrier – Tech influencer sharing about coding and coffee`,
-      desc: `Nathanaël is a tech influencer with a highly engaged community, passionate about code and coffee. Let's promote you brand!`,
+      desc: `Nathanaël is a tech influencer with a highly engaged community, passionate about code and coffee. Let's promote your brand!`,
     },
     callToAction: `Use my influence`,
     brands: {
@@ -158,34 +158,34 @@ export default {
     },
     pricing: {
       title: `Pricing`,
-      legals1: `Prices are indicative. They will be adapted depending on your project, its complexity, the number of deliverable, etc. All projects includes stats reporting.`,
+      legals1: `Prices are indicative. They will be adapted depending on your project, its complexity, the number of deliverables, etc. All projects include stats reporting.`,
       legals2: `Projects are accepted only if they match our editorial line and if they bring value to the readers/followers. The editorial team has full power to refuse any request that, they think, does not meet those requirements.`,
       callToAction: `Get a quote!`,
       price: `from €{ price }`,
       products: {
         sponsoredPost: {
           title: `Sponsored post on Mindsers Blog`,
-          text: `A sponsored post written by the blog's team about the client's products or services.`,
+          text: `A sponsored post written by the blog's team about your products or services.`,
         },
         guestPost: {
           title: `Guest post on Mindsers Blog`,
-          text: `A sponsored post written by the client and not the blog's team.`,
+          text: `A sponsored post written by you and not the blog's team.`,
         },
         linkInsertion: {
           title: `Link insertion on Mindsers Blog`,
-          text: `Asking for updates on an existing post to insert a link.`,
+          text: `Inserting a link of your choice on an existing post.`,
         },
         instagramReel: {
           title: `Instagram Reel on @mindsers.codes`,
-          text: `A single video post that appear in feed and shared in stories`,
+          text: `A short video post (a reel) that will appear in feed and will be shared in stories.`,
         },
         instagramStory: {
           title: `Instagram Story on @mindsers.codes`,
-          text: ``,
+          text: `One or several stories, can be saved in highlights.`,
         },
         instagramPost: {
           title: `Instagram Post on @mindsers.codes`,
-          text: `A single image post that appear in feed and shared in stories`,
+          text: `An in-feed post that will be shared in stories.`,
         },
       },
     },
@@ -193,22 +193,21 @@ export default {
       insight: `
         <p>+12k followers
          on Instagram</p>
-        <p>more than 3 %
+        <p>more than 5%
          engament rate</p>
       `,
       text: `
         <p>
-          I code since 2005 and I do it profesionnally since 2013. That's what I share with
+          I have been coding since 2005 and doing it profesionally since 2013. That's what I share with
           my community: my developer/entrepreneur journey.
         </p>
         <p>
-          They see where I work, how my setup evolves, my frustrations fixing bug and how my
-          carrier changes. Between all those I sometimes share my cafeinated drinks of the
-          moment.
+          My followers see where I work, how my setup evolves, my frustrations fixing bugs and how my
+          career changes. Between all of this, I share my daily cafeinated drinks.
         </p>
         <p>
-          Instagram is where most of my community is. They are mostly geek of all levels who
-          loves great workplaces, productivity/coding tips.
+          Instagram is where most of my community is. They are mostly geeks of all levels who
+          love great workplaces, setups, productivity/coding tips and coffee.
         </p>
       `,
       callToAction: `Advertize on my Instagram`,
