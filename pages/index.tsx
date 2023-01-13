@@ -9,10 +9,12 @@ import ExpertSVG from '../components/illustrations/ExpertSVG'
 import SocialSVG from '../components/illustrations/SocialSVG'
 import ExperienceSVG from '../components/illustrations/ExperienceSVG'
 import Header from '../components/Header'
+import { useRouter } from 'next/router'
 
 function Home() {
   const [menuOpacity, setMenuOpacity] = useState(0)
   const t = useTranslations('Home')
+  const { locale } = useRouter()
 
   useEffect(() => {
     function updateOpacity() {
@@ -104,7 +106,12 @@ function Home() {
               <h2>{t('coachingSection.title')}</h2>
               <p>{t('coachingSection.text')}</p>
               <p className={styles.actions}>
-                <Link className={styles.action} href="https://calendly.com/ncherrier/mentoring">
+                <Link
+                  className={styles.action}
+                  href={`https://calendly.com/ncherrier/${
+                    locale === 'fr' ? 'mentoring-fr' : 'mentoring'
+                  }`}
+                >
                   {t('coachingSection.linkText')}
                 </Link>
               </p>
