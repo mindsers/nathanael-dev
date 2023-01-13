@@ -20,9 +20,9 @@ export default {
     coachingSection: {
       title: `Besoin de discuter avec un expert en conception ?`,
       text: `Se lancer dans le développement ou même une reconversion professionnelle peut faire
-      peur. Besoin d'un coaching JavaScript ou de poser des questions à un professionnel ?
+      peur. Besoin d'un mentor JavaScript ou de poser des questions à un professionnel ?
       Je peux vous aider.`,
-      linkText: `Programmer une séance de coaching`,
+      linkText: `Programmer une séance de mentoring`,
     },
     experienceSection: {
       title: `Plus de 15 ans d'expérience en développement web et mobile`,

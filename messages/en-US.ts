@@ -17,8 +17,8 @@ export default {
     },
     coachingSection: {
       title: `Need to talk to a pro?`,
-      text: `Starting from zero in development or even changing your career path can be scary. Need JavaScript coaching or ask a professional questions? I would be happy to help you.`,
-      linkText: `Schedule a one-time coaching session`,
+      text: `Starting from zero in development or even changing your career path can be scary. Need JavaScript mentor or ask a professional questions? I would be happy to help you.`,
+      linkText: `Schedule a one-time mentoring session`,
     },
     experienceSection: {
       title: `More than 15 years in mobile and web industry`,
