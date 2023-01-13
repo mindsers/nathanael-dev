@@ -18,7 +18,7 @@ export default {
       linkText: `Faire du marketing d'influence`,
     },
     coachingSection: {
-      title: `Besoin de discuter avec un expert en conception ?`,
+      title: `Besoin de discuter avec un expert ?`,
       text: `Se lancer dans le développement ou même une reconversion professionnelle peut faire
       peur. Besoin d'un mentor JavaScript ou de poser des questions à un professionnel ?
       Je peux vous aider.`,
