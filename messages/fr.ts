@@ -112,7 +112,7 @@ export default {
     TJMSection: {
       insight: `
         <p>Une facturation au forfait adapté à votre projet</p>
-        <p>Ou un TJM de 700€ pour les missions de longue durée en régie</p>
+        <p>Ou un TJM de 700€ pour les missions en régie</p>
       `,
       text: `
         <p>
