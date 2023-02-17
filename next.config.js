@@ -8,6 +8,20 @@ const nextConfig = {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },
+  async redirects() {
+    return [
+      {
+        source: '/en/resume',
+        destination: '/developer/',
+        permanent: true,
+      },
+      {
+        source: '/fr/resume',
+        destination: '/fr/developer/',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
