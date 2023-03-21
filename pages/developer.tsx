@@ -201,7 +201,7 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
             'JavaScript',
           ],
           start: new Date(2018, 8).toISOString(),
-          end: new Date(2023, 2).toISOString(),
+          end: new Date(2023, 0).toISOString(),
         },
         {
           title: `Javascript & iOS Software Engineer, DevOps`,
