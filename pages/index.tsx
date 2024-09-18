@@ -108,9 +108,7 @@ function Home() {
               <p className={styles.actions}>
                 <Link
                   className={styles.action}
-                  href={`https://calendly.com/ncherrier/${
-                    locale === 'fr' ? 'mentoring-fr' : 'mentoring'
-                  }`}
+                  href={`https://cal.com/nathanael-cherrier/coaching`}
                 >
                   {t('coachingSection.linkText')}
                 </Link>
