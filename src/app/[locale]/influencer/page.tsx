@@ -27,15 +27,15 @@ const InfluencerPage: NextPage = () => {
   const instagramProducts = [
     {
       id: 'instagramPost',
-      price: 180,
+      price: 150,
     },
     {
       id: 'instagramStory',
-      price: 100,
+      price: 70,
     },
     {
       id: 'instagramReel',
-      price: 210,
+      price: 190,
     },
   ]
   const blogProducts = [
