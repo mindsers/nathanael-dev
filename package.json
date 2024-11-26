@@ -10,14 +10,19 @@
   },
   "dependencies": {
     "@types/node": "18.11.10",
-    "@types/react": "18.0.26",
-    "@types/react-dom": "18.0.9",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
     "eslint": "8.29.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
+    "eslint-config-next": "15.0.3",
+    "next": "15.0.3",
     "next-intl": "^2.9.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "19.0.0-rc.1",
+    "react-dom": "19.0.0-rc.1",
     "typescript": "4.9.3"
-  }
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
+  },
+  "packageManager": "pnpm@10.0.0-alpha.2+sha512.f18a59ca3611002321af7681e6d49234cb3ece8496b05818be5b1081168ec21b8c3d28cbb4351e2fdec66ca95e6516faaf08b95b755013c88cf5174d5029865c"
 }
