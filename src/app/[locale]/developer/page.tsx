@@ -1,26 +1,21 @@
-import {
-  NextPage,
-  GetStaticPropsContext,
-  GetStaticPropsResult,
-  InferGetStaticPropsType,
-} from 'next'
-import { useTranslations } from 'next-intl'
+import { getLocale, getTranslations } from 'next-intl/server'
 import Head from 'next/head'
-import Link from 'next/link'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import { FreelanceSVG } from '../components/illustrations/FreelanceSVG'
-import { MobileSVG } from '../components/illustrations/MobileSVG'
-import { WebSVG } from '../components/illustrations/WebSVG'
 
-import styles from '../styles/activities.module.css'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import { FreelanceSVG } from '@/components/illustrations/FreelanceSVG'
+import { MobileSVG } from '@/components/illustrations/MobileSVG'
+import { WebSVG } from '@/components/illustrations/WebSVG'
+import { Link } from '@/i18n/routing'
+import { rawHTMLDefaults } from '@/i18n/utils'
 
-function DeveloperPage({
-  experiences,
-  locale,
-  feedbacks,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const t = useTranslations('DeveloperPage')
+import styles from './developer.module.css'
+
+async function DeveloperPage() {
+  const t = await getTranslations('DeveloperPage')
+  const locale = await getLocale();
+  const experiences = await getExperiences(locale)
+  const feedbacks = await getFeedbacks(locale)
 
   return (
     <div className={styles.container}>
@@ -65,8 +60,8 @@ function DeveloperPage({
         </header>
         <section className={styles.section}>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('webSection.insight')}</div>
-            {t.rich('webSection.text')}
+            <div className={styles.insights}>{t.rich('webSection.insight', rawHTMLDefaults)}</div>
+            {t.rich('webSection.text', rawHTMLDefaults)}
           </div>
           <div className={styles.svgContainer}>
             <WebSVG />
@@ -77,8 +72,8 @@ function DeveloperPage({
             <MobileSVG />
           </div>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('mobileSection.insight')}</div>
-            {t.rich('mobileSection.text')}
+            <div className={styles.insights}>{t.rich('mobileSection.insight', rawHTMLDefaults)}</div>
+            {t.rich('mobileSection.text', rawHTMLDefaults)}
           </div>
         </section>
         <section className={styles.sectionLight}>
@@ -127,8 +122,8 @@ function DeveloperPage({
         </section>
         <section className={styles.section}>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('TJMSection.insight')}</div>
-            {t.rich('TJMSection.text')}
+            <div className={styles.insights}>{t.rich('TJMSection.insight', rawHTMLDefaults)}</div>
+            {t.rich('TJMSection.text', rawHTMLDefaults)}
             <p className={styles.actions}>
               <Link className={'button'} href={t('experience.callToAction.maltURL')}>
                 {t('TJMSection.callToAction')}
@@ -173,15 +168,12 @@ function DeveloperPage({
 
 export default DeveloperPage
 
-export async function getStaticProps({ locale }: GetStaticPropsContext) {
+async function getExperiences(locale = 'en') {
   const needFrench = locale === 'fr'
   const englishSkillLabel = needFrench ? 'Anglais' : 'English'
   const architectureSkillLabel = needFrench ? 'Architecture logicielle' : 'Software Architecture'
 
-  return {
-    props: {
-      locale,
-      experiences: [
+  return [
         {
           title: `Lead Software Engineer`,
           company: `Ferpection`,
@@ -284,8 +276,13 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
           start: new Date(2012, 1).toISOString(),
           end: new Date(2013, 2).toISOString(),
         },
-      ],
-      feedbacks: [
+      ]
+}
+
+async function getFeedbacks(locale = 'en') {
+  const needFrench = locale === 'fr'
+
+  return [
         {
           text: needFrench
             ? [
@@ -387,9 +384,7 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
           author: `Coline`,
           role: `Lead Developer`,
         },
-      ],
-    },
-  }
+      ]
 }
 
 function formatDate(date: Date, locale = 'fr') {

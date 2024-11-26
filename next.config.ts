@@ -1,13 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
+const withNextIntl = createNextIntlPlugin();
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   output: 'standalone',
   trailingSlash: true,
-  i18n: {
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',
-  },
   async redirects() {
     return [
       {
@@ -22,6 +20,6 @@ const nextConfig = {
       },
     ]
   },
-}
+};
 
-module.exports = nextConfig
+export default withNextIntl(nextConfig);

@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 
 import styles from './Header.module.css'
+import { Link } from '@/i18n/routing'
 
 export function Header() {
   const t = useTranslations('Header')

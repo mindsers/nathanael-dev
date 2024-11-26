@@ -1,20 +1,21 @@
+"use client";
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 
-import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
-import ExpertSVG from '../components/illustrations/ExpertSVG'
-import SocialSVG from '../components/illustrations/SocialSVG'
-import ExperienceSVG from '../components/illustrations/ExperienceSVG'
-import Header from '../components/Header'
-import { useRouter } from 'next/router'
+import Footer from '@/components/Footer'
+import ExpertSVG from '@/components/illustrations/ExpertSVG'
+import SocialSVG from '@/components/illustrations/SocialSVG'
+import ExperienceSVG from '@/components/illustrations/ExperienceSVG'
+import Header from '@/components/Header'
 
-function Home() {
+import styles from './home.module.css'
+import { Link } from '@/i18n/routing';
+import { rawHTMLDefaults } from '@/i18n/utils';
+
+function HomePage() {
   const [menuOpacity, setMenuOpacity] = useState(0)
   const t = useTranslations('Home')
-  const { locale } = useRouter()
 
   useEffect(() => {
     function updateOpacity() {
@@ -76,7 +77,7 @@ function Home() {
           <section className={styles.section}>
             <div>
               <h2>{t('experienceSection.title')}</h2>
-              {t.rich('experienceSection.text')}
+              {t.rich('experienceSection.text', rawHTMLDefaults)}
               <p className={styles.actions}>
                 <Link className={styles.action} href={`/developer/`}>
                   {t('experienceSection.linkText')}
@@ -90,7 +91,7 @@ function Home() {
           <section className={styles.section}>
             <div>
               <h2>{t('communitySection.title')}</h2>
-              {t.rich('communitySection.text')}
+              {t.rich('communitySection.text', rawHTMLDefaults)}
               <p className={styles.actions}>
                 <Link className={styles.action} href={`/influencer/`}>
                   {t('communitySection.linkText')}
@@ -125,4 +126,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomePage

@@ -2,22 +2,23 @@ import { NextPage } from 'next'
 import { useTranslations } from 'next-intl'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import { CommunitySVG } from '../components/illustrations/CommunitySVG'
-import { InstagramSVG } from '../components/illustrations/InstagramSVG'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import { CommunitySVG } from '@/components/illustrations/CommunitySVG'
+import { InstagramSVG } from '@/components/illustrations/InstagramSVG'
+import { Link } from '@/i18n/routing'
+import { rawHTMLDefaults } from '@/i18n/utils'
 
-import f1Logo from '../public/f1.svg'
-import awsLogo from '../public/aws.svg'
-import benqLogo from '../public/benq.svg'
-import rapydLogo from '../public/rapyd.svg'
-import ocushieldLogo from '../public/ocushield.png'
-import whooshLogo from '../public/whoosh.jpg'
-import gridstudioLogo from '../public/gridstudio.jpg'
+import f1Logo from '@/../public/f1.svg'
+import awsLogo from '@/../public/aws.svg'
+import benqLogo from '@/../public/benq.svg'
+import rapydLogo from '@/../public/rapyd.svg'
+import ocushieldLogo from '@/../public/ocushield.png'
+import whooshLogo from '@/../public/whoosh.jpg'
+import gridstudioLogo from '@/../public/gridstudio.jpg'
 
-import styles from '../styles/activities.module.css'
+import styles from './influencer.module.css'
 
 const InfluencerPage: NextPage = () => {
   const t = useTranslations('InfluencerPage')
@@ -102,8 +103,8 @@ const InfluencerPage: NextPage = () => {
         </header>
         <section className={styles.section}>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('instagramSection.insight')}</div>
-            {t.rich('instagramSection.text')}
+            <div className={styles.insights}>{t.rich('instagramSection.insight', rawHTMLDefaults)}</div>
+            {t.rich('instagramSection.text', rawHTMLDefaults)}
             <p className={styles.actions}>
               <Link className={'button'} href={quoteURL}>
                 {t('instagramSection.callToAction')}
@@ -119,8 +120,8 @@ const InfluencerPage: NextPage = () => {
             <CommunitySVG />
           </div>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('engagementSection.insight')}</div>
-            {t.rich('engagementSection.text')}
+            <div className={styles.insights}>{t.rich('engagementSection.insight', rawHTMLDefaults)}</div>
+            {t.rich('engagementSection.text', rawHTMLDefaults)}
             <p className={styles.actions}>
               <Link className={'button'} href={quoteURL}>
                 {t('engagementSection.callToAction')}
