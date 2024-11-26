@@ -194,7 +194,7 @@ async function getExperiences(locale = 'en') {
         },
         {
           title: needFrench ? `Formateur React` : `React Trainer`,
-          company: `´Ecole Hexagone`,
+          company: `École Hexagone`,
           description: needFrench
             ? [
                 `Formateur React.js et React Native pour des classes de Bac +3. Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
