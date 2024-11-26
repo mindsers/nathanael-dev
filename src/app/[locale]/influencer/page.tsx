@@ -22,7 +22,7 @@ import styles from './influencer.module.css'
 
 const InfluencerPage: NextPage = () => {
   const t = useTranslations('InfluencerPage')
-  const quoteURL = 'https://tally.so/r/3xVvEG'
+  const quoteURL = 'https://www.passionfroot.me/mindsers'
 
   const instagramProducts = [
     {
