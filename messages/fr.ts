@@ -94,8 +94,8 @@ export default {
     },
     webSection: {
       insight: `
-        <p>Plus de 7 ans d'expériences</p>
-        <p>Maitrise des applications JavaScript backend et frontend</p>
+        <p>Plus de 10 ans d'expériences</p>
+        <p>Maitrise du développement JavaScript backend et frontend</p>
       `,
       text: `
         <p>

@@ -86,8 +86,8 @@ export default {
     },
     webSection: {
       insight: `
-        <p>More than 7 years of experience</p>
-        <p>Master JavaScript in backend and frontend app</p>
+        <p>More than 10 years of experience</p>
+        <p>Mastering JavaScript in backend and frontend app</p>
       `,
       text: `
         <p>
