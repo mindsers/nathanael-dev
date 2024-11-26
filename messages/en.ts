@@ -64,7 +64,7 @@ export default {
     callToAction1: `Work with me!`,
     mobileSection: {
       insight: `
-        <p>5 iOS apps developed for leading tech companies</p>
+        <p>7 iOS apps developed for leading tech companies</p>
         <p>Master Swift in backend and frontend app</p>
       `,
       text: `
