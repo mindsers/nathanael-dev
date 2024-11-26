@@ -22,7 +22,6 @@ export default async function LocaleLayout({
   children,
 }: {
   children: React.ReactNode;
-  params: {locale: string};
 }) {
   type Locale = typeof routing.defaultLocale
   const locale = await getLocale() as Locale;
