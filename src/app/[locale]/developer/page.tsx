@@ -193,6 +193,44 @@ async function getExperiences(locale = 'en') {
           end: new Date().toISOString()
         },
         {
+          title: needFrench ? `Formateur React` : `React Trainer`,
+          company: `´Ecole Hexagone`,
+          description: needFrench
+            ? [
+                `Formateur React.js et React Native pour des classes de Bac +3. Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
+              ]
+            : [
+                `React and React Native Trainer for Bachelor of Science (Computer Science) students.
+            Writing of course materials. Reviews & evaluation of acquired knowledge.`,
+              ],
+          skills: [
+            'React Native',
+            'Expo'
+          ],
+          start: new Date(2024, 5).toISOString(),
+          end: new Date().toISOString(),
+        },
+        {
+          title: needFrench ? `Formateur React` : `React Trainer`,
+          company: `UCLy`,
+          description: needFrench
+            ? [
+                `Formateur React.js et React Native pour des classes de Bac +2 et Bac +3. Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
+              ]
+            : [
+                `React and React Native Trainer for Associate of Science and Bachelor of Science (Computer Science) students.
+            Writing of course materials. Reviews & evaluation of acquired knowledge.`,
+              ],
+          skills: [
+            'React.js',
+            'React Native',
+            'NodeJS',
+            'Docker',
+          ],
+          start: new Date(2022, 12).toISOString(),
+          end: new Date(2024, 8).toISOString(),
+        },
+        {
           title: `Lead Software Engineer`,
           company: `Ferpection`,
           description: needFrench
