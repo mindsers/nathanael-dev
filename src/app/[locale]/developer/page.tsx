@@ -175,6 +175,24 @@ async function getExperiences(locale = 'en') {
 
   return [
         {
+          title: `Chief Technology Officer`,
+          company: `Steply`,
+          description: needFrench ? [`Direction technique et développement de la plateforme Steply composé d'une application mobile native et de différents service web géré via Docker et Kubernetes.`] : [
+            `Design and development of Steply. The full platform is composed of native mobile applications and sereval web services running on kubernetes`
+          ],
+          skills: [
+            'Swift',
+            'SwiftUI',
+            'Kotlin',
+            'Jetpack Compose',
+            'React.js',
+            architectureSkillLabel,
+            'Remix'
+          ],
+          start: new Date(2023, 1).toISOString(),
+          end: new Date().toISOString()
+        },
+        {
           title: `Lead Software Engineer`,
           company: `Ferpection`,
           description: needFrench
