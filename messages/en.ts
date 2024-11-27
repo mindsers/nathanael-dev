@@ -284,7 +284,7 @@ export default {
       `,
     },
     experience: {
-      title: `Previous Experiences as a Trainer`,
+      title: `Previous Experiences`,
       callToAction: {
         text: `Want to hire a trainer for your school? Looking for a senior mentor for your development team? I can teach mostly anything about JavaScript, Git, mobile development and DevOps.`,
         button: `Get a quote!`,

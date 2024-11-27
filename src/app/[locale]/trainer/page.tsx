@@ -58,14 +58,14 @@ async function TrainerPage() {
             <MobileSVG />
           </div>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('mobileSection.insight', rawHTMLDefaults)}</div>
-            {t.rich('mobileSection.text', rawHTMLDefaults)}
+            <div className={styles.insights}>{t.rich('teachingExpSection.insight', rawHTMLDefaults)}</div>
+            {t.rich('teachingExpSection.text', rawHTMLDefaults)}
           </div>
         </section>
         <section className={styles.section}>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('webSection.insight', rawHTMLDefaults)}</div>
-            {t.rich('webSection.text', rawHTMLDefaults)}
+            <div className={styles.insights}>{t.rich('topicSection.insight', rawHTMLDefaults)}</div>
+            {t.rich('topicSection.text', rawHTMLDefaults)}
           </div>
           <div className={styles.svgContainer}>
             <WebSVG />
