@@ -40,6 +40,7 @@ export default {
       influencer: `Influencer`,
       entrepreneur: `Entrepreneur`,
       blogger: `Blogger`,
+      trainer: `Trainer`,
     },
   },
   Header: {
@@ -50,6 +51,7 @@ export default {
       influencer: `Influencer`,
       entrepreneur: `Entrepreneur`,
       blogger: `Blogger`,
+      trainer: `Trainer`,
     },
   },
   Footer: {
@@ -240,4 +242,76 @@ export default {
     paidMailingList2: `subscribers`,
     blog: `blog readers`,
   },
+  TrainerPage: {
+    title: `A trainer that is actually an active and experienced senior developer!`,
+    meta: {
+      title: `Nathanaël Cherrier – Computer Science Trainer`,
+      desc: `Nathanaël is an experienced software engineer, passionate about sharing his knowledge to other developers or students in high school`,
+    },
+    callToAction1: `Hire as a trainer!`,
+    mobileSection: {
+      insight: `
+        <p>External trainer in 3 high school</p>
+        <p>Trained +70 students in Bachelore of Science</p>
+      `,
+      text: `
+        <p>
+          With several years of teaching experience in high school and in companies, I can pretend to be the trainer you where looking for!
+        </p>
+        <p>
+          My courses are "simple" and "easy" to follow for students. I use a lot of exercices to let the student learn by doing instead of waiting for them 
+          to remember what I said previously in my lecture.
+        </p>
+      `,
+    },
+    webSection: {
+      insight: `
+        <p>More than 10 years of experience</p>
+        <p>Master Fullstack and mobile development</p>
+      `,
+      text: `
+        <p>
+          I have been designing, coding and maintaining applications using JavaScript since 2015 and the ES6
+          tsunami in the JavaScript world. I know how web technologies works and I'm able to teach them to your team or your students.
+        </p>
+        <p>
+          Before heading to the web development world I started by creating native app using Objective-C and Swift. 
+          Since, I also learn Kotlin with Jetpack Compose and React Native. That's why I also offer mobile development courses and training.
+        </p>
+        <p>
+          The last thing I can teach is DevOps technologies for all levels (from Git to Kubernetes and CI/CD pipelines).
+        </p>
+      `,
+    },
+    experience: {
+      title: `Previous Experiences as a Trainer`,
+      callToAction: {
+        text: `Want to hire a trainer for your school? Looking for a senior mentor for your development team? I can teach mostly anything about JavaScript, Git, mobile development and DevOps.`,
+        button: `Get a quote!`,
+        fallback: `See more on LinkedIn`,
+        maltURL: `https://en.malt.fr/profile/nathanaelcherrier`,
+      },
+      skills: `Skills :`,
+      duration: `{years, plural, =0 {} =1 {1 year} other {# years}} {months, plural, =0 {} =1 {1 month} other {# months}}`,
+      fallback: `⚠️ Unable to show the experience list currently. Retry later. ⚠️`,
+    },
+    feedbacks: {
+      fallback: `⚠️ Unable to show the feedback list currently. Retry later. ⚠️`,
+      title: `Some feedback`,
+    },
+    TJMSection: {
+      insight: `
+        <p>The best quote depending on your teaching needs</p>
+      `,
+      text: `
+        <p>
+          Are you a school looking for a trainer or a company that needs to train a group of employee on a specific topic?
+        </p>
+        <p>
+          I know both situation are specific and require a specific quote. Tell me your needs, I can adjust my courses and my pricing to your project.
+        </p>
+      `,
+      callToAction: `Ask for a quote`,
+    },
+  }
 }

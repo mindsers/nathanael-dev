@@ -55,6 +55,9 @@ function HomePage() {
               <li>
                 <Link href={`/developer/`}>{t('menu.developer')}</Link>
               </li>
+              <li>
+                <Link href={`/trainer/`}>{t('menu.trainer')}</Link>
+              </li>
               {/* <li>
                 <a>{t('menu.entrepreneur')}</a>
               </li>
