@@ -193,44 +193,6 @@ async function getExperiences(locale = 'en') {
           end: new Date().toISOString()
         },
         {
-          title: needFrench ? `Formateur React` : `React Trainer`,
-          company: `École Hexagone`,
-          description: needFrench
-            ? [
-                `Formateur React.js et React Native pour des classes de Bac +3. Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
-              ]
-            : [
-                `React and React Native Trainer for Bachelor of Science (Computer Science) students.
-            Writing of course materials. Reviews & evaluation of acquired knowledge.`,
-              ],
-          skills: [
-            'React Native',
-            'Expo'
-          ],
-          start: new Date(2024, 5).toISOString(),
-          end: new Date().toISOString(),
-        },
-        {
-          title: needFrench ? `Formateur React` : `React Trainer`,
-          company: `UCLy`,
-          description: needFrench
-            ? [
-                `Formateur React.js et React Native pour des classes de Bac +2 et Bac +3. Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
-              ]
-            : [
-                `React and React Native Trainer for Associate of Science and Bachelor of Science (Computer Science) students.
-            Writing of course materials. Reviews & evaluation of acquired knowledge.`,
-              ],
-          skills: [
-            'React.js',
-            'React Native',
-            'NodeJS',
-            'Docker',
-          ],
-          start: new Date(2022, 12).toISOString(),
-          end: new Date(2024, 8).toISOString(),
-        },
-        {
           title: `Lead Software Engineer`,
           company: `Ferpection`,
           description: needFrench
@@ -270,31 +232,6 @@ async function getExperiences(locale = 'en') {
           skills: ['Angular', 'Swift', 'Objective-C', architectureSkillLabel, 'JavaScript'],
           start: new Date(2015, 10).toISOString(),
           end: new Date(2018, 7).toISOString(),
-        },
-        {
-          title: needFrench ? `Formateur Javascript` : `JavaScript Trainer`,
-          company: `ORT Lyon`,
-          description: needFrench
-            ? [
-                `Formateur d'une classe de 14 élèves en 3Csi (Concepteur de systèmes d’Information -
-              Bac +3). Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
-              ]
-            : [
-                `Trainer of a class of 14 students in Bachelor of Science (Computer Science).
-            Writing of course materials. Reviews & evaluation of acquired knowledge.`,
-              ],
-          skills: [
-            'Javascript ES3-5',
-            'Javascript ES6+',
-            'jQuery',
-            'AngularJS',
-            'NodeJS',
-            'Docker',
-            'ExpressJS',
-            'Pug (Jade)',
-          ],
-          start: new Date(2017, 1).toISOString(),
-          end: new Date(2018, 0).toISOString(),
         },
         {
           title: `Web Developer, Software & Embedded System Developer`,
