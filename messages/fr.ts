@@ -249,7 +249,7 @@ export default {
       desc: `Nathanaël est un ingénieur logiciel animé par l'envie de partager son savoir grâce à des formations techniques.`,
     },
     callToAction1: `Apprend avec moi !`,
-    mobileSection: {
+    teachingExpSection: {
       insight: `
         <p>Formateur dans 3 écoles supérieures d'informatique</p>
         <p>Plus de 70 étudiants formés en Bac +2 et Bac +3</p>
@@ -265,7 +265,7 @@ export default {
         </p>
       `,
     },
-    webSection: {
+    topicSection: {
       insight: `
         <p>Plus de 10 ans d'expériences</p>
         <p>Maitrise du développement web fullstack et mobile</p>

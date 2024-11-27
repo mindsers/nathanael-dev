@@ -249,7 +249,7 @@ export default {
       desc: `Nathanaël is an experienced software engineer, passionate about sharing his knowledge to other developers or students in high school`,
     },
     callToAction1: `Hire as a trainer!`,
-    mobileSection: {
+    teachingExpSection: {
       insight: `
         <p>External trainer in 3 high school</p>
         <p>Trained +70 students in Bachelore of Science</p>
@@ -264,7 +264,7 @@ export default {
         </p>
       `,
     },
-    webSection: {
+    topicSection: {
       insight: `
         <p>More than 10 years of experience</p>
         <p>Master Fullstack and mobile development</p>
