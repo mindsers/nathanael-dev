@@ -48,7 +48,7 @@
 .menu a:hover:before {
   content: '👉 ';
   position: absolute;
-  left: -19px;
+  left: -22px;
   top: -1px;
 }
 
