@@ -165,7 +165,10 @@ export default TrainerPage
 
 async function getExperiences(locale = 'en') {
   const needFrench = locale === 'fr'
-  const architectureSkillLabel = needFrench ? 'Architecture logicielle' : 'Software Architecture'
+  const conferenceSkillLabel = needFrench ? 'Conférences' : 'Talks'
+  const workshopSkillLabel = needFrench ? 'Atelier' : 'Workshop'
+  const trainingSkillLabel = needFrench ? 'Formation' : 'Training'
+  const coursSkillLabel = needFrench ? 'Cours' : 'Lecture'
 
   return [
         {
@@ -173,15 +176,17 @@ async function getExperiences(locale = 'en') {
           company: `École Hexagone`,
           description: needFrench
             ? [
-                `Formateur React.js et React Native pour des classes de Bac +3. Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
+                `Formateur React Native pour des classes de Bac +3. Ecriture des supports de cours. Examens & évaluation des notions acquises.`,
               ]
             : [
-                `React and React Native Trainer for Bachelor of Science (Computer Science) students.
+                `React Native Trainer for Bachelor of Science (Computer Science) students.
             Writing of course materials. Reviews & evaluation of acquired knowledge.`,
               ],
           skills: [
             'React Native',
-            'Expo'
+            'Expo',
+            coursSkillLabel,
+            trainingSkillLabel
           ],
           start: new Date(2024, 5).toISOString(),
           end: new Date().toISOString(),
@@ -202,6 +207,8 @@ async function getExperiences(locale = 'en') {
             'React Native',
             'NodeJS',
             'Docker',
+            coursSkillLabel,
+            trainingSkillLabel
           ],
           start: new Date(2022, 12).toISOString(),
           end: new Date(2024, 8).toISOString(),
@@ -211,18 +218,20 @@ async function getExperiences(locale = 'en') {
           company: `Econocom`,
           description: needFrench
             ? [
-                `Dev : Référent mobilité et technologies Javascript du centre de service Econocom,
-            j'interviens sur les phases de conception, de chiffrage, d'architecture et de
-            développement des projets iOS et des projets front/back/full Javascript.`,
-                `DevOps: Mise en place des plateformes d'intégration / déploiement continue.
-            Automatisation des tâches. Accompagnement des développeurs sur les technologies Git,
-            Docker, GitLab CI, etc...`,
+                `Rataché à la direction technique du centre de service lyonnais, je participais à la formation continue 
+                des développeurs via des atelier, mini-conférence, contenu technique et des formation organisé autour des sujets lié au JavaScript, à l'intégration continue, etc`,
               ]
             : [
-                `Dev : Mobility and Javascript technologies referent at the Econocom service center, I work on the design, costing, architecture and development phases of iOS projects and front/back/full Javascript projects.`,
-                `DevOps: Implementation of continuous integration / deployment platforms. Automation of tasks. Support for developers on Git, Docker, GitLab CI technologies, etc...`,
+                `I was in charge of helping developers learn and grow in their expertise using workshops, technical content and training about JavaScript, continuous integration, etc.`,
               ],
-          skills: ['Angular', 'Swift', 'Objective-C', architectureSkillLabel, 'JavaScript'],
+          skills: [
+            'CI/CD', 
+            'JavaScript', 
+            'Docker',
+            trainingSkillLabel,
+            workshopSkillLabel,
+            conferenceSkillLabel,
+          ],
           start: new Date(2017, 10).toISOString(),
           end: new Date(2018, 7).toISOString(),
         },
@@ -247,6 +256,8 @@ async function getExperiences(locale = 'en') {
             'Docker',
             'ExpressJS',
             'Pug (Jade)',
+            coursSkillLabel,
+            trainingSkillLabel
           ],
           start: new Date(2017, 1).toISOString(),
           end: new Date(2018, 0).toISOString(),
