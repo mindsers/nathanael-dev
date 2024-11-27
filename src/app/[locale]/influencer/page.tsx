@@ -58,11 +58,17 @@ const InfluencerPage: NextPage = () => {
       <Head>
         <title>{t('meta.title')}</title>
         <meta name="description" content={t('meta.desc')} />
-        <link rel="icon" href="/favicon.ico" />
+        
+        <link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+        <link rel="shortcut icon" href="/public/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Nath Dev" />
+        <link rel="manifest" href="/public/site.webmanifest" />
 
         <link rel="alternate" hrefLang="fr" href="/fr/influencer" />
-        <link rel="alternate" hrefLang="en" href="/influencer" />
-        <link rel="alternate" hrefLang="x-default" href="/influencer" />
+        <link rel="alternate" hrefLang="en" href="/en/influencer" />
+        <link rel="alternate" hrefLang="x-default" href="/en/influencer" />
       </Head>
 
       <main className={styles.main}>
