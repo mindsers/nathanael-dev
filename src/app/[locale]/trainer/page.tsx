@@ -17,6 +17,8 @@ async function TrainerPage() {
   const experiences = await getExperiences(locale)
   const feedbacks = await getFeedbacks(locale)
 
+  const callURL = "https://cal.com/nathanael-cherrier/formation"
+
   return (
     <div className={styles.container}>
       <Head>
@@ -47,7 +49,7 @@ async function TrainerPage() {
               </svg>
             </Link>
             <div className={styles.verticalSeparator} />
-            <Link href={t('experience.callToAction.maltURL')} className="button">
+            <Link href={callURL} className="button">
               {t('callToAction1')}
             </Link>
           </div>
@@ -108,7 +110,7 @@ async function TrainerPage() {
               <Link href="https://linkedin.com/in/mindsers/" className="button inverse">
                 {t('experience.callToAction.fallback')}
               </Link>
-              <Link href={t('experience.callToAction.maltURL')} className="button inverse">
+              <Link href={callURL} className="button inverse">
                 {t('experience.callToAction.button')}
               </Link>
             </div>
@@ -119,7 +121,7 @@ async function TrainerPage() {
             <div className={styles.insights}>{t.rich('TJMSection.insight', rawHTMLDefaults)}</div>
             {t.rich('TJMSection.text', rawHTMLDefaults)}
             <p className={styles.actions}>
-              <Link className={'button'} href={t('experience.callToAction.maltURL')}>
+              <Link className={'button'} href={callURL}>
                 {t('TJMSection.callToAction')}
               </Link>
             </p>
