@@ -384,6 +384,53 @@ async function getFeedbacks(locale = 'en') {
           author: `Coline`,
           role: `Lead Developer`,
         },
+        {
+          text: needFrench
+            ? [
+                `"Nathanael, au delà de ses compétences techniques, a la capacité à comprendre les enjeux business du produit et à les intégrer dans sa réflexion pour développer en prenant en compte l’ensemble des besoins clients/ utilisateurs mais aussi les enjeux liés à l’entreprise. Il sait prendre du recul sur son travail et notamment le faire challenger par les utilisateurs afin de l’améliorer en continu.`,
+                `Il est force de proposition face à d’éventuelles difficultés et peu apporter un point de vue intéressant sur de nombreux sujets.`,
+                `Son implication chez ferpection sur des sujets au delà de ses compétences techniques (financiers, RH, commerciaux) lui ont permis de prendre de la hauteur sur son travail grâce à cette vision plus globale. Ce qui n’a fait qu’augmenter la qualité de ce dernier.`,
+                `Nathanael fait preuve de solidarité et d’entraide et il est agréable de travailler avec lui au quotidien.`,
+                `Je recommande complètement Nathanael, il est pour moi, un véritable atout au sein d’une équipe."`,
+              ]
+            : [
+                `"Nathanaël, beyond his technical skills, has the ability to understand the business challenges of a product and incorporate them into his thinking. He develops solutions that take into account not only customer/user needs but also the company’s objectives. He knows how to take a step back from his work and seeks feedback from users to continuously improve it.`,
+                `He is proactive in addressing potential challenges and brings valuable insights to a variety of topics.`,
+                `His involvement at Ferpection in areas beyond his technical expertise (finance, HR, sales) allowed him to gain a broader perspective on his work. This global vision has further enhanced the quality of his contributions.`,
+                `Nathanaël demonstrates solidarity and a collaborative spirit, making him a pleasure to work with on a daily basis.`,
+                `I wholeheartedly recommend Nathanaël; he is, in my opinion, a true asset to any team."`,
+              ],
+          author: `Manon`,
+          role: `Head of Operation`,
+        },
+        {
+          text: needFrench
+            ? [
+                `"Nathanaël est un excellent collègue. Il réfléchit avant de se lancer dans le code, il contribue à la conception des idées et apporte des solutions techniques.`,
+                `Il a une vision globale, non seulement de la structure technique, mais aussi du projet et de la stratégie globale.`,
+                `Ce fut un plaisir de travailler avec lui sur des projets de conception UX."`,
+              ]
+            : [
+                `"Nathanaël is a great colleague. He thinks things through before leaping into code, he helps design ideas and brings technical solutions to the table. He has an overall vision of not only the technical structure, but also of the project and global strategy. It was a pleasure working with him on UX design projects."`,
+              ],
+          author: `Marie`,
+          role: `Senior Product Designer`,
+        },
+        {
+          text: needFrench
+            ? [
+                `"J'ai eu le plaisir de travailler avec Nathanaël durant quelques mois au sein de l'entreprise Ferpection.`,
+                `C'est une personne à l'écoute, qui prend le temps de comprendre vos besoins afin de produire les systèmes/fonctionnalités qui y répondent au mieux. Il est également demandeur de retours sur son travail dans un souci d'amélioration continue, ce qui est très appréciable.`,
+                `Je recommande vivement Nathanël, car c'est une personne de confiance avec qui il est agréable de travailler."`,
+              ]
+            : [
+                `"I had the pleasure of working with Nathanaël for a few months at Ferpection.`,
+                `He is a great listener who takes the time to understand your needs in order to deliver systems and features that best meet them. He actively seeks feedback on his work to continuously improve, which is highly appreciated.`,
+                `I highly recommend Nathanaël as he is a trustworthy person and a pleasure to work with."`,
+              ],
+          author: `Clara`,
+          role: `UX Research Consultant`,
+        },
       ]
 }
 

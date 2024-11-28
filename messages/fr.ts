@@ -152,7 +152,7 @@ export default {
       fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
       title: `Quelques avis`,
       callToAction: {
-        text: `Rejoingnez mes clients et mes collaborateur satisfaits. Travaillons ensemble !`,
+        text: `Rejoingnez mes clients et mes collaborateurs satisfaits. Travaillons ensemble !`,
         button: `Prendre RDV pour en parler`
       }
     },
