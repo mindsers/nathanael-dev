@@ -74,7 +74,7 @@ export default {
     callToAction1: `Demander un devis`,
     mobileSection: {
       insight: `
-        <p>7 applications iOS développées pour des entreprises leader de l'IT</p>
+        <p>+10 applications iOS développées pour des entreprises leader de l'IT</p>
         <p>Maîtrise des applications Swift backend et iOS</p>
       `,
       text: `

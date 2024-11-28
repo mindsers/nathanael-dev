@@ -411,7 +411,9 @@ async function getFeedbacks(locale = 'en') {
                 `Ce fut un plaisir de travailler avec lui sur des projets de conception UX."`,
               ]
             : [
-                `"Nathanaël is a great colleague. He thinks things through before leaping into code, he helps design ideas and brings technical solutions to the table. He has an overall vision of not only the technical structure, but also of the project and global strategy. It was a pleasure working with him on UX design projects."`,
+                `"Nathanaël is a great colleague. He thinks things through before leaping into code, he helps design ideas and brings technical solutions to the table.`,
+                `He has an overall vision of not only the technical structure, but also of the project and global strategy.`,
+                `It was a pleasure working with him on UX design projects."`,
               ],
           author: `Marie`,
           role: `Senior Product Designer`,
