@@ -193,7 +193,7 @@
   background-color: unset;
 }
 
-.sectionResume .call2ActionText {
+.sectionResume .call2ActionText, .feedbackSection .call2ActionText {
   text-align: center;
   margin-top: 50px;
 }

@@ -66,7 +66,7 @@ export default {
     callToAction1: `Work with me!`,
     mobileSection: {
       insight: `
-        <p>7 iOS apps developed for leading tech companies</p>
+        <p>+10 iOS apps developed for leading tech companies</p>
         <p>Master Swift in backend and frontend app</p>
       `,
       text: `
@@ -76,7 +76,7 @@ export default {
         </p>
         <p>
           Let's make things clear: I know JavaScript but when it comes to mobile application, I
-          believe in the superiority of native languages like Swift and Java. That's why I
+          believe in the superiority of native languages like Swift and Kotlin. That's why I
           recommend my client to go for native technologies rather than hybrid languages.
         </p>
         <p>
@@ -93,7 +93,7 @@ export default {
       `,
       text: `
         <p>
-          I have been designing, coding and maintaining applications using JavaScript since 2015 and the ES6
+          <strong>I have been designing, coding and maintaining applications using JavaScript since 2015</strong> and the ES6
           tsunami in the JavaScript world. I'm used to work on small apps using VanillaJS
           and larger cloud native applications that need to scale up.
         </p>
@@ -127,7 +127,7 @@ export default {
           Lead Developer</strong> and help you achieve your goals.
         </p>
       `,
-      callToAction: `Ask for a quote`,
+      callToAction: `Ask for a custom quote`,
     },
     experience: {
       title: `Previous Experiences`,
@@ -144,6 +144,10 @@ export default {
     feedbacks: {
       fallback: `⚠️ Unable to show the feedback list currently. Retry later. ⚠️`,
       title: `Some feedback`,
+      callToAction: {
+        text: `Become one of thoses happy client and partners. Let's work together!`,
+        button: `Schedule a call`
+      }
     },
   },
   InfluencerPage: {
@@ -248,7 +252,7 @@ export default {
       title: `Nathanaël Cherrier – Computer Science Trainer`,
       desc: `Nathanaël is an experienced software engineer, passionate about sharing his knowledge to other developers or students in high school`,
     },
-    callToAction1: `Hire as a trainer!`,
+    callToAction1: `Hire me as a trainer!`,
     teachingExpSection: {
       insight: `
         <p>External trainer in 3 high school</p>
@@ -289,7 +293,6 @@ export default {
         text: `Want to hire a trainer for your school? Looking for a senior mentor for your development team? I can teach mostly anything about JavaScript, Git, mobile development and DevOps.`,
         button: `Get a quote!`,
         fallback: `See more on LinkedIn`,
-        maltURL: `https://en.malt.fr/profile/nathanaelcherrier`,
       },
       skills: `Skills :`,
       duration: `{years, plural, =0 {} =1 {1 year} other {# years}} {months, plural, =0 {} =1 {1 month} other {# months}}`,
@@ -310,6 +313,11 @@ export default {
         <p>
           I know both situation are specific and require a specific quote. Tell me your needs, I can adjust my courses and my pricing to your project.
         </p>
+        <h4>Indicative Rates:</h4>
+        <ul>
+          <li>External trainer for a higher education institution: €70/hour</li>
+          <li>Professional training: starting at €700/participant</li>
+        </ul>
       `,
       callToAction: `Ask for a quote`,
     },

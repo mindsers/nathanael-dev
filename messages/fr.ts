@@ -71,7 +71,7 @@ export default {
       title: `Nathanaël Cherrier – Sénior Lead Développeur, Codeur freelance, fan de Swift et JavaScript`,
       desc: `Nathanaël est un ingénieur logiciel, passionné de code qui peut vous aider à counstruire tout ce que vous voulez en utilisant les technologies web et mobile. Demandez votre devis !`,
     },
-    callToAction1: `Travaillez avec moi !`,
+    callToAction1: `Demander un devis`,
     mobileSection: {
       insight: `
         <p>7 applications iOS développées pour des entreprises leader de l'IT</p>
@@ -84,7 +84,7 @@ export default {
         </p>
         <p>
           Mettons les choses au clair dès maintenant : je sais coder en JavaScript mais lorsque l'on parle de développement mobile, je
-          crois en la superiorité des langages et solutions natives comme Swift ou Java. C'est pour cette raison que je
+          crois en la superiorité des langages et solutions natives comme Swift ou Kotlin. C'est pour cette raison que je
           recommande ces solutions natives à mes clients plutôt que d'utiliser des technologies hybride.
         </p>
         <p>
@@ -101,7 +101,7 @@ export default {
       `,
       text: `
         <p>
-          Je conçois, développe et maintiens des applications JavaScript depuis 2015 et l'avènement du tsunami
+          Je <strong>conçois, développe et maintiens des applications JavaScript depuis 2015</strong> et l'avènement du tsunami
           ES6 dans le monde du web. Je suis habitué à travailler autant sur des sites web simples utilisant du VanillaJS
           que d'énormes applications React/Angular qui supportent des contraintes de traffic importantes.
         </p>
@@ -135,15 +135,14 @@ export default {
           et vous aider à atteindre vos objectifs.
         </p>
       `,
-      callToAction: `Me contacter pour un devis`,
+      callToAction: `Me contacter pour un devis personnalisé`,
     },
     experience: {
       title: `Expériences Précédentes`,
       callToAction: {
         text: `Vous avez besoin d'une application ou d'un site web ? Je peux vous aider à construire vos prochains projets.`,
-        button: `Demander un devis !`,
+        button: `Demander un devis`,
         fallback: `En voir plus sur LinkedIn`,
-        maltURL: `https://www.malt.fr/profile/nathanaelcherrier`,
       },
       skills: `Compétences :`,
       duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
@@ -152,6 +151,10 @@ export default {
     feedbacks: {
       fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
       title: `Quelques avis`,
+      callToAction: {
+        text: `Rejoingnez mes clients et mes collaborateur satisfaits. Travaillons ensemble !`,
+        button: `Prendre RDV pour en parler`
+      }
     },
   },
   InfluencerPage: {
@@ -248,7 +251,7 @@ export default {
       title: `Nathanaël Cherrier – Formateur JavaScript, K8s et Swift expériementé`,
       desc: `Nathanaël est un ingénieur logiciel animé par l'envie de partager son savoir grâce à des formations techniques.`,
     },
-    callToAction1: `Apprend avec moi !`,
+    callToAction1: `Me contacter pour un devis`,
     teachingExpSection: {
       insight: `
         <p>Formateur dans 3 écoles supérieures d'informatique</p>
@@ -298,6 +301,11 @@ export default {
           Ces situations ont chacune leur propres défis et enjeux. 
           Je saurais m'adapter et vous proposer un budget correspondant à vos besoin spécifique de formation.
         </p>
+        <h4>Tarifs indicatifs :</h4>
+        <ul>
+          <li>Formateur externe pour une école supérieure : 70€ / heure</li>
+          <li>Formations professionnelles : à partir de 700€ / participant</li>
+        </ul>
       `,
       callToAction: `Me contacter pour un devis`,
     },

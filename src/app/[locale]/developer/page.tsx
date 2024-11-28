@@ -159,6 +159,12 @@ async function DeveloperPage() {
             {feedbacks.length < 1 && (
               <p className={styles.call2ActionText}>{t('feedbacks.fallback')}</p>
             )}
+            <p className={styles.call2ActionText}>{t('feedbacks.callToAction.text')}</p>
+            <p className={styles.actions}>
+              <Link className={'button inverse'} href={callURL}>
+                {t('feedbacks.callToAction.button')}
+              </Link>
+            </p>
           </div>
         </section>
         <Footer />
