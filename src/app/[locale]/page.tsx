@@ -52,18 +52,18 @@ async function HomePage() {
               </li>
               {/* <li>
                 <a>{t('menu.entrepreneur')}</a>
-              </li>
-              <li>
+                </li>
+                <li>
                 <a>{t('menu.writter')}</a>
-              </li>
-              <li>
-                <a>{t('menu.coach')}</a>
-              </li>
-              <li>
+                </li>
+                <li>
                 <a>{t('menu.blogger')}</a>
-              </li> */}
+                </li> */}
               <li>
                 <Link href={`/influencer/`}>{t('menu.influencer')}</Link>
+              </li>
+              <li>
+                <Link href={`/mentor/`}>{t('menu.mentor')}</Link>
               </li>
             </ul>
           </div>

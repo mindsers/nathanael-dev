@@ -42,7 +42,7 @@ export default {
       linkText: `Je développe votre projet`,
     },
     menu: {
-      coach: `Coach`,
+      mentor: `Mentor`,
       developer: `Développeur`,
       writter: `Auteur`,
       influencer: `Influenceur`,
@@ -53,7 +53,7 @@ export default {
   },
   Header: {
     menu: {
-      coach: `Coach`,
+      mentor: `Mentor`,
       developer: `Développeur`,
       writter: `Auteur`,
       influencer: `Influenceur`,
@@ -246,6 +246,87 @@ export default {
     blog: `lecteurs du blog`,
   },
   TrainerPage: {
+    title: `Un ingénieur qui partage sa passion en formant les futurs générations de développeurs`,
+    meta: {
+      title: `Nathanaël Cherrier – Formateur JavaScript, K8s et Swift expériementé`,
+      desc: `Nathanaël est un ingénieur logiciel animé par l'envie de partager son savoir grâce à des formations techniques.`,
+    },
+    callToAction1: `Me contacter pour un devis`,
+    teachingExpSection: {
+      insight: `
+        <p>Formateur dans 3 écoles supérieures d'informatique</p>
+        <p>Plus de 70 étudiants formés en Bac +2 et Bac +3</p>
+      `,
+      text: `
+        <p>
+          Avec de nombreuses années d'experience à former des étudiants ou des employés de grand groupe, 
+          je pense être le formateur qui saura faire progresser votre organisation.
+        </p>
+        <p>
+          Mes cours sont accessible à tous. Ils sont accès sur le savoir-faire avec des exercices pratique
+          pour vous faire apprendre en faisant plutôt qu'en assayant de vous rappeler ce que j'ai pu raconter dans mon monologue.
+        </p>
+      `,
+    },
+    topicSection: {
+      insight: `
+        <p>Plus de 10 ans d'expériences</p>
+        <p>Maitrise du développement web fullstack et mobile</p>
+      `,
+      text: `
+        <p>
+          Je conçois, développe et maintiens des applications JavaScript depuis 2015 et l'avènement du tsunami
+          ES6 dans le monde du web. Je sais comment fonctionne les technologies web et je pourrais les enseigner à vos équipes où vos étudiants.
+        </p>
+        <p>
+          Avant de commencer à coder pour le web je développais des applications mobile avec Objective-C, Swift, Kotlin et React Native.
+          Je serais ravi de pouvoir former vos collaborateurs à ces technologies mobiles.
+        </p>
+        <p>
+          Grâce à mes années d'expériences en tant que CTO de startup, je peux aussi enseigner certaines technologies DevOps.
+          Par exemple, Docker et Kubernetes, ou encore Git et les pipeline d'intégration continue.
+        </p>
+      `,
+    },
+    TJMSection: {
+      insight: `
+        <p>Des tarifs adaptés à vos besoins en formation</p>
+      `,
+      text: `
+        <p>
+          Êtes-vous une école supérieure qui cherche un nouveau formateur ? 
+          Ou plutôt une entreprise qui souhaite former ses employés sur un sujet spécifique ?
+        </p>
+        <p>
+          Ces situations ont chacune leur propres défis et enjeux. 
+          Je saurais m'adapter et vous proposer un budget correspondant à vos besoin spécifique de formation.
+        </p>
+        <h4>Tarifs indicatifs :</h4>
+        <ul>
+          <li>Formateur externe pour une école supérieure : 70€ / heure</li>
+          <li>Formations professionnelles : à partir de 700€ / participant</li>
+        </ul>
+      `,
+      callToAction: `Me contacter pour un devis`,
+    },
+    experience: {
+      title: `Expériences Précédentes`,
+      callToAction: {
+        text: `Vous avez besoin d'un formateur ou d'un mentor pour vos équipes ? Je peux intervenir chez vous pour enseigner le JavaScript, Git, le développement mobile et les tecnologies DevOps.`,
+        button: `Demander un devis !`,
+        fallback: `En voir plus sur LinkedIn`,
+        maltURL: `https://www.malt.fr/profile/nathanaelcherrier`,
+      },
+      skills: `Compétences :`,
+      duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
+      fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
+    },
+    feedbacks: {
+      fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
+      title: `Quelques avis`,
+    },
+  },
+  CoachPage: {
     title: `Un ingénieur qui partage sa passion en formant les futurs générations de développeurs`,
     meta: {
       title: `Nathanaël Cherrier – Formateur JavaScript, K8s et Swift expériementé`,

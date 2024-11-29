@@ -33,6 +33,9 @@ export function Header() {
           <li>
             <Link href={`/influencer/`}>{t('menu.influencer')}</Link>
           </li>
+          <li>
+            <Link href={`/mentor/`}>{t('menu.mentor')}</Link>
+          </li>
         </ul>
       </nav>
     </div>
