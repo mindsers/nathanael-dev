@@ -35,7 +35,7 @@
 .menu nav a:hover:before {
   content: '👉 ';
   position: absolute;
-  left: -22px;
+  left: -20px;
   top: -1px;
 }
 
