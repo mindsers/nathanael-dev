@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { EducatorSVG } from '@/components/illustrations/EducatorSVG'
-import { ExpertTeacherSVG } from '@/components/illustrations/ExpertTeacherSVG'
-import { ProjectionSVG } from '@/components/illustrations/ProjectionSVG'
+import { SharingKnowledgeSVG } from '@/components/illustrations/SharingKnowledgeSVG'
+import { SolutionMindsetSVG } from '@/components/illustrations/SolutionMindsetSVG'
+import { FinancialDataSVG } from '@/components/illustrations/FinancialDataSVG'
 import { Link } from '@/i18n/routing'
 import { rawHTMLDefaults } from '@/i18n/utils'
 
@@ -33,7 +33,7 @@ async function CoachPage() {
   const locale = await getLocale();
   const feedbacks = await getFeedbacks(locale)
 
-  const callURL = "https://cal.com/nathanael-cherrier/formation"
+  const callURL = "https://cal.com/nathanael-cherrier/coaching"
 
   return (
     <div className={styles.container}>
@@ -63,7 +63,7 @@ async function CoachPage() {
         </header>
         <section className={styles.section}>
           <div className={styles.svgContainer}>
-            <EducatorSVG />
+            <SharingKnowledgeSVG />
           </div>
           <div className={styles.sectionColumn}>
             <div className={styles.insights}>{t.rich('teachingExpSection.insight', rawHTMLDefaults)}</div>
@@ -76,7 +76,7 @@ async function CoachPage() {
             {t.rich('topicSection.text', rawHTMLDefaults)}
           </div>
           <div className={styles.svgContainer}>
-            <ExpertTeacherSVG />
+            <SolutionMindsetSVG />
           </div>
         </section>
         <section className={styles.sectionLight}>
@@ -122,7 +122,7 @@ async function CoachPage() {
             </p>
           </div>
           <div className={styles.svgContainer}>
-            <ProjectionSVG />
+            <FinancialDataSVG />
           </div>
         </section>
         <Footer />
