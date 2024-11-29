@@ -3,9 +3,9 @@ import { Metadata } from 'next'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { FreelanceSVG } from '@/components/illustrations/FreelanceSVG'
-import { MobileSVG } from '@/components/illustrations/MobileSVG'
-import { WebSVG } from '@/components/illustrations/WebSVG'
+import { EducatorSVG } from '@/components/illustrations/EducatorSVG'
+import { ExpertTeacherSVG } from '@/components/illustrations/ExpertTeacherSVG'
+import { ProjectionSVG } from '@/components/illustrations/ProjectionSVG'
 import { Link } from '@/i18n/routing'
 import { rawHTMLDefaults } from '@/i18n/utils'
 
@@ -64,7 +64,7 @@ async function TrainerPage() {
         </header>
         <section className={styles.section}>
           <div className={styles.svgContainer}>
-            <MobileSVG />
+            <EducatorSVG />
           </div>
           <div className={styles.sectionColumn}>
             <div className={styles.insights}>{t.rich('teachingExpSection.insight', rawHTMLDefaults)}</div>
@@ -77,7 +77,7 @@ async function TrainerPage() {
             {t.rich('topicSection.text', rawHTMLDefaults)}
           </div>
           <div className={styles.svgContainer}>
-            <WebSVG />
+            <ExpertTeacherSVG />
           </div>
         </section>
         <section className={styles.sectionLight}>
@@ -135,7 +135,7 @@ async function TrainerPage() {
             </p>
           </div>
           <div className={styles.svgContainer}>
-            <FreelanceSVG />
+            <ProjectionSVG />
           </div>
         </section>
         <section className={styles.sectionLight}>
