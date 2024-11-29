@@ -9,10 +9,10 @@ import { FinancialDataSVG } from '@/components/illustrations/FinancialDataSVG'
 import { Link } from '@/i18n/routing'
 import { rawHTMLDefaults } from '@/i18n/utils'
 
-import styles from './coach.module.css'
+import styles from './mentor.module.css'
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations('CoachPage')
+  const t = await getTranslations('MentorPage')
 
   return {
     title: t('meta.title'),
@@ -28,8 +28,8 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-async function CoachPage() {
-  const t = await getTranslations('CoachPage')
+async function MentorPage() {
+  const t = await getTranslations('MentorPage')
   const locale = await getLocale();
   const feedbacks = await getFeedbacks(locale)
 
@@ -131,7 +131,7 @@ async function CoachPage() {
   )
 }
 
-export default CoachPage
+export default MentorPage
 
 async function getFeedbacks(locale = 'en') {
   const needFrench = locale === 'fr'

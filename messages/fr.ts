@@ -326,7 +326,7 @@ export default {
       title: `Quelques avis`,
     },
   },
-  CoachPage: {
+  MentorPage: {
     title: `Un développeur sénior, serial entrepreneur à qui tu peux demander conseil`,
     meta: {
       title: `Nathanaël Cherrier – Mentor et coach pour les développeurs entrepreuneurs`,

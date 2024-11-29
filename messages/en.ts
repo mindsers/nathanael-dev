@@ -322,7 +322,7 @@ export default {
       callToAction: `Ask for a quote`,
     },
   },
-  CoachPage: {
+  MentorPage: {
     title: `A senior developer and serial entrepreneur you can turn to for advice`,
     meta: {
       title: `Nathanaël Cherrier – Mentor and coach for developer-entrepreneurs`,
