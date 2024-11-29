@@ -6,6 +6,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 
 import '@/app/globals.css'
+import { Metadata } from 'next';
  
 // const geistSans = localFont({
 //   src: "../../fonts/GeistVF.woff",
@@ -17,6 +18,14 @@ import '@/app/globals.css'
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Nathanaël Cherrier',
+    template: '%s',
+  },
+  metadataBase: new URL('https://nathanaelcherrier.dev'),
+}
 
 export default async function LocaleLayout({
   children,

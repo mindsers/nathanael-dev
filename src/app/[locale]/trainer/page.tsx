@@ -1,5 +1,4 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import Head from 'next/head'
 import { Metadata } from 'next'
 
 import Footer from '@/components/Footer'
@@ -18,6 +17,14 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
+    alternates: {
+      canonical: '/en/trainer/',
+      languages: {
+        'en': '/en/trainer/',
+        'fr': '/fr/trainer/',
+        'x-default': '/en/trainer/'
+      },
+    },
   }
 }
 
@@ -31,12 +38,6 @@ async function TrainerPage() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="alternate" hrefLang="fr" href="/fr/trainer" />
-        <link rel="alternate" hrefLang="en" href="/en/trainer" />
-        <link rel="alternate" hrefLang="x-default" href="/en/trainer" />
-      </Head>
-
       <main className={styles.main}>
         <header>
           <Header />

@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import { getLocale, getTranslations } from 'next-intl/server'
-import Head from 'next/head'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -18,6 +17,14 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
+    alternates: {
+      canonical: '/en/developer/',
+      languages: {
+        'en': '/en/developer/',
+        'fr': '/fr/developer/',
+        'x-default': '/en/developer/'
+      },
+    },
   }
 }
 
@@ -32,12 +39,6 @@ async function DeveloperPage() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="alternate" hrefLang="fr" href="/fr/developer" />
-        <link rel="alternate" hrefLang="en" href="/en/developer" />
-        <link rel="alternate" hrefLang="x-default" href="/en/developer" />
-      </Head>
-
       <main className={styles.main}>
         <header>
           <Header />

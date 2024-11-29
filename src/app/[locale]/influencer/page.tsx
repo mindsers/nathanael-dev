@@ -1,6 +1,5 @@
 import { Metadata, NextPage } from 'next'
 import { useTranslations } from 'next-intl'
-import Head from 'next/head'
 import Image from 'next/image'
 
 import Footer from '@/components/Footer'
@@ -27,6 +26,14 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
+    alternates: {
+      canonical: '/en/influencer/',
+      languages: {
+        'en': '/en/influencer/',
+        'fr': '/fr/influencer/',
+        'x-default': '/en/influencer/'
+      },
+    },
   }
 }
 
@@ -65,12 +72,6 @@ const InfluencerPage: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="alternate" hrefLang="fr" href="/fr/influencer" />
-        <link rel="alternate" hrefLang="en" href="/en/influencer" />
-        <link rel="alternate" hrefLang="x-default" href="/en/influencer" />
-      </Head>
-
       <main className={styles.main}>
         <header>
           <Header />

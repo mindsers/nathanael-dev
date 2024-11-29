@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { getTranslations } from 'next-intl/server'
 
 import Footer from '@/components/Footer'
@@ -18,6 +17,14 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
+    alternates: {
+      canonical: '/en/',
+      languages: {
+        'en': '/en/',
+        'fr': '/fr/',
+        'x-default': '/en/'
+      },
+    },
   }
 }
 
@@ -26,12 +33,6 @@ async function HomePage() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="alternate" hrefLang="fr" href="/fr/" />
-        <link rel="alternate" hrefLang="en" href="/en/" />
-        <link rel="alternate" hrefLang="x-default" href="/en/" />
-      </Head>
-
       <main className={styles.main}>
         <StickyHeader />
         <section className={styles.hero}>
