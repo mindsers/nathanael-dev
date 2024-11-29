@@ -143,10 +143,10 @@ async function getFeedbacks(locale = 'en') {
                 `"J’ai beaucoup apprécié la session de mentoring. Je trouve que tu as su cerner la posture dans laquelle je suis dans l’équipe et l’environnement actuel."`,
               ]
             : [
-                `"J’ai beaucoup apprécié la session de mentoring. Je trouve que tu as su cerner la posture dans laquelle je suis dans l’équipe et l’environnement actuel."`,
+                `"I really appreciated the mentoring session. I feel that you were able to understand my current role within the team and the surrounding environment."`,
               ],
           author: `Valérie`,
-          role: `Développeur Freelance`,
+          role: `Freelance Developer`,
         },
       ]
 }
