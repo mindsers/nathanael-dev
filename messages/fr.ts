@@ -204,8 +204,8 @@ export default {
     },
     instagramSection: {
       insight: `
-        <p>+12k abonnés sur Instagram</p>
-        <p>plus de 5 % de taux d'engagement</p>
+        <p>+15k abonnés sur Instagram</p>
+        <p>plus de 2 % de taux d'engagement</p>
       `,
       text: `
         <p>

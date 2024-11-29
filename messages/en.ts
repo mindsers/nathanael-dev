@@ -197,9 +197,9 @@ export default {
     },
     instagramSection: {
       insight: `
-        <p>+12k followers
+        <p>+15k followers
          on Instagram</p>
-        <p>more than 5%
+        <p>more than 2%
          engament rate</p>
       `,
       text: `
