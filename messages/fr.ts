@@ -222,12 +222,12 @@ export default {
     },
     engagementSection: {
       insight: `
-        <p>4 niveaux d'engagement</p>
+        <p>3 niveaux d'engagement</p>
         <p>indépendante des médias sociaux</p>
       `,
       text: `
         <p>
-          Ma communauté est construite sur un entonnoir d'acquisition qui garantit le plus de valeur aux membres les plus engagés. Il est conçu pour fonctionner sur quatre niveaux et vous permettre de savoir où vous devez faire de la publicité en fonction de vos besoins.
+          Ma communauté est construite sur un entonnoir d'acquisition qui garantit le plus de valeur aux membres les plus engagés. Il est conçu pour fonctionner sur trois niveaux et vous permettre de savoir où vous devez faire de la publicité en fonction de vos besoins.
         </p>
         <p>
           Chaque niveau a son propre niveau d'engagement, une gamme de prix publicitaire et un ensemble d'actions qui aident ses membres à naviguer vers le niveau supérieur.

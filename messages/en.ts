@@ -220,13 +220,13 @@ export default {
     },
     engagementSection: {
       insight: `
-        <p>4 levels of engagement</p>
+        <p>3 levels of engagement</p>
         <p>non social media dependent</p>
       `,
       text: `
         <p>
           My community is built on an aquisition funnel that garanty the most value to the most
-          engaged members. It is designed to work on four levels and make you able to know where
+          engaged members. It is designed to work on three levels and make you able to know where
           you should advertize depending on your needs.
         </p>
         <p>
