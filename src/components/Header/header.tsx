@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import styles from './Header.module.css'
+import styles from './header.module.css'
 import { Link } from '@/i18n/routing'
 
 export function Header() {

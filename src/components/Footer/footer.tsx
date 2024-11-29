@@ -2,7 +2,7 @@
 import { useTranslations } from 'next-intl'
 import { Link, usePathname } from '@/i18n/routing'
 
-import styles from './Footer.module.css'
+import styles from './footer.module.css'
 
 export function Footer() {
   const t = useTranslations('Footer')
