@@ -104,7 +104,7 @@ async function HomePage() {
               <p className={styles.actions}>
                 <Link
                   className={styles.action}
-                  href={`https://cal.com/nathanael-cherrier/coaching`}
+                  href={`/mentor/`}
                 >
                   {t('coachingSection.linkText')}
                 </Link>
