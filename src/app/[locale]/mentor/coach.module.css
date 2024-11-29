@@ -193,10 +193,10 @@
   background-color: unset;
 }
 
-.sectionResume .call2ActionText {
+.feedbackSection .call2ActionText  {
   text-align: center;
   margin-top: 50px;
-}
+} 
 
 @media screen and (max-width: 550px) {
   .sectionCard {
@@ -231,7 +231,7 @@
 .feedbackSection {
   max-width: 1280px;
   margin: auto;
-  padding: 0 0 60px 0;
+  padding: 0 0 10px 0;
 }
 
 .feedbackSection h2 {

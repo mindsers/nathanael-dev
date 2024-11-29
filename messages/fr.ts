@@ -20,7 +20,7 @@ export default {
     coachingSection: {
       title: `Besoin de discuter avec un expert ?`,
       text: `Se lancer dans le développement ou même une reconversion professionnelle peut faire
-      peur. Besoin d'un mentor JavaScript ou de poser des questions à un professionnel ?
+      peur. Besoin d'un mentor JavaScript ou de poser des questions à un professionnel ?
       Je peux vous aider.`,
       linkText: `Programmer une séance de mentoring`,
     },
@@ -144,7 +144,7 @@ export default {
         button: `Demander un devis`,
         fallback: `En voir plus sur LinkedIn`,
       },
-      skills: `Compétences :`,
+      skills: `Compétences :`,
       duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
       fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
     },
@@ -209,7 +209,7 @@ export default {
       `,
       text: `
         <p>
-          Je code depuis 2005 et je le fais professionnellement depuis 2013. C'est ce que je partage avec ma communauté : mon parcours de développeur/entrepreneur.
+          Je code depuis 2005 et je le fais professionnellement depuis 2013. C'est ce que je partage avec ma communauté : mon parcours de développeur/entrepreneur.
         </p>
         <p>
           Ils voient où je travaille, comment mon setup évolue, mes frustrations lorsque je dois corriger des bugs et comment ma carrière change dans le temps. Entre tout ça je partage quotidiennement mes boissons caféinées.
@@ -294,17 +294,17 @@ export default {
       `,
       text: `
         <p>
-          Êtes-vous une école supérieure qui cherche un nouveau formateur ? 
-          Ou plutôt une entreprise qui souhaite former ses employés sur un sujet spécifique ?
+          Êtes-vous une école supérieure qui cherche un nouveau formateur ? 
+          Ou plutôt une entreprise qui souhaite former ses employés sur un sujet spécifique ?
         </p>
         <p>
           Ces situations ont chacune leur propres défis et enjeux. 
           Je saurais m'adapter et vous proposer un budget correspondant à vos besoin spécifique de formation.
         </p>
-        <h4>Tarifs indicatifs :</h4>
+        <h4>Tarifs indicatifs :</h4>
         <ul>
-          <li>Formateur externe pour une école supérieure : 70€ / heure</li>
-          <li>Formations professionnelles : à partir de 700€ / participant</li>
+          <li>Formateur externe pour une école supérieure : 70€ / heure</li>
+          <li>Formations professionnelles : à partir de 700€ / participant</li>
         </ul>
       `,
       callToAction: `Me contacter pour un devis`,
@@ -317,7 +317,7 @@ export default {
         fallback: `En voir plus sur LinkedIn`,
         maltURL: `https://www.malt.fr/profile/nathanaelcherrier`,
       },
-      skills: `Compétences :`,
+      skills: `Compétences :`,
       duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
       fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
     },
@@ -327,84 +327,95 @@ export default {
     },
   },
   CoachPage: {
-    title: `Un ingénieur qui partage sa passion en formant les futurs générations de développeurs`,
+    title: `Un développeur sénior, serial entrepreneur à qui tu peux demander conseil`,
     meta: {
-      title: `Nathanaël Cherrier – Formateur JavaScript, K8s et Swift expériementé`,
-      desc: `Nathanaël est un ingénieur logiciel animé par l'envie de partager son savoir grâce à des formations techniques.`,
+      title: `Nathanaël Cherrier – Mentor et coach pour les développeurs entrepreuneurs`,
+      desc: `Nathanaël est un ingénieur logiciel expérimenté qui coach les développeur sur leur technique, leur carrière et leur bussines`,
     },
-    callToAction1: `Me contacter pour un devis`,
+    callToAction1: `Réserver un call de 30 min`,
     teachingExpSection: {
       insight: `
-        <p>Formateur dans 3 écoles supérieures d'informatique</p>
-        <p>Plus de 70 étudiants formés en Bac +2 et Bac +3</p>
+        <p>Formateur, Développeur, Entrepreneur</p>
+        <p>Plus de 10 ans d'expériences et 3 sociétés lancées</p>
       `,
       text: `
         <p>
-          Avec de nombreuses années d'experience à former des étudiants ou des employés de grand groupe, 
-          je pense être le formateur qui saura faire progresser votre organisation.
+          Au cours de ma carrière j'ai été amené à occupé beaucoup de postes même 
+          si mon expertise principale est la conception d'application web ou mobile. J'ai commencé
+          en tant que développeur junior chez un éditeur de logiciel mais j'ai également exploré 
+          les ESN puis les startups où je me suis attardé au point d'en créer moi-même. 
+          Dans ces boites, j'ai été développeur, lead développeur, développeur sénior, lead technique, directeur technique (CTO), etc.
         </p>
         <p>
-          Mes cours sont accessible à tous. Ils sont accès sur le savoir-faire avec des exercices pratique
-          pour vous faire apprendre en faisant plutôt qu'en assayant de vous rappeler ce que j'ai pu raconter dans mon monologue.
+          En parallèle de mes emplois salarié, j'ai rapidement monter plusieurs types d'entreprises : 
+          une activité de développeur freelance, des boutiques e-commerce, de la création de contenu, 
+          une marque de vétement, du marketing d'influence, de l'édition de livres,
+          une activité de formateur indépendant, une startup tech à impact, etc.
+        </p>
+        <p>
+          Aujourd'hui je ne suis plus salarié. J'ai fermé des boites et abandonné des activités. 
+          Je me suis concentré sur quelques activités seulement et je vis de celles-ci.
+        </p>
+        <p>
+          C'est de <strong>cette expérience riche et variée que je fais profiter les développeurs</strong> qui ont besoin de conseil
+          que ce soit pour améliorer leur technique, réfléchir à leur carrière ou même explorer des possibilités d'emancipation grâce à l'entrepreneuriat.
         </p>
       `,
     },
     topicSection: {
       insight: `
-        <p>Plus de 10 ans d'expériences</p>
-        <p>Maitrise du développement web fullstack et mobile</p>
+        <p>L'experience d'un développeur sénior à la demande</p>
+        <p>Un serial entrepreneur disponible pour discuter business et finance</p>
       `,
       text: `
         <p>
-          Je conçois, développe et maintiens des applications JavaScript depuis 2015 et l'avènement du tsunami
-          ES6 dans le monde du web. Je sais comment fonctionne les technologies web et je pourrais les enseigner à vos équipes où vos étudiants.
+          Une des situation les plus frustrante que j'ai connu en entreprise c'est de sentir que j'ai besoin d'un conseil pour une situation spécifique et de ne pas avoir de développeur sénior auprés de qui aller chercher ce conseil.
         </p>
         <p>
-          Avant de commencer à coder pour le web je développais des applications mobile avec Objective-C, Swift, Kotlin et React Native.
-          Je serais ravi de pouvoir former vos collaborateurs à ces technologies mobiles.
+          Depuis que je suis à mon compte, cette situation arrive encore plus souvent qu'avant ! Les entrepreneurs souffrent de la solitude dans leur travail.
         </p>
         <p>
-          Grâce à mes années d'expériences en tant que CTO de startup, je peux aussi enseigner certaines technologies DevOps.
-          Par exemple, Docker et Kubernetes, ou encore Git et les pipeline d'intégration continue.
+          Je propose de devenir ce développeur sénior ou cet entrepreneur avec qui tu pourras discuter 
+          de ton problème. Sans forcément te dire exactement quoi faire, 
+          mon idée est d'utiliser mon expérience pour t'aider à réfléchir, te permettre de changer 
+          d'angle de réflexion et au maximum t'aider à résoudre tes problèmes.
+        </p>
+        <p>
+          Avec moi tu pourras parler programmation, infra et architecture logicielle, freelance, 
+          évolution de carrière, SaaS, finance personnelle, levée de fond, café et même de guitare.
         </p>
       `,
     },
     TJMSection: {
       insight: `
-        <p>Des tarifs adaptés à vos besoins en formation</p>
+        <p>Des séances de mentoring ponstuelles</p>
+        <p>Un suivi sur la durée jusqu'a 6 mois</p>
       `,
       text: `
         <p>
-          Êtes-vous une école supérieure qui cherche un nouveau formateur ? 
-          Ou plutôt une entreprise qui souhaite former ses employés sur un sujet spécifique ?
+          En fonction de votre situation ou des problème que vous cherchez à résoudre votre besoin en mentorat 
+          ne sera pas le même. Avez-vous besoin d'une seule séance pour repondre à une question simple 
+          ou plutot d'un suivi sur la durée ?
         </p>
         <p>
-          Ces situations ont chacune leur propres défis et enjeux. 
-          Je saurais m'adapter et vous proposer un budget correspondant à vos besoin spécifique de formation.
+          Je propose donc une formule à la carte où il est possible de réserver 30 min en fonction 
+          de vos besoin et puis une formule "régulière" mensualisée qui permet de régulièrement se parler pour faire un suivi :
         </p>
-        <h4>Tarifs indicatifs :</h4>
         <ul>
-          <li>Formateur externe pour une école supérieure : 70€ / heure</li>
-          <li>Formations professionnelles : à partir de 700€ / participant</li>
+          <li>Mentorat à la carte : 100€ / 30 min call</li>
+          <li>Mentorat régulier : 1500€ / mois (tarif dégressif)</li>
         </ul>
+        <p>Même si vous pensez avoir besoin d'un mentorat régulier, la première séance doit obligatoirement être une séance à la carte.</p>
       `,
-      callToAction: `Me contacter pour un devis`,
-    },
-    experience: {
-      title: `Expériences Précédentes`,
-      callToAction: {
-        text: `Vous avez besoin d'un formateur ou d'un mentor pour vos équipes ? Je peux intervenir chez vous pour enseigner le JavaScript, Git, le développement mobile et les tecnologies DevOps.`,
-        button: `Demander un devis !`,
-        fallback: `En voir plus sur LinkedIn`,
-        maltURL: `https://www.malt.fr/profile/nathanaelcherrier`,
-      },
-      skills: `Compétences :`,
-      duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
-      fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
+      callToAction: `Réserver une première séance`,
     },
     feedbacks: {
       fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
-      title: `Quelques avis`,
+      title: `Qu'en pensent les développeurs ?`,
+      callToAction: {
+        text: `Rejoingnez les développeurs satisfaits qui ont profité du mentorat avec moi.`,
+        button: `Prendre RDV pour une première séance`
+      }
     },
   }
 }

@@ -323,79 +323,91 @@ export default {
     },
   },
   CoachPage: {
-    title: `A trainer that is actually an active and experienced senior developer!`,
+    title: `A senior developer and serial entrepreneur you can turn to for advice`,
     meta: {
-      title: `Nathanaël Cherrier – Computer Science Trainer`,
-      desc: `Nathanaël is an experienced software engineer, passionate about sharing his knowledge to other developers or students in high school`,
+      title: `Nathanaël Cherrier – Mentor and coach for developer-entrepreneurs`,
+      desc: `Nathanaël is an experienced software engineer coaching developers on their technique, career, and business`,
     },
-    callToAction1: `Hire me as a trainer!`,
+    callToAction1: `Book a 30-minute call`,
     teachingExpSection: {
       insight: `
-        <p>External trainer in 3 high school</p>
-        <p>Trained +70 students in Bachelore of Science</p>
+        <p>Trainer, Developer, Entrepreneur</p>
+        <p>Over 10 years of experience and 3 companies launched</p>
       `,
       text: `
         <p>
-          With several years of teaching experience in high school and in companies, I can pretend to be the trainer you where looking for!
+          Throughout my career, I’ve taken on many roles, though my main expertise lies in designing web and mobile applications. 
+          I started as a junior developer at a software company, then explored IT consulting and startups, 
+          staying long enough to eventually create my own. In these roles, I’ve been a developer, lead developer, senior developer, 
+          technical lead, CTO, and more.
         </p>
         <p>
-          My courses are "simple" and "easy" to follow for students. I use a lot of exercices to let the student learn by doing instead of waiting for them 
-          to remember what I said previously in my lecture.
+          Alongside my salaried positions, I quickly ventured into various side entrepreneurial activities: freelancing, e-commerce stores, 
+          content creation, a clothing brand, influencer marketing, book publishing, independent training, an impact-driven tech startup, etc.
+        </p>
+        <p>
+          Today, I’m no longer an employee. I’ve closed businesses and dropped activities to focus on a few key ventures 
+          that now sustain me.
+        </p>
+        <p>
+          It’s this <strong>rich and varied experience that I bring to developers</strong> seeking advice, whether to enhance their skills, 
+          navigate their careers, or explore entrepreneurial freedom.
         </p>
       `,
     },
     topicSection: {
       insight: `
-        <p>More than 10 years of experience</p>
-        <p>Master Fullstack and mobile development</p>
+        <p>The experience of a senior developer on demand</p>
+        <p>A serial entrepreneur available to discuss business and finance</p>
       `,
       text: `
         <p>
-          I have been designing, coding and maintaining applications using JavaScript since 2015 and the ES6
-          tsunami in the JavaScript world. I know how web technologies works and I'm able to teach them to your team or your students.
+          One of the most frustrating situations I’ve faced in the workplace was needing advice for a specific issue 
+          but not having a senior developer to turn to.
         </p>
         <p>
-          Before heading to the web development world I started by creating native app using Objective-C and Swift. 
-          Since, I also learn Kotlin with Jetpack Compose and React Native. That's why I also offer mobile development courses and training.
+          Since becoming self-employed, this situation has occurred even more frequently! Entrepreneurs often experience isolation in their work.
         </p>
         <p>
-          The last thing I can teach is DevOps technologies for all levels (from Git to Kubernetes and CI/CD pipelines).
+          I aim to be that senior developer or entrepreneur you can talk to about your challenges. While I won’t always 
+          tell you exactly what to do, my goal is to use my experience to help you think differently, change perspectives, 
+          and ultimately solve your problems.
+        </p>
+        <p>
+          With me, you can discuss programming, infrastructure, software architecture, freelancing, career development, 
+          SaaS, personal finance, fundraising, coffee, and even guitars.
         </p>
       `,
-    },
-    experience: {
-      title: `Previous Experiences`,
-      callToAction: {
-        text: `Want to hire a trainer for your school? Looking for a senior mentor for your development team? I can teach mostly anything about JavaScript, Git, mobile development and DevOps.`,
-        button: `Get a quote!`,
-        fallback: `See more on LinkedIn`,
-      },
-      skills: `Skills :`,
-      duration: `{years, plural, =0 {} =1 {1 year} other {# years}} {months, plural, =0 {} =1 {1 month} other {# months}}`,
-      fallback: `⚠️ Unable to show the experience list currently. Retry later. ⚠️`,
-    },
-    feedbacks: {
-      fallback: `⚠️ Unable to show the feedback list currently. Retry later. ⚠️`,
-      title: `Some feedback`,
     },
     TJMSection: {
       insight: `
-        <p>The best quote depending on your teaching needs</p>
+        <p>One-off mentoring sessions</p>
+        <p>Ongoing support for up to 6 months</p>
       `,
       text: `
         <p>
-          Are you a school looking for a trainer or a company that needs to train a group of employee on a specific topic?
+          Depending on your situation and the problems you’re trying to solve, your mentoring needs will vary. 
+          Do you need just one session to answer a simple question, or ongoing support?
         </p>
         <p>
-          I know both situation are specific and require a specific quote. Tell me your needs, I can adjust my courses and my pricing to your project.
+          I offer a flexible approach where you can book 30 minutes as needed or opt for a regular monthly plan 
+          to discuss and track progress consistently:
         </p>
-        <h4>Indicative Rates:</h4>
         <ul>
-          <li>External trainer for a higher education institution: €70/hour</li>
-          <li>Professional training: starting at €700/participant</li>
+          <li>One-off mentoring: €100 / 30 min</li>
+          <li>Regular mentoring: €1500 / month (discounted rates available)</li>
         </ul>
+        <p>Even if you’re considering regular mentoring, the first session must be booked as a one-off.</p>
       `,
-      callToAction: `Ask for a quote`,
+      callToAction: `Book your first session`,
+    },
+    feedbacks: {
+      fallback: `⚠️ Unable to display feedback at the moment. Please try again later. ⚠️`,
+      title: `What do developers think?`,
+      callToAction: {
+        text: `Join the satisfied developers who’ve benefited from my mentoring.`,
+        button: `Book your first session`,
+      },
     },
   }
 }
