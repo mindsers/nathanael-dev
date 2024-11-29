@@ -1,0 +1,9 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--background-color);
+  z-index: 2;
+  transition: all 0.1s ease-in-out;
+}

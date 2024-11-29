@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import { getLocale, getTranslations } from 'next-intl/server'
 import Head from 'next/head'
 
@@ -10,6 +11,16 @@ import { Link } from '@/i18n/routing'
 import { rawHTMLDefaults } from '@/i18n/utils'
 
 import styles from './developer.module.css'
+ 
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('DeveloperPage')
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.desc'),
+  }
+}
+
 
 async function DeveloperPage() {
   const t = await getTranslations('DeveloperPage')
@@ -22,9 +33,6 @@ async function DeveloperPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t('meta.title')}</title>
-        <meta name="description" content={t('meta.desc')} />
-
         <link rel="alternate" hrefLang="fr" href="/fr/developer" />
         <link rel="alternate" hrefLang="en" href="/en/developer" />
         <link rel="alternate" hrefLang="x-default" href="/en/developer" />

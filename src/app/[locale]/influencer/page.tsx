@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { Metadata, NextPage } from 'next'
 import { useTranslations } from 'next-intl'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -19,6 +19,16 @@ import whooshLogo from '@/../public/whoosh.jpg'
 import gridstudioLogo from '@/../public/gridstudio.jpg'
 
 import styles from './influencer.module.css'
+import { getTranslations } from 'next-intl/server'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('InfluencerPage')
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.desc'),
+  }
+}
 
 const InfluencerPage: NextPage = () => {
   const t = useTranslations('InfluencerPage')
@@ -56,9 +66,6 @@ const InfluencerPage: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t('meta.title')}</title>
-        <meta name="description" content={t('meta.desc')} />
-
         <link rel="alternate" hrefLang="fr" href="/fr/influencer" />
         <link rel="alternate" hrefLang="en" href="/en/influencer" />
         <link rel="alternate" hrefLang="x-default" href="/en/influencer" />

@@ -1,47 +1,39 @@
-"use client";
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
 import Footer from '@/components/Footer'
 import ExpertSVG from '@/components/illustrations/ExpertSVG'
 import SocialSVG from '@/components/illustrations/SocialSVG'
 import ExperienceSVG from '@/components/illustrations/ExperienceSVG'
-import Header from '@/components/Header'
+import StickyHeader from '@/components/StickyHeader/sticky-header';
+import { rawHTMLDefaults } from '@/i18n/utils';
+import { Link } from '@/i18n/routing';
 
 import styles from './home.module.css'
-import { Link } from '@/i18n/routing';
-import { rawHTMLDefaults } from '@/i18n/utils';
+import { Metadata } from 'next'
 
-function HomePage() {
-  const [menuOpacity, setMenuOpacity] = useState(0)
-  const t = useTranslations('Home')
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('Home')
 
-  useEffect(() => {
-    function updateOpacity() {
-      setMenuOpacity(window.pageYOffset - window.innerHeight + 130)
-    }
+  return {
+    title: t('meta.title'),
+    description: t('meta.desc'),
+  }
+}
 
-    window.addEventListener('scroll', updateOpacity, { passive: true })
-
-    return () => window.removeEventListener('scroll', updateOpacity)
-  }, [])
+async function HomePage() {
+  const t = await getTranslations('Home')
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t('meta.title')}</title>
-        <meta name="description" content={t('meta.desc')} />
-
         <link rel="alternate" hrefLang="fr" href="/fr/" />
         <link rel="alternate" hrefLang="en" href="/en/" />
         <link rel="alternate" hrefLang="x-default" href="/en/" />
       </Head>
 
       <main className={styles.main}>
-        <header className={styles.header} style={{ opacity: menuOpacity }}>
-          <Header />
-        </header>
+        <StickyHeader />
         <section className={styles.hero}>
           <div>
             <p className={styles.title}>

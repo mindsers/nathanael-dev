@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from 'next-intl/server'
 import Head from 'next/head'
+import { Metadata } from 'next'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -10,6 +11,15 @@ import { Link } from '@/i18n/routing'
 import { rawHTMLDefaults } from '@/i18n/utils'
 
 import styles from './trainer.module.css'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('TrainerPage')
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.desc'),
+  }
+}
 
 async function TrainerPage() {
   const t = await getTranslations('TrainerPage')
@@ -22,9 +32,6 @@ async function TrainerPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t('meta.title')}</title>
-        <meta name="description" content={t('meta.desc')} />
-
         <link rel="alternate" hrefLang="fr" href="/fr/trainer" />
         <link rel="alternate" hrefLang="en" href="/en/trainer" />
         <link rel="alternate" hrefLang="x-default" href="/en/trainer" />
