@@ -13,16 +13,17 @@ import styles from './mentor.module.css'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('MentorPage')
+  const locale = await getLocale();
 
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
     alternates: {
-      canonical: '/en/trainer/',
+      canonical: `/${locale}/mentor/`,
       languages: {
-        'en': '/en/trainer/',
-        'fr': '/fr/trainer/',
-        'x-default': '/en/trainer/'
+        'en': '/en/mentor/',
+        'fr': '/fr/mentor/',
+        'x-default': '/en/mentor/'
       },
     },
   }

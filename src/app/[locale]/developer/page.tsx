@@ -13,12 +13,13 @@ import styles from './developer.module.css'
  
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('DeveloperPage')
+  const locale = await getLocale();
 
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
     alternates: {
-      canonical: '/en/developer/',
+      canonical: `/${locale}/developer/`,
       languages: {
         'en': '/en/developer/',
         'fr': '/fr/developer/',

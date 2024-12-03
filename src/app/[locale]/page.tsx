@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 
 import Footer from '@/components/Footer'
 import ExpertSVG from '@/components/illustrations/ExpertSVG'
@@ -13,12 +13,13 @@ import { Metadata } from 'next'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('Home')
+  const locale = await getLocale();
 
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
     alternates: {
-      canonical: '/en/',
+      canonical: `/${locale}/`,
       languages: {
         'en': '/en/',
         'fr': '/fr/',

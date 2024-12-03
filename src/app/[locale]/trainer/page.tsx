@@ -13,12 +13,13 @@ import styles from './trainer.module.css'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('TrainerPage')
+  const locale = await getLocale();
 
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
     alternates: {
-      canonical: '/en/trainer/',
+      canonical: `/${locale}/trainer/`,
       languages: {
         'en': '/en/trainer/',
         'fr': '/fr/trainer/',

@@ -18,16 +18,17 @@ import whooshLogo from '@/../public/whoosh.jpg'
 import gridstudioLogo from '@/../public/gridstudio.jpg'
 
 import styles from './influencer.module.css'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('InfluencerPage')
+  const locale = await getLocale();
 
   return {
     title: t('meta.title'),
     description: t('meta.desc'),
     alternates: {
-      canonical: '/en/influencer/',
+      canonical: `/${locale}/influencer/`,
       languages: {
         'en': '/en/influencer/',
         'fr': '/fr/influencer/',
