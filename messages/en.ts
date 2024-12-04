@@ -199,7 +199,7 @@ export default {
       insight: `
         <p>+15k followers
          on Instagram</p>
-        <p>more than 2%
+        <p>more than 3%
          engament rate</p>
       `,
       text: `
