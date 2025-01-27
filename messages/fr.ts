@@ -156,12 +156,13 @@ export default {
     },
   },
   InfluencerPage: {
-    title: `Un influenceur avec une communauté forte et engagée, passionné de code et de café`,
+    // title: `Un influenceur avec une communauté forte et engagée, passionné de code et de café`,
+    title: `Je partage ma passion du code et du café avec une communauté de plus de 15k geeks`,
     meta: {
       title: `Nathanaël Cherrier – Influenceur tech qui partage sur le codage et le café`,
       desc: `Nathanaël est un influenceur tech avec une communauté très engagée, passionné de code et de café. Faisons la promotion de votre marque !`,
     },
-    callToAction: `Faites du marketing d'influence`,
+    callToAction: `Faisons du marketing d'influence ensemble !`,
     brands: {
       title: `Marques partnaires`,
       description: `J'ai travaillé avec des marques qui sont leaders dans leur industrie sur des contrats ponctuels ou à long terme.`,
@@ -171,7 +172,7 @@ export default {
       title: `Tarification`,
       legals1: `Les prix sont indicatifs. Ils seront adaptés en fonction de votre projet, de sa complexité, du nombre de livrables, etc. Tous les projets incluent un reporting statistique.`,
       legals2: `Les projets ne sont acceptés que s'ils correspondent à notre ligne éditoriale et s'ils apportent de la valeur aux lecteurs/followers. La rédaction a tout pouvoir pour refuser toute demande qui, selon elle, ne répond pas à ces exigences.`,
-      callToAction: `Demandez un devis !`,
+      callToAction: `Demandez un devis gratuit !`,
       price: `à partir de { price } €`,
       products: {
         sponsoredPost: {
@@ -231,7 +232,7 @@ export default {
           Chaque niveau a son propre niveau d'engagement, une gamme de prix publicitaire et un ensemble d'actions qui aident ses membres à naviguer vers le niveau supérieur.
         </p>
       `,
-      callToAction: `Faites votre publicité dans ma communauté`,
+      callToAction: `Réserver un appel gratuit`,
     },
   },
   CommunitySVG: {
@@ -244,12 +245,12 @@ export default {
     blog: `lecteurs du blog`,
   },
   TrainerPage: {
-    title: `Un ingénieur qui partage sa passion en formant les futurs générations de développeurs`,
+    title: `Je transmets mon savoir-faire en JavaScript, K8s et Swift à vos équipes ou vos étudiants`,
     meta: {
       title: `Nathanaël Cherrier – Formateur JavaScript, K8s et Swift expériementé`,
       desc: `Nathanaël est un ingénieur logiciel animé par l'envie de partager son savoir grâce à des formations techniques.`,
     },
-    callToAction1: `Me contacter pour un devis`,
+    callToAction1: `Me contacter pour un devis gratuit`,
     teachingExpSection: {
       insight: `
         <p>Formateur dans 3 écoles supérieures d'informatique</p>
@@ -301,8 +302,8 @@ export default {
         </p>
         <h4>Tarifs indicatifs :</h4>
         <ul>
-          <li>Formateur externe pour une école supérieure : 70€ / heure</li>
-          <li>Formations professionnelles : à partir de 700€ / participant</li>
+          <li>Formateur externe pour une école supérieure : 70€ HT / heure</li>
+          <li>Formations professionnelles : à partir de 700€ HT / participant</li>
         </ul>
       `,
       callToAction: `Demander un devis gratuit`,
@@ -325,7 +326,8 @@ export default {
     },
   },
   MentorPage: {
-    title: `Un développeur sénior, serial entrepreneur à qui tu peux demander conseil`,
+    // title: `Un développeur sénior, serial entrepreneur à qui tu peux demander conseil`,
+    title: `J'aide les développeurs à améliorer leur technique, leur carrière et leur business`,
     meta: {
       title: `Nathanaël Cherrier – Mentor et coach pour les développeurs entrepreuneurs`,
       desc: `Nathanaël est un ingénieur logiciel expérimenté qui coach les développeur sur leur technique, leur carrière et leur bussines`,
