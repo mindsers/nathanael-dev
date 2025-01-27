@@ -10,10 +10,10 @@ import { Link } from '@/i18n/routing'
 import { rawHTMLDefaults } from '@/i18n/utils'
 
 import styles from './developer.module.css'
- 
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('DeveloperPage')
-  const locale = await getLocale();
+  const locale = await getLocale()
 
   return {
     title: t('meta.title'),
@@ -21,22 +21,21 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: {
       canonical: `/${locale}/developer/`,
       languages: {
-        'en': '/en/developer/',
-        'fr': '/fr/developer/',
-        'x-default': '/en/developer/'
+        en: '/en/developer/',
+        fr: '/fr/developer/',
+        'x-default': '/en/developer/',
       },
     },
   }
 }
 
-
 async function DeveloperPage() {
   const t = await getTranslations('DeveloperPage')
-  const locale = await getLocale();
+  const locale = await getLocale()
   const experiences = await getExperiences(locale)
   const feedbacks = await getFeedbacks(locale)
 
-  const callURL = "https://cal.com/nathanael-cherrier/development"
+  const callURL = 'https://cal.com/nathanael-cherrier/development'
 
   return (
     <div className={styles.container}>
@@ -63,6 +62,30 @@ async function DeveloperPage() {
                 <path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z" />
               </svg>
             </Link>
+            <Link
+              href="https://www.collective.work/profile/nathanael-cherrier-uoq"
+              className={styles.socialLink}
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                height={30}
+                viewBox="0 0 469.000000 492.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,492.000000) scale(0.100000,-0.100000)"
+                  stroke="none"
+                >
+                  <path
+                    d="M2270 4914 c-593 -56 -1100 -284 -1514 -684 -399 -385 -648 -870 -732 -1425 -25 -163 -25 -522 -1 -686 78 -525 303 -986 667 -1363 385 -399 870 -648 1425 -732 163 -25 522 -25 686 -1 613 91 1156 394 1551 867 90 108 211 285 259 380 31 59 34 73 34 155 0 82 -3 96 -31 150 -98 186 -342 277 -512 191 -72 -36 -116 -84 -189 -201 -289 -469 -762 -757 -1322 -807 -627 -56 -1254 266 -1590 815 -184 302 -273 675 -243 1019 55 615 402 1127 949 1402 258 129 597 193 885 168 567 -51 1041 -345 1334 -828 26 -43 65 -95 86 -116 137 -137 365 -127 523 23 107 101 142 243 92 368 -84 207 -346 534 -597 743 -341 285 -774 477 -1220 543 -111 16 -444 28 -540 19z"
+                  />
+                  <path
+                    d="M2310 3226 c-245 -53 -437 -202 -546 -421 -63 -128 -78 -195 -78 -345 -1 -145 14 -213 73 -335 78 -163 194 -281 356 -361 128 -63 195 -78 345 -78 145 -1 213 14 335 73 163 78 281 194 361 356 63 128 78 195 78 345 1 145 -14 213 -73 335 -50 104 -116 191 -199 260 -75 63 -217 137 -307 160 -85 23 -265 28 -345 11z"
+                  />
+                </g>
+              </svg>
+            </Link>
             <div className={styles.verticalSeparator} />
             <Link href={callURL} className="button">
               {t('callToAction1')}
@@ -83,7 +106,9 @@ async function DeveloperPage() {
             <MobileSVG />
           </div>
           <div className={styles.sectionColumn}>
-            <div className={styles.insights}>{t.rich('mobileSection.insight', rawHTMLDefaults)}</div>
+            <div className={styles.insights}>
+              {t.rich('mobileSection.insight', rawHTMLDefaults)}
+            </div>
             {t.rich('mobileSection.text', rawHTMLDefaults)}
           </div>
         </section>
@@ -191,259 +216,263 @@ async function getExperiences(locale = 'en') {
   const architectureSkillLabel = needFrench ? 'Architecture logicielle' : 'Software Architecture'
 
   return [
-        {
-          title: `Chief Technology Officer`,
-          company: `Steply`,
-          description: needFrench ? [`Direction technique et développement de la plateforme Steply composé d'une application mobile native et de différents service web géré via Docker et Kubernetes.`] : [
-            `Design and development of Steply. The full platform is composed of native mobile applications and sereval web services running on kubernetes`
+    {
+      title: `Chief Technology Officer`,
+      company: `Steply`,
+      description: needFrench
+        ? [
+            `Direction technique et développement de la plateforme Steply composé d'une application mobile native et de différents service web géré via Docker et Kubernetes.`,
+          ]
+        : [
+            `Design and development of Steply. The full platform is composed of native mobile applications and sereval web services running on kubernetes`,
           ],
-          skills: [
-            'Swift',
-            'SwiftUI',
-            'Kotlin',
-            'Jetpack Compose',
-            'React.js',
-            architectureSkillLabel,
-            'Remix'
+      skills: [
+        'Swift',
+        'SwiftUI',
+        'Kotlin',
+        'Jetpack Compose',
+        'React.js',
+        architectureSkillLabel,
+        'Remix',
+      ],
+      start: new Date(2023, 1).toISOString(),
+      end: new Date().toISOString(),
+    },
+    {
+      title: `Lead Software Engineer`,
+      company: `Ferpection`,
+      description: needFrench
+        ? [
+            ` Dévelopement de la plateforme de recherche en test utilisateur ansi que les outils interne avec les technos: ES6+, ReactJS, VictoryJS`,
+          ]
+        : [
+            `Built the frontend of the user research platform and some of the internal tools used at Ferpection.`,
+            `Built no-code automations using Zapier.`,
           ],
-          start: new Date(2023, 1).toISOString(),
-          end: new Date().toISOString()
-        },
-        {
-          title: `Lead Software Engineer`,
-          company: `Ferpection`,
-          description: needFrench
-            ? [
-                ` Dévelopement de la plateforme de recherche en test utilisateur ansi que les outils interne avec les technos: ES6+, ReactJS, VictoryJS`,
-              ]
-            : [
-                `Built the frontend of the user research platform and some of the internal tools used at Ferpection.`,
-                `Built no-code automations using Zapier.`,
-              ],
-          skills: [
-            englishSkillLabel,
-            'React.js',
-            'Apollo GraphQL',
-            architectureSkillLabel,
-            'JavaScript',
-          ],
-          start: new Date(2018, 8).toISOString(),
-          end: new Date(2023, 0).toISOString(),
-        },
-        {
-          title: `Javascript & iOS Software Engineer, DevOps`,
-          company: `Econocom`,
-          description: needFrench
-            ? [
-                `Dev : Référent mobilité et technologies Javascript du centre de service Econocom,
+      skills: [
+        englishSkillLabel,
+        'React.js',
+        'Apollo GraphQL',
+        architectureSkillLabel,
+        'JavaScript',
+      ],
+      start: new Date(2018, 8).toISOString(),
+      end: new Date(2023, 0).toISOString(),
+    },
+    {
+      title: `Javascript & iOS Software Engineer, DevOps`,
+      company: `Econocom`,
+      description: needFrench
+        ? [
+            `Dev : Référent mobilité et technologies Javascript du centre de service Econocom,
             j'interviens sur les phases de conception, de chiffrage, d'architecture et de
             développement des projets iOS et des projets front/back/full Javascript.`,
-                `DevOps: Mise en place des plateformes d'intégration / déploiement continue.
+            `DevOps: Mise en place des plateformes d'intégration / déploiement continue.
             Automatisation des tâches. Accompagnement des développeurs sur les technologies Git,
             Docker, GitLab CI, etc...`,
-              ]
-            : [
-                `Dev : Mobility and Javascript technologies referent at the Econocom service center, I work on the design, costing, architecture and development phases of iOS projects and front/back/full Javascript projects.`,
-                `DevOps: Implementation of continuous integration / deployment platforms. Automation of tasks. Support for developers on Git, Docker, GitLab CI technologies, etc...`,
-              ],
-          skills: ['Angular', 'Swift', 'Objective-C', architectureSkillLabel, 'JavaScript'],
-          start: new Date(2015, 10).toISOString(),
-          end: new Date(2018, 7).toISOString(),
-        },
-        {
-          title: `Web Developer, Software & Embedded System Developer`,
-          company: `Winciel`,
-          description: needFrench
-            ? [
-                `Développement de modules Php, C, M.Access, Vb, autour de la solution principale
+          ]
+        : [
+            `Dev : Mobility and Javascript technologies referent at the Econocom service center, I work on the design, costing, architecture and development phases of iOS projects and front/back/full Javascript projects.`,
+            `DevOps: Implementation of continuous integration / deployment platforms. Automation of tasks. Support for developers on Git, Docker, GitLab CI technologies, etc...`,
+          ],
+      skills: ['Angular', 'Swift', 'Objective-C', architectureSkillLabel, 'JavaScript'],
+      start: new Date(2015, 10).toISOString(),
+      end: new Date(2018, 7).toISOString(),
+    },
+    {
+      title: `Web Developer, Software & Embedded System Developer`,
+      company: `Winciel`,
+      description: needFrench
+        ? [
+            `Développement de modules Php, C, M.Access, Vb, autour de la solution principale
             vendu par l'entreprise. Développement d'applications spécifiques pour certains
             clients. Co-développement sur un projet concernant le création d'un système embarqué
             pour les chaudières d'immeuble.`,
-              ]
-            : [
-                `Development of Php, C, M.Access, Vb modules, around the main solution sold by the company. Development of specific applications for certain customers. Co-development on a project concerning the creation of an embedded system for building boilers.`,
-              ],
-          skills: ['PHP', 'JavaScript', 'Java', 'C11', 'Python'],
-          start: new Date(2013, 7).toISOString(),
-          end: new Date(2015, 9).toISOString(),
-        },
-        {
-          title: `Web Developer, Web Designer`,
-          company: `Crédit Agricole`,
-          description: needFrench
-            ? [
-                `Déploiement et amélioration du site dédiée aux sociétaires. Création du site
+          ]
+        : [
+            `Development of Php, C, M.Access, Vb modules, around the main solution sold by the company. Development of specific applications for certain customers. Co-development on a project concerning the creation of an embedded system for building boilers.`,
+          ],
+      skills: ['PHP', 'JavaScript', 'Java', 'C11', 'Python'],
+      start: new Date(2013, 7).toISOString(),
+      end: new Date(2015, 9).toISOString(),
+    },
+    {
+      title: `Web Developer, Web Designer`,
+      company: `Crédit Agricole`,
+      description: needFrench
+        ? [
+            `Déploiement et amélioration du site dédiée aux sociétaires. Création du site
             https://societaire-reunion.fr`,
-                `Création d'une bibliothèque de bannière publicitaire, de site web en collaboration
+            `Création d'une bibliothèque de bannière publicitaire, de site web en collaboration
             avec le service marketing, d'affiche publicitaire destinées a l'impression.
             Modification et participation à la vie du site https://ca-reunion.fr`,
-              ]
-            : [
-                `Deployment and improvement of the site dedicated to members. Creation of the website https://societaire-reunion.fr`,
-                `Creation of a library of advertising banners, websites in collaboration with the marketing department, advertising posters intended for printing. Modification and participation in the life of the site https://ca-reunion.fr`,
-              ],
-          skills: ['PHP', 'JavaScript', 'WordPress', 'Photoshop', 'InDesign'],
-          start: new Date(2012, 1).toISOString(),
-          end: new Date(2013, 2).toISOString(),
-        },
-      ]
+          ]
+        : [
+            `Deployment and improvement of the site dedicated to members. Creation of the website https://societaire-reunion.fr`,
+            `Creation of a library of advertising banners, websites in collaboration with the marketing department, advertising posters intended for printing. Modification and participation in the life of the site https://ca-reunion.fr`,
+          ],
+      skills: ['PHP', 'JavaScript', 'WordPress', 'Photoshop', 'InDesign'],
+      start: new Date(2012, 1).toISOString(),
+      end: new Date(2013, 2).toISOString(),
+    },
+  ]
 }
 
 async function getFeedbacks(locale = 'en') {
   const needFrench = locale === 'fr'
 
   return [
-        {
-          text: needFrench
-            ? [
-                `"Nathanaël a effectué le développement de mon site internet, la migration des données et l'installation de serveur sécurisé dans le cloud.`,
-                `La prestation a été effectuée rapidement, la communication a été facile et mes attentes bien prises en compte même pour des changements de dernière minute.`,
-                `Nathanaël sait s'adapter au client!"`,
-              ]
-            : [
-                `Nathanaël carried out the development of my website, the migration of data and the installation of a secure server in the cloud.`,
-                `The service was carried out quickly, communication was easy and my expectations were well taken into account, even for last minute changes.`,
-                `Nathanaël knows how to adapt to the customer!"`,
-              ],
-          author: `Maëva`,
-          role: `CEO Travel & Food`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Nathanaël est un développeur comme on n'en fait plus : passionné, précis, et d'une grande maturité. Très pédagogue, il a su m'encadrer pendant mon stage, et me permettre de monter en compétence rapidement et efficacement.`,
-                `En ne perdant jamais de vue les bonnes pratiques, il permet à toute l'équipe d'atteindre un code de qualité, et d'utiliser au mieux tous les outils.`,
-                `Ressource pour toute l'équipe et même pour d'autres équipes, il prend le temps de toujours faire bien, et a à cœur la réussite des projets."`,
-              ]
-            : [
-                `"Nathanaël is a developer like no other: passionate, precise, and very mature. Very pedagogical, he knew how to supervise me during my internship, and allowed me to develop my skills quickly and efficiently.`,
-                `By never losing sight of good practices, he allows the whole team to achieve quality code, and to make the best use of all the tools.`,
-                `A resource for the whole team and even for other teams, he takes the time to always do well, and takes the success of projects to heart."`,
-              ],
-          author: `Clementine`,
-          role: `Software Engineer`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Développeur rare, qui regarde et comprend comment fonctionnent les différentes technos et les frameworks. Pourquoi choisir un développeur qui utilise bêtement une techno quand on peut en choisir un qui la comprend pleinement ?"`,
-              ]
-            : [
-                `Rare developer, who watches and understands how different technologies and frameworks work. Why choose a developer who stupidly uses technology when you can choose one who fully understands it?`,
-              ],
-          author: `Sasha`,
-          role: `Frontend Developer`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Nathanaël est une personne passionnée par son métier, pédagogue et très
+    {
+      text: needFrench
+        ? [
+            `"Nathanaël a effectué le développement de mon site internet, la migration des données et l'installation de serveur sécurisé dans le cloud.`,
+            `La prestation a été effectuée rapidement, la communication a été facile et mes attentes bien prises en compte même pour des changements de dernière minute.`,
+            `Nathanaël sait s'adapter au client!"`,
+          ]
+        : [
+            `Nathanaël carried out the development of my website, the migration of data and the installation of a secure server in the cloud.`,
+            `The service was carried out quickly, communication was easy and my expectations were well taken into account, even for last minute changes.`,
+            `Nathanaël knows how to adapt to the customer!"`,
+          ],
+      author: `Maëva`,
+      role: `CEO Travel & Food`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Nathanaël est un développeur comme on n'en fait plus : passionné, précis, et d'une grande maturité. Très pédagogue, il a su m'encadrer pendant mon stage, et me permettre de monter en compétence rapidement et efficacement.`,
+            `En ne perdant jamais de vue les bonnes pratiques, il permet à toute l'équipe d'atteindre un code de qualité, et d'utiliser au mieux tous les outils.`,
+            `Ressource pour toute l'équipe et même pour d'autres équipes, il prend le temps de toujours faire bien, et a à cœur la réussite des projets."`,
+          ]
+        : [
+            `"Nathanaël is a developer like no other: passionate, precise, and very mature. Very pedagogical, he knew how to supervise me during my internship, and allowed me to develop my skills quickly and efficiently.`,
+            `By never losing sight of good practices, he allows the whole team to achieve quality code, and to make the best use of all the tools.`,
+            `A resource for the whole team and even for other teams, he takes the time to always do well, and takes the success of projects to heart."`,
+          ],
+      author: `Clementine`,
+      role: `Software Engineer`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Développeur rare, qui regarde et comprend comment fonctionnent les différentes technos et les frameworks. Pourquoi choisir un développeur qui utilise bêtement une techno quand on peut en choisir un qui la comprend pleinement ?"`,
+          ]
+        : [
+            `Rare developer, who watches and understands how different technologies and frameworks work. Why choose a developer who stupidly uses technology when you can choose one who fully understands it?`,
+          ],
+      author: `Sasha`,
+      role: `Frontend Developer`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Nathanaël est une personne passionnée par son métier, pédagogue et très
             sympathique. J'ai travaillé avec lui sur plusieurs projets. Il témoigne d'une
             grande curiosité, même en design.`,
-                `Son calme, ses connaissances approfondies et sa bonne humeur en font un collègue
+            `Son calme, ses connaissances approfondies et sa bonne humeur en font un collègue
             apprécié.`,
-                `Une collaboration designer-développeur comme on en souhaite !"`,
-              ]
-            : [
-                `"Nathanaël is a person passionate about his job, a teacher and very friendly. I worked with him on several projects. He shows great curiosity, even in design.`,
-                `His calm, in-depth knowledge and good humor make him a valued colleague.`,
-                `A designer-developer collaboration as we wish!"`,
-              ],
-          author: `Sayuli`,
-          role: `UX Designer`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Nathanaël est un développeur passionné avec un très haut niveau d'exigence et des
+            `Une collaboration designer-développeur comme on en souhaite !"`,
+          ]
+        : [
+            `"Nathanaël is a person passionate about his job, a teacher and very friendly. I worked with him on several projects. He shows great curiosity, even in design.`,
+            `His calm, in-depth knowledge and good humor make him a valued colleague.`,
+            `A designer-developer collaboration as we wish!"`,
+          ],
+      author: `Sayuli`,
+      role: `UX Designer`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Nathanaël est un développeur passionné avec un très haut niveau d'exigence et des
             capacités hors norme. J'ai été ravi de travailler avec lui."`,
-              ]
-            : [
-                `"Nathanaël is a passionate developer with very high standards and exceptional abilities. I was delighted to work with him."`,
-              ],
-          author: `Antonio`,
-          role: `Senior Developer`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Un honneur d’avoir pu travailler avec lui. Une personne avec qui j’ai énormément appris.`,
-                `Que cela soit sur le plan technique ou organisationnel, Nathanael m’a fait évoluer.`,
-                `Une personne très professionnelle qui va au bout de ses missions et que j’ai eu plaisir à rencontrer et qui enrichit une équipe. Toujours de bons conseils pour aller de l’avant sur un projet."`,
-              ]
-            : [
-                `"An honor to have been able to work with him. A person with whom I learned a lot.`,
-                `Whether on a technical or organizational level, Nathanaël made me evolve.`,
-                `A very professional person who goes to the end of his missions and whom I had the pleasure of meeting and who enriches a team. Always good advice to move forward on a project."`,
-              ],
-          author: `Paul`,
-          role: `Backend Developer`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Travailler avec Nathanaël est un immense plaisir : curieux, passionné, garant des bonnes pratiques, il pousse toute une équipe à son meilleur.`,
-                `Rapidement au sein d'Econocom, il est devenu indispensable sur tous les sujets transverses comme l'intégration continue, le versionning, les tests automatisés.`,
-                `Excellent développeur iOS et JS, n'hésitez pas à lire son blog qui est une pépite technique."`,
-              ]
-            : [
-                `"Working with Nathanaël is an immense pleasure: curious, passionate, guarantor of good practices, he pushes an entire team to its best.`,
-                `Quickly within Econocom, he became essential on all cross-functional topics such as continuous integration, versioning, automated testing.`,
-                `Excellent iOS and JS developer, do not hesitate to read his blog which is a technical nugget."`,
-              ],
-          author: `Coline`,
-          role: `Lead Developer`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Nathanael, au delà de ses compétences techniques, a la capacité à comprendre les enjeux business du produit et à les intégrer dans sa réflexion pour développer en prenant en compte l’ensemble des besoins clients/ utilisateurs mais aussi les enjeux liés à l’entreprise. Il sait prendre du recul sur son travail et notamment le faire challenger par les utilisateurs afin de l’améliorer en continu.`,
-                `Il est force de proposition face à d’éventuelles difficultés et peu apporter un point de vue intéressant sur de nombreux sujets.`,
-                `Son implication chez ferpection sur des sujets au delà de ses compétences techniques (financiers, RH, commerciaux) lui ont permis de prendre de la hauteur sur son travail grâce à cette vision plus globale. Ce qui n’a fait qu’augmenter la qualité de ce dernier.`,
-                `Nathanael fait preuve de solidarité et d’entraide et il est agréable de travailler avec lui au quotidien.`,
-                `Je recommande complètement Nathanael, il est pour moi, un véritable atout au sein d’une équipe."`,
-              ]
-            : [
-                `"Nathanaël, beyond his technical skills, has the ability to understand the business challenges of a product and incorporate them into his thinking. He develops solutions that take into account not only customer/user needs but also the company’s objectives. He knows how to take a step back from his work and seeks feedback from users to continuously improve it.`,
-                `He is proactive in addressing potential challenges and brings valuable insights to a variety of topics.`,
-                `His involvement at Ferpection in areas beyond his technical expertise (finance, HR, sales) allowed him to gain a broader perspective on his work. This global vision has further enhanced the quality of his contributions.`,
-                `Nathanaël demonstrates solidarity and a collaborative spirit, making him a pleasure to work with on a daily basis.`,
-                `I wholeheartedly recommend Nathanaël; he is, in my opinion, a true asset to any team."`,
-              ],
-          author: `Manon`,
-          role: `Head of Operation`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"Nathanaël est un excellent collègue. Il réfléchit avant de se lancer dans le code, il contribue à la conception des idées et apporte des solutions techniques.`,
-                `Il a une vision globale, non seulement de la structure technique, mais aussi du projet et de la stratégie globale.`,
-                `Ce fut un plaisir de travailler avec lui sur des projets de conception UX."`,
-              ]
-            : [
-                `"Nathanaël is a great colleague. He thinks things through before leaping into code, he helps design ideas and brings technical solutions to the table.`,
-                `He has an overall vision of not only the technical structure, but also of the project and global strategy.`,
-                `It was a pleasure working with him on UX design projects."`,
-              ],
-          author: `Marie`,
-          role: `Senior Product Designer`,
-        },
-        {
-          text: needFrench
-            ? [
-                `"J'ai eu le plaisir de travailler avec Nathanaël durant quelques mois au sein de l'entreprise Ferpection.`,
-                `C'est une personne à l'écoute, qui prend le temps de comprendre vos besoins afin de produire les systèmes/fonctionnalités qui y répondent au mieux. Il est également demandeur de retours sur son travail dans un souci d'amélioration continue, ce qui est très appréciable.`,
-                `Je recommande vivement Nathanël, car c'est une personne de confiance avec qui il est agréable de travailler."`,
-              ]
-            : [
-                `"I had the pleasure of working with Nathanaël for a few months at Ferpection.`,
-                `He is a great listener who takes the time to understand your needs in order to deliver systems and features that best meet them. He actively seeks feedback on his work to continuously improve, which is highly appreciated.`,
-                `I highly recommend Nathanaël as he is a trustworthy person and a pleasure to work with."`,
-              ],
-          author: `Clara`,
-          role: `UX Research Consultant`,
-        },
-      ]
+          ]
+        : [
+            `"Nathanaël is a passionate developer with very high standards and exceptional abilities. I was delighted to work with him."`,
+          ],
+      author: `Antonio`,
+      role: `Senior Developer`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Un honneur d’avoir pu travailler avec lui. Une personne avec qui j’ai énormément appris.`,
+            `Que cela soit sur le plan technique ou organisationnel, Nathanael m’a fait évoluer.`,
+            `Une personne très professionnelle qui va au bout de ses missions et que j’ai eu plaisir à rencontrer et qui enrichit une équipe. Toujours de bons conseils pour aller de l’avant sur un projet."`,
+          ]
+        : [
+            `"An honor to have been able to work with him. A person with whom I learned a lot.`,
+            `Whether on a technical or organizational level, Nathanaël made me evolve.`,
+            `A very professional person who goes to the end of his missions and whom I had the pleasure of meeting and who enriches a team. Always good advice to move forward on a project."`,
+          ],
+      author: `Paul`,
+      role: `Backend Developer`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Travailler avec Nathanaël est un immense plaisir : curieux, passionné, garant des bonnes pratiques, il pousse toute une équipe à son meilleur.`,
+            `Rapidement au sein d'Econocom, il est devenu indispensable sur tous les sujets transverses comme l'intégration continue, le versionning, les tests automatisés.`,
+            `Excellent développeur iOS et JS, n'hésitez pas à lire son blog qui est une pépite technique."`,
+          ]
+        : [
+            `"Working with Nathanaël is an immense pleasure: curious, passionate, guarantor of good practices, he pushes an entire team to its best.`,
+            `Quickly within Econocom, he became essential on all cross-functional topics such as continuous integration, versioning, automated testing.`,
+            `Excellent iOS and JS developer, do not hesitate to read his blog which is a technical nugget."`,
+          ],
+      author: `Coline`,
+      role: `Lead Developer`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Nathanael, au delà de ses compétences techniques, a la capacité à comprendre les enjeux business du produit et à les intégrer dans sa réflexion pour développer en prenant en compte l’ensemble des besoins clients/ utilisateurs mais aussi les enjeux liés à l’entreprise. Il sait prendre du recul sur son travail et notamment le faire challenger par les utilisateurs afin de l’améliorer en continu.`,
+            `Il est force de proposition face à d’éventuelles difficultés et peu apporter un point de vue intéressant sur de nombreux sujets.`,
+            `Son implication chez ferpection sur des sujets au delà de ses compétences techniques (financiers, RH, commerciaux) lui ont permis de prendre de la hauteur sur son travail grâce à cette vision plus globale. Ce qui n’a fait qu’augmenter la qualité de ce dernier.`,
+            `Nathanael fait preuve de solidarité et d’entraide et il est agréable de travailler avec lui au quotidien.`,
+            `Je recommande complètement Nathanael, il est pour moi, un véritable atout au sein d’une équipe."`,
+          ]
+        : [
+            `"Nathanaël, beyond his technical skills, has the ability to understand the business challenges of a product and incorporate them into his thinking. He develops solutions that take into account not only customer/user needs but also the company’s objectives. He knows how to take a step back from his work and seeks feedback from users to continuously improve it.`,
+            `He is proactive in addressing potential challenges and brings valuable insights to a variety of topics.`,
+            `His involvement at Ferpection in areas beyond his technical expertise (finance, HR, sales) allowed him to gain a broader perspective on his work. This global vision has further enhanced the quality of his contributions.`,
+            `Nathanaël demonstrates solidarity and a collaborative spirit, making him a pleasure to work with on a daily basis.`,
+            `I wholeheartedly recommend Nathanaël; he is, in my opinion, a true asset to any team."`,
+          ],
+      author: `Manon`,
+      role: `Head of Operation`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"Nathanaël est un excellent collègue. Il réfléchit avant de se lancer dans le code, il contribue à la conception des idées et apporte des solutions techniques.`,
+            `Il a une vision globale, non seulement de la structure technique, mais aussi du projet et de la stratégie globale.`,
+            `Ce fut un plaisir de travailler avec lui sur des projets de conception UX."`,
+          ]
+        : [
+            `"Nathanaël is a great colleague. He thinks things through before leaping into code, he helps design ideas and brings technical solutions to the table.`,
+            `He has an overall vision of not only the technical structure, but also of the project and global strategy.`,
+            `It was a pleasure working with him on UX design projects."`,
+          ],
+      author: `Marie`,
+      role: `Senior Product Designer`,
+    },
+    {
+      text: needFrench
+        ? [
+            `"J'ai eu le plaisir de travailler avec Nathanaël durant quelques mois au sein de l'entreprise Ferpection.`,
+            `C'est une personne à l'écoute, qui prend le temps de comprendre vos besoins afin de produire les systèmes/fonctionnalités qui y répondent au mieux. Il est également demandeur de retours sur son travail dans un souci d'amélioration continue, ce qui est très appréciable.`,
+            `Je recommande vivement Nathanël, car c'est une personne de confiance avec qui il est agréable de travailler."`,
+          ]
+        : [
+            `"I had the pleasure of working with Nathanaël for a few months at Ferpection.`,
+            `He is a great listener who takes the time to understand your needs in order to deliver systems and features that best meet them. He actively seeks feedback on his work to continuously improve, which is highly appreciated.`,
+            `I highly recommend Nathanaël as he is a trustworthy person and a pleasure to work with."`,
+          ],
+      author: `Clara`,
+      role: `UX Research Consultant`,
+    },
+  ]
 }
 
 function formatDate(date: Date, locale = 'fr') {

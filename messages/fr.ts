@@ -6,7 +6,7 @@ export default {
       desc: `Nathanaël est un ingénieur logiciel passionné de code, d'entreprenariat et de café.`,
     },
     communitySection: {
-      title: `Une communauté de plus de 12k de geeks`,
+      title: `Une communauté de plus de 15k de geeks`,
       text: `<p>
           Je partage ma passion du code et de la tech via différents médias (magazine
           numérique et papier, réseaux sociaux, mail, etc).
@@ -66,31 +66,29 @@ export default {
     copyright: `2022 Nathanaël Cherrier. Tous droits réservés.`,
   },
   DeveloperPage: {
-    title: `Un développeur fullstack spécialisé dans le développement frontend et mobile`,
+    // title: `Un développeur fullstack spécialisé dans le développement frontend et mobile`,
+    title: `Je transforme vos idées les plus folles en applications inspirantes et performantes`,
     meta: {
       title: `Nathanaël Cherrier – Sénior Lead Développeur, Codeur freelance, fan de Swift et JavaScript`,
       desc: `Nathanaël est un ingénieur logiciel, passionné de code qui peut vous aider à counstruire tout ce que vous voulez en utilisant les technologies web et mobile. Demandez votre devis !`,
     },
-    callToAction1: `Demander un devis`,
+    callToAction1: `Réverser un appel gratuit`,
     mobileSection: {
       insight: `
-        <p>+10 applications iOS développées pour des entreprises leader de l'IT</p>
-        <p>Maîtrise des applications Swift backend et iOS</p>
+        <p>+10 applications iOS développées pour des entreprises leader de leur industrie</p>
+        <p>Maîtrise du développement d'applications iOS et Android</p>
       `,
       text: `
         <p>
-          Avant même le JavaScript, je suis développeur d'application pour iOS. J'ai commencé par apprendre l'Objective-C et puis
-          j'ai changé pour Swift lorsqu'Apple l'a annoncé officiellement.
+          Développeur d'application pour iOS depuis l'époque de l'Objective-C , je conçois maintenant des applications iOS native en Swift 
+          ainsi que des applications Android native en Kotlin.
         </p>
         <p>
-          Mettons les choses au clair dès maintenant : je sais coder en JavaScript mais lorsque l'on parle de développement mobile, je
-          crois en la superiorité des langages et solutions natives comme Swift ou Kotlin. C'est pour cette raison que je
-          recommande ces solutions natives à mes clients plutôt que d'utiliser des technologies hybride.
+          Selon les besoins et les contraintes de votre projet, je peux utiliser React Native comme technologie alternative. 
         </p>
         <p>
-          J'apprécie tant le langage Swift (qui a été bati sur le meilleur de Python, C/C++, JavaScript et l'héritage de l'Objective-C)
-          que j'ai décidé d'apprendre à l'utiliser également au backend, afin de proposer à mes clients une solution
-          complète basée sur ce langage.
+          Malgrès tout, dans beaucoup de cas, je vous conseillerais l'utilisation de langages et solutions natives comme Swift ou Kotlin. 
+          Notamment pour des applications qui ont besoin de performance ou d'interaction avec des composants spécifiques du système.
         </p>
       `,
     },
@@ -135,13 +133,13 @@ export default {
           et vous aider à atteindre vos objectifs.
         </p>
       `,
-      callToAction: `Me contacter pour un devis personnalisé`,
+      callToAction: `Me contacter pour un devis gratuit`,
     },
     experience: {
       title: `Expériences Précédentes`,
       callToAction: {
         text: `Vous avez besoin d'une application ou d'un site web ? Je peux vous aider à construire vos prochains projets.`,
-        button: `Demander un devis`,
+        button: `Demander un devis gratuit`,
         fallback: `En voir plus sur LinkedIn`,
       },
       skills: `Compétences :`,
@@ -153,7 +151,7 @@ export default {
       title: `Quelques avis`,
       callToAction: {
         text: `Rejoingnez mes clients et mes collaborateurs satisfaits. Travaillons ensemble !`,
-        button: `Prendre RDV pour en parler`
+        button: `Prendre RDV gratuitement pour en parler`
       }
     },
   },
@@ -307,7 +305,7 @@ export default {
           <li>Formations professionnelles : à partir de 700€ / participant</li>
         </ul>
       `,
-      callToAction: `Me contacter pour un devis`,
+      callToAction: `Demander un devis gratuit`,
     },
     experience: {
       title: `Expériences Précédentes`,

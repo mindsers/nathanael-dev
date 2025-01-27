@@ -6,7 +6,7 @@ export default {
       desc: `Nathanaël is a software engineer, passionate about code, business and coffee.`,
     },
     communitySection: {
-      title: `A community of +12k geeks`,
+      title: `A community of +15k geeks`,
       text: `<p>
           I share my passion for code and tech via different media (digital and paper magazine, social networks, email, etc.).
         </p>
