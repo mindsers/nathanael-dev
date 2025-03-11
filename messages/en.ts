@@ -1,9 +1,9 @@
-export default {
+const en = {
   Home: {
     title: `Senior lead developer, blogger, influencer & entrepreneur`,
     meta: {
       title: `Nathanaël Cherrier – Coder, Blogger, Influencer`,
-      desc: `Nathanaël is a software engineer, passionate about code, business and coffee.`,
+      desc: 'Nathanaël is a software engineer, passionate about code, business and coffee.',
     },
     communitySection: {
       title: `A community of +15k geeks`,
@@ -105,29 +105,28 @@ export default {
       `,
     },
     TJMSection: {
+      // <p>Une facturation au forfait adapté à votre projet</p>
+      // <p>Ou un TJM de 700€ pour les missions en régie</p>
       insight: `
-        <p>A flat rate pricing adapted to your project</p>
-        <p>Or a €700 daily rate for long term mission</p>
+        <p>A development studio for your fixed-price projects</p>
+        <p>A freelancer available for time-and-materials assignments</p>
       `,
       text: `
         <p>
-          Whether it's setting up your e-commerce site with Shopify, developing a
-          business plugin for your CMS, or designing a complete application
-          "from scratch", I offer you a budgeted turnkey service, from the start.
+          Thanks to my experience as CTO, VP of Engineering, Tech Lead, and Lead Developer,
+          I can adapt to your needs, whether they are strategic or production-related.
         </p>
         <p>
-          For large web or mobile development projects, <strong>I can also set up
-          a team of qualified developers</strong> to offer you a quality solution
-          in a reasonable time and price.
+          Need a consultant who can support your development teams?
+          I am available for web and mobile development projects, growth support, team structuring, etc. On a managed contract at a negotiable daily rate of €700.
         </p>
         <p>
-          If you prefer to work with me in management (service in the client's teams),
-          the pricing applied will be an average daily rate of 700 euros.
-          I can thus <strong>integrate your development team as a Senior
-          Lead Developer</strong> and help you achieve your goals.
+          Don’t have an in-house Tech team or prefer to work with an external expert team?
+          Your needs might include setting up your e-commerce site, developing a specialized plugin for your CMS, creating a website to showcase your business, or designing a complete SaaS application. My web development studio can offer you a turnkey service with a predefined budget.
         </p>
       `,
-      callToAction: `Ask for a custom quote`,
+      callToAction: "Request a free quote",
+      fallbackAction: "Book a free call"
     },
     experience: {
       title: `Previous Experiences`,
@@ -414,3 +413,5 @@ export default {
     },
   }
 }
+
+export default en

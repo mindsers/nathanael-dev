@@ -25,7 +25,7 @@ const fr = {
       linkText: "Programmer une séance de mentoring",
     },
     experienceSection: {
-      title: `Plus de 15 ans d'expérience en développement web et mobile`,
+      title: `Plus de 12 ans d'expérience en développement web et mobile`,
       text: `<p>
           Mon histoire avec le code a commencé en 2005. Et, depuis, j'ai navigué entre le back
           et le front, le web et le mobile, le logiciel de bureau et l'embarqué en fonction de
@@ -36,7 +36,7 @@ const fr = {
           Swift et JavaScript.
         </p>
         <p>
-          Je suis maintenant <strong>Senior lead développeur freelance</strong> avec plus de 7
+          Je suis maintenant <strong>Senior lead développeur freelance</strong> avec plus de +12
           ans d'expérience professionnelle avec JavaScript et Swift.
         </p>`,
       linkText: "Je développe votre projet",
@@ -67,7 +67,7 @@ const fr = {
   },
   DeveloperPage: {
     // title: `Un développeur fullstack spécialisé dans le développement frontend et mobile`,
-    title: "Je transforme vos idées les plus folles en applications inspirantes et performantes",
+    title: "Je transforme vos idées les plus folles en apps inspirantes et performantes",
     meta: {
       title: "Nathanaël Cherrier – Sénior Lead Développeur, Codeur freelance, fan de Swift et JavaScript",
       desc: "Nathanaël est un ingénieur logiciel, passionné de code qui peut vous aider à construire tout ce que vous voulez en utilisant les technologies web et mobile. Demandez votre devis !",
@@ -94,7 +94,7 @@ const fr = {
     },
     webSection: {
       insight: `
-        <p>Plus de 10 ans d'expérience</p>
+        <p>Plus de 12 ans d'expérience</p>
         <p>Maîtrise du développement JavaScript backend et frontend</p>
       `,
       text: `
@@ -110,24 +110,33 @@ const fr = {
       `,
     },
     TJMSection: {
+      // <p>Une facturation au forfait adapté à votre projet</p>
+      // <p>Ou un TJM de 700€ pour les missions en régie</p>
       insight: `
-        <p>Une facturation au forfait adapté à votre projet</p>
-        <p>Ou un TJM de 700€ pour les missions en régie</p>
+        <p>Un studio de développement pour vos projets au forfait</p>
+        <p>Un freelance disponible pour des missions en régie</p>
       `,
       text: `
         <p>
-          Que ce soit pour la mise en place de votre site e-commerce avec Shopify,
-          le développement d'un plugin métier pour votre CMS, ou la conception
-          d'une application complète "from scratch", je vous propose une
-          prestation clé en main budgétée dès le départ.
+          Grâce à mes expériences en tant que CTO, VP of Engineering, Tech Lead et Lead développeur,
+          je suis capable de m'adapter à vos besoins, qu'ils soient stratégiques ou de production.
         </p>
         <p>
-          Pour les gros projets de développement web ou mobile, <strong>je peux également monter
-          une équipe de développeurs qualifiés</strong> pour vous proposer une solution de qualité
-          dans un temps et un prix raisonnable.
+          Besoin d'un consultant capable de soutenir vos équipes de développement ?
+          Je suis disponible pour des missions de développement web, de développement mobile, 
+          d'accompagnement à la croissance, de structuration d'équipe, etc. En régie, 
+          à un TJM de 700 € négociable.
+        </p>
+        <p>
+          Vous n'avez pas d'équipe Tech interne ou vous préférez passer par une équipe externe experte ?
+          Vos besoins concernent la mise en place de votre site e-commerce, le développement d'un plugin 
+          métier pour votre CMS, le développement d'un site présentant votre activité ou la conception 
+          d'une application SaaS complète. Mon studio de développement web peut vous proposer une 
+          prestation clé en main budgétée dès le départ.
         </p>
       `,
-      callToAction: "Me contacter pour un devis gratuit",
+      callToAction: "Demander pour un devis gratuit",
+      fallbackAction: "Réservcer un appel gratuit"
     },
     experience: {
       title: "Expériences Précédentes",
