@@ -389,7 +389,8 @@ const fr = {
         </p>
         <ul>
           <li>Mentorat à la carte (1 séance quand vous le souhaitez) : 100€ / séance</li>
-          <li>Mentorat régulier (1 séance par semaine pendant 1 à 6 mois) : à partir de 250€ / mois</li>
+          <li>Mentorat régulier (4 séances par mois pendant 1 à 6 mois) : à partir de 250€ / mois</li>
+          <li>Mentorat régulier++ (7 séances par mois pendant 1 à 6 mois) : à partir de 700€ / mois</li>
         </ul>
         <p>Même si vous pensez avoir besoin d'un mentorat régulier, la première séance que nous faisons ensemble doit obligatoirement être une séance à la carte.</p>
       `,
