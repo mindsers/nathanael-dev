@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -146,8 +146,19 @@ async function getFeedbacks(locale = 'en') {
             : [
                 `"I really appreciated the mentoring session. I feel that you were able to understand my current role within the team and the surrounding environment."`,
               ],
-          author: `Valérie`,
-          role: `Freelance Developer`,
+          author: "Valérie",
+          role: "Freelance Developer",
+        },
+        {
+          text: needFrench
+            ? [
+                `"J’ai eu le plaisir d’échanger avec Nathanaël Cherrier sur des sujets tech passionnants : 1/ le choix des technologies les plus adaptées à mon projet, 2/ l’architecture logicielle et ses impacts sur la scalabilité, 3/ aligner le code à 100 % avec les besoins du client. Ces discussions sont toujours enrichissantes et me permettent d’affiner mon expertise. Être entouré de développeurs qualifiés et bienveillants, c’est une vraie force pour progresser continuellement."`,
+              ]
+            : [
+                `"I had the pleasure of discussing exciting tech topics with Nathanaël Cherrier: 1/ choosing the most suitable technologies for my project, 2/ exploring software architecture and its impact on scalability, 3/ aligning the code 100% with the client's needs. These discussions are always enriching and help me refine my expertise. Being surrounded by highly qualified and supportive developers is a true asset for continuous progress."`,
+              ],
+          author: "Vincent",
+          role: "Freelance Developer",
         },
       ]
 }
