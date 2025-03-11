@@ -256,7 +256,7 @@
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
   grid-template-areas:
-    'feedback1 feedback1 feedback2 feedback2'
+    'feedback1 feedback1 feedback1 feedback2'
     'feedback3 feedback4 feedback4 feedback5'
     'feedback6 feedback6 feedback7 feedback7';
   column-gap: 10px;

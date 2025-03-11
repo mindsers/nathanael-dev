@@ -386,18 +386,20 @@ export default {
       `,
       text: `
         <p>
-          Depending on your situation and the problems you’re trying to solve, your mentoring needs will vary. 
-          Do you need just one session to answer a simple question, or ongoing support?
+          Depending on your situation or the problems you're looking to solve, your mentoring needs will vary. 
+          Do you need a single session to answer a simple question, or are you looking for ongoing support over time?
         </p>
         <p>
-          I offer a flexible approach where you can book 30 minutes as needed or opt for a regular monthly plan 
-          to discuss and track progress consistently:
+          I offer a flexible, on-demand option where you can book a 30-minute session as needed, as well as 
+          a "regular" subscription-based plan that allows us to meet consistently for follow-up discussions:
         </p>
         <ul>
-          <li>One-off mentoring: €100 / 30 min</li>
-          <li>Regular mentoring: €1500 / month (discounted rates available)</li>
+          <li>On-demand mentoring (one session whenever you need it): €100 per session</li>
+          <li>Regular mentoring (one session per week for 1 to 6 months): from €250 per month</li>
         </ul>
-        <p>Even if you’re considering regular mentoring, the first session must be booked as a one-off.</p>
+        <p>
+          Even if you think you’ll need regular mentoring, our first session together must be an on-demand session.
+        </p>
       `,
       callToAction: `Book your first session`,
     },

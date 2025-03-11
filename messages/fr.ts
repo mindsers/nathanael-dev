@@ -388,10 +388,10 @@ const fr = {
           de vos besoins et puis une formule "régulière" mensualisée qui permet de régulièrement se parler pour faire un suivi :
         </p>
         <ul>
-          <li>Mentorat à la carte : 100€ / 30 min call</li>
-          <li>Mentorat régulier : 1050€ / mois (tarif dégressif)</li>
+          <li>Mentorat à la carte (1 séance quand vous le souhaitez) : 100€ / séance</li>
+          <li>Mentorat régulier (1 séance par semaine pendant 1 à 6 mois) : à partir de 250€ / mois</li>
         </ul>
-        <p>Même si vous pensez avoir besoin d'un mentorat régulier, la première séance doit obligatoirement être une séance à la carte.</p>
+        <p>Même si vous pensez avoir besoin d'un mentorat régulier, la première séance que nous faisons ensemble doit obligatoirement être une séance à la carte.</p>
       `,
       callToAction: 'Réserver une première séance',
     },
