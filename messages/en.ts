@@ -58,7 +58,7 @@ export default {
     copyright: `2022 Nathanaël Cherrier. All rights reserved.`,
   },
   DeveloperPage: {
-    title: `A full stack developer specialized in frontend and mobile dev`,
+    title: `I build inspiring web and mobile applications from your thoughts and ideas`,
     meta: {
       title: `Nathanaël Cherrier – Senior Lead Developer, Freelance Coder, JavaScript enthousiast`,
       desc: `Nathanaël is a software engineer, passionate about code who can help you build whatever you want using web and mobile technology. Ask for a quote!`,
@@ -67,7 +67,7 @@ export default {
     mobileSection: {
       insight: `
         <p>+10 iOS apps developed for leading tech companies</p>
-        <p>Master Swift in backend and frontend app</p>
+        <p>Master iOS and Android native app development</p>
       `,
       text: `
         <p>

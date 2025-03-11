@@ -1,28 +1,28 @@
-export default {
+const fr = {
   Home: {
-    title: `Sénior lead développeur, blogueur, influenceur & entrepreneur`,
+    title: "Sénior lead développeur, blogueur, influenceur & entrepreneur",
     meta: {
-      title: `Nathanaël Cherrier – Codeur, Blogueur, Influenceur`,
-      desc: `Nathanaël est un ingénieur logiciel passionné de code, d'entreprenariat et de café.`,
+      title: "Nathanaël Cherrier – Codeur, Blogueur, Influenceur",
+      desc: `Nathanaël est un ingénieur logiciel passionné de code, d'entrepreneuriat et de café.`,
     },
     communitySection: {
-      title: `Une communauté de plus de 15k de geeks`,
+      title: "Une communauté de plus de 15k de geeks",
       text: `<p>
           Je partage ma passion du code et de la tech via différents médias (magazine
           numérique et papier, réseaux sociaux, mail, etc).
         </p>
         <p>
           Tout confondu, ce sont plus de douze mille personnes qui suivent mes aventures
-        d'entrepreneur tech et de développeur.
+          d'entrepreneur tech et de développeur.
         </p>`,
       linkText: `Faire du marketing d'influence`,
     },
     coachingSection: {
-      title: `Besoin de discuter avec un expert ?`,
+      title: "Besoin de discuter avec un expert ?",
       text: `Se lancer dans le développement ou même une reconversion professionnelle peut faire
       peur. Besoin d'un mentor JavaScript ou de poser des questions à un professionnel ?
       Je peux vous aider.`,
-      linkText: `Programmer une séance de mentoring`,
+      linkText: "Programmer une séance de mentoring",
     },
     experienceSection: {
       title: `Plus de 15 ans d'expérience en développement web et mobile`,
@@ -39,69 +39,69 @@ export default {
           Je suis maintenant <strong>Senior lead développeur freelance</strong> avec plus de 7
           ans d'expérience professionnelle avec JavaScript et Swift.
         </p>`,
-      linkText: `Je développe votre projet`,
+      linkText: "Je développe votre projet",
     },
     menu: {
-      mentor: `Mentor`,
-      developer: `Développeur`,
-      writter: `Auteur`,
-      influencer: `Influenceur`,
-      entrepreneur: `Entrepreneur`,
-      blogger: `Blogueur`,
-      trainer: `Formateur`,
+      mentor: "Mentor",
+      developer: "Développeur",
+      writter: "Auteur",
+      influencer: "Influenceur",
+      entrepreneur: "Entrepreneur",
+      blogger: "Blogueur",
+      trainer: "Formateur",
     },
   },
   Header: {
     menu: {
-      mentor: `Mentor`,
-      developer: `Développeur`,
-      writter: `Auteur`,
-      influencer: `Influenceur`,
-      entrepreneur: `Entrepreneur`,
-      blogger: `Blogueur`,
-      trainer: `Formateur`,
+      mentor: "Mentor",
+      developer: "Développeur",
+      writter: "Auteur",
+      influencer: "Influenceur",
+      entrepreneur: "Entrepreneur",
+      blogger: "Blogueur",
+      trainer: "Formateur",
     },
   },
   Footer: {
-    copyright: `2022 Nathanaël Cherrier. Tous droits réservés.`,
+    copyright: "2022 Nathanaël Cherrier de MindsersIT. Tous droits réservés.",
   },
   DeveloperPage: {
     // title: `Un développeur fullstack spécialisé dans le développement frontend et mobile`,
-    title: `Je transforme vos idées les plus folles en applications inspirantes et performantes`,
+    title: "Je transforme vos idées les plus folles en applications inspirantes et performantes",
     meta: {
-      title: `Nathanaël Cherrier – Sénior Lead Développeur, Codeur freelance, fan de Swift et JavaScript`,
-      desc: `Nathanaël est un ingénieur logiciel, passionné de code qui peut vous aider à counstruire tout ce que vous voulez en utilisant les technologies web et mobile. Demandez votre devis !`,
+      title: "Nathanaël Cherrier – Sénior Lead Développeur, Codeur freelance, fan de Swift et JavaScript",
+      desc: "Nathanaël est un ingénieur logiciel, passionné de code qui peut vous aider à construire tout ce que vous voulez en utilisant les technologies web et mobile. Demandez votre devis !",
     },
-    callToAction1: `Réverser un appel gratuit`,
+    callToAction1: "Réserver un appel gratuit",
     mobileSection: {
       insight: `
-        <p>+10 applications iOS développées pour des entreprises leader de leur industrie</p>
+        <p>+10 applications iOS développées pour des entreprises leaders de leur industrie</p>
         <p>Maîtrise du développement d'applications iOS et Android</p>
       `,
       text: `
         <p>
-          Développeur d'application pour iOS depuis l'époque de l'Objective-C , je conçois maintenant des applications iOS native en Swift 
-          ainsi que des applications Android native en Kotlin.
+          Développeur d'application pour iOS depuis l'époque de l'Objective-C, je conçois maintenant des applications iOS natives en Swift 
+          ainsi que des applications Android natives en Kotlin.
         </p>
         <p>
           Selon les besoins et les contraintes de votre projet, je peux utiliser React Native comme technologie alternative. 
         </p>
         <p>
-          Malgrès tout, dans beaucoup de cas, je vous conseillerais l'utilisation de langages et solutions natives comme Swift ou Kotlin. 
+          Malgré tout, dans beaucoup de cas, je vous conseillerais l'utilisation de langages et solutions natives comme Swift ou Kotlin. 
           Notamment pour des applications qui ont besoin de performance ou d'interaction avec des composants spécifiques du système.
         </p>
       `,
     },
     webSection: {
       insight: `
-        <p>Plus de 10 ans d'expériences</p>
-        <p>Maitrise du développement JavaScript backend et frontend</p>
+        <p>Plus de 10 ans d'expérience</p>
+        <p>Maîtrise du développement JavaScript backend et frontend</p>
       `,
       text: `
         <p>
           Je <strong>conçois, développe et maintiens des applications JavaScript depuis 2015</strong> et l'avènement du tsunami
           ES6 dans le monde du web. Je suis habitué à travailler autant sur des sites web simples utilisant du VanillaJS
-          que d'énormes applications React/Angular qui supportent des contraintes de traffic importantes.
+          que d'énormes applications React/Angular qui supportent des contraintes de trafic importantes.
         </p>
         <p>
           Je pense que JavaScript est le langage le plus polyvalent qui permet de répondre à la plupart des besoins de mes clients.
@@ -126,78 +126,71 @@ export default {
           une équipe de développeurs qualifiés</strong> pour vous proposer une solution de qualité
           dans un temps et un prix raisonnable.
         </p>
-        <p>
-          Si vous préférez travailler avec moi en régie (prestation dans les équipes du client),
-          la tarification appliquée sera un taux journalier moyen de 700 euros. Je peux ainsi <strong>intégrer vos équipes
-          de développement en tant que Senior Lead Développeur</strong>
-          et vous aider à atteindre vos objectifs.
-        </p>
       `,
-      callToAction: `Me contacter pour un devis gratuit`,
+      callToAction: "Me contacter pour un devis gratuit",
     },
     experience: {
-      title: `Expériences Précédentes`,
+      title: "Expériences Précédentes",
       callToAction: {
         text: `Vous avez besoin d'une application ou d'un site web ? Je peux vous aider à construire vos prochains projets.`,
-        button: `Demander un devis gratuit`,
-        fallback: `En voir plus sur LinkedIn`,
+        button: "Demander un devis gratuit",
+        fallback: "En voir plus sur LinkedIn",
       },
-      skills: `Compétences :`,
-      duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
-      fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
+      skills: "Compétences :",
+      duration: "{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}",
+      fallback: `⚠️ Impossible de montrer la liste des expériences pour l'instant. Réessayer plus tard. ⚠️`,
     },
     feedbacks: {
       fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
-      title: `Quelques avis`,
+      title: "Quelques avis",
       callToAction: {
-        text: `Rejoingnez mes clients et mes collaborateurs satisfaits. Travaillons ensemble !`,
-        button: `Prendre RDV gratuitement pour en parler`
-      }
+        text: "Rejoignez mes clients et mes collaborateurs satisfaits. Travaillons ensemble !",
+        button: "Prendre RDV gratuitement pour en parler",
+      },
     },
   },
   InfluencerPage: {
-    // title: `Un influenceur avec une communauté forte et engagée, passionné de code et de café`,
-    title: `Je partage ma passion du code et du café avec une communauté de plus de 15k geeks`,
+    title: "Je partage ma passion du code et du café avec une communauté de plus de 15k geeks",
     meta: {
-      title: `Nathanaël Cherrier – Influenceur tech qui partage sur le codage et le café`,
-      desc: `Nathanaël est un influenceur tech avec une communauté très engagée, passionné de code et de café. Faisons la promotion de votre marque !`,
+      title: "Nathanaël Cherrier – Influenceur tech qui partage sur le codage et le café",
+      desc: "Nathanaël est un influenceur tech avec une communauté très engagée, passionné de code et de café. Faisons la promotion de votre marque !",
     },
     callToAction: `Faisons du marketing d'influence ensemble !`,
     brands: {
-      title: `Marques partnaires`,
+      title: "Marques partenaires",
       description: `J'ai travaillé avec des marques qui sont leaders dans leur industrie sur des contrats ponctuels ou à long terme.`,
-      callToAction: `Ajoutez votre logo à la liste`,
+      callToAction: "Ajoutez votre logo à la liste",
     },
     pricing: {
-      title: `Tarification`,
-      legals1: `Les prix sont indicatifs. Ils seront adaptés en fonction de votre projet, de sa complexité, du nombre de livrables, etc. Tous les projets incluent un reporting statistique.`,
+      title: "Tarification",
+      legals1: "Les prix sont indicatifs. Ils seront adaptés en fonction de votre projet, de sa complexité, du nombre de livrables, etc. Tous les projets incluent un reporting statistique.",
       legals2: `Les projets ne sont acceptés que s'ils correspondent à notre ligne éditoriale et s'ils apportent de la valeur aux lecteurs/followers. La rédaction a tout pouvoir pour refuser toute demande qui, selon elle, ne répond pas à ces exigences.`,
-      callToAction: `Demandez un devis gratuit !`,
-      price: `à partir de { price } €`,
+      callToAction: "Demandez un devis gratuit !",
+      price: "à partir de { price } €",
       products: {
         sponsoredPost: {
-          title: `Article sponsorisé sur Mindsers Blog`,
+          title: "Article sponsorisé sur Mindsers Blog",
           text: `Un article sponsorisé écrit par l'équipe du blog sur vos produits ou services.`,
         },
         guestPost: {
-          title: `Article invité sur Mindsers Blog`,
+          title: "Article invité sur Mindsers Blog",
           text: `Un article écrit par vos soins et non par l'équipe du blog.`,
         },
         linkInsertion: {
-          title: `Insertion de lien sur Mindsers Blog`,
+          title: "Insertion de lien sur Mindsers Blog",
           text: `Insertion d'un ou plusieurs liens sur un article déjà existant de mon blog.`,
         },
         instagramReel: {
-          title: `Instagram Reel sur @mindsers.codes`,
-          text: `Une vidéo sous forme de reel qui sera partagée en story.`,
+          title: "Instagram Reel sur @mindsers.codes",
+          text: "Une vidéo sous forme de reel qui sera partagée en story.",
         },
         instagramStory: {
-          title: `Instagram Story sur @mindsers.codes`,
-          text: `Une ou plusieurs stories mentionnant vos services ou produits, possibilité de garder les stories en highlight.`,
+          title: "Instagram Story sur @mindsers.codes",
+          text: "Une ou plusieurs stories mentionnant vos services ou produits, possibilité de garder les stories en highlight.",
         },
         instagramPost: {
-          title: `Instagram Post sur @mindsers.codes`,
-          text: `Un post in-feed qui sera partagé en story.`,
+          title: 'Instagram Post sur @mindsers.codes',
+          text: 'Un post in-feed qui sera partagé en story.',
         },
       },
     },
@@ -217,7 +210,7 @@ export default {
           Instagram est l'endroit où se trouve la majeure partie de ma communauté actuellement. Ce sont pour la plupart des geeks de tous niveaux qui aiment les beaux environnements de travail, les beaux setups, les astuces de productivité/codage et le café.
         </p>
       `,
-      callToAction: `Faites votre publicité sur mon Instagram`,
+      callToAction: 'Faites votre publicité sur mon Instagram',
     },
     engagementSection: {
       insight: `
@@ -232,25 +225,17 @@ export default {
           Chaque niveau a son propre niveau d'engagement, une gamme de prix publicitaire et un ensemble d'actions qui aident ses membres à naviguer vers le niveau supérieur.
         </p>
       `,
-      callToAction: `Réserver un appel gratuit`,
+      callToAction: 'Réserver un appel gratuit',
     },
-  },
-  CommunitySVG: {
-    socialMedia1: `followers des ré-`,
-    socialMedia2: `seaux sociaux`,
-    mailingList1: `abonnés à la`,
-    mailingList2: `mailing liste`,
-    paidMailingList1: `abonnés payants à`,
-    paidMailingList2: `la mailing liste`,
-    blog: `lecteurs du blog`,
   },
   TrainerPage: {
-    title: `Je transmets mon savoir-faire en JavaScript, K8s et Swift à vos équipes ou vos étudiants`,
+    title:
+      'Je transmets mon savoir-faire en JavaScript, K8s et Swift à vos équipes ou vos étudiants',
     meta: {
-      title: `Nathanaël Cherrier – Formateur JavaScript, K8s et Swift expériementé`,
+      title: 'Nathanaël Cherrier – Formateur JavaScript, K8s et Swift expérimenté',
       desc: `Nathanaël est un ingénieur logiciel animé par l'envie de partager son savoir grâce à des formations techniques.`,
     },
-    callToAction1: `Me contacter pour un devis gratuit`,
+    callToAction1: 'Me contacter pour un devis gratuit',
     teachingExpSection: {
       insight: `
         <p>Formateur dans 3 écoles supérieures d'informatique</p>
@@ -258,32 +243,32 @@ export default {
       `,
       text: `
         <p>
-          Avec de nombreuses années d'experience à former des étudiants ou des employés de grand groupe, 
+          Avec de nombreuses années d'expérience à former des étudiants ou des employés de grand groupe, 
           je pense être le formateur qui saura faire progresser votre organisation.
         </p>
         <p>
-          Mes cours sont accessible à tous. Ils sont accès sur le savoir-faire avec des exercices pratique
-          pour vous faire apprendre en faisant plutôt qu'en assayant de vous rappeler ce que j'ai pu raconter dans mon monologue.
+          Mes cours sont accessibles à tous. Ils sont axés sur le savoir-faire avec des exercices pratiques
+          pour vous faire apprendre en faisant plutôt qu'en essayant de vous rappeler ce que j'ai pu raconter dans mon monologue.
         </p>
       `,
     },
     topicSection: {
       insight: `
-        <p>Plus de 10 ans d'expériences</p>
-        <p>Maitrise du développement web fullstack et mobile</p>
+        <p>Plus de 10 ans d'expérience</p>
+        <p>Maîtrise du développement web fullstack et mobile</p>
       `,
       text: `
         <p>
           Je conçois, développe et maintiens des applications JavaScript depuis 2015 et l'avènement du tsunami
-          ES6 dans le monde du web. Je sais comment fonctionne les technologies web et je pourrais les enseigner à vos équipes où vos étudiants.
+          ES6 dans le monde du web. Je sais comment fonctionnent les technologies web et je pourrais les enseigner à vos équipes ou à vos étudiants.
         </p>
         <p>
-          Avant de commencer à coder pour le web je développais des applications mobile avec Objective-C, Swift, Kotlin et React Native.
+          Avant de commencer à coder pour le web, je développais des applications mobiles avec Objective-C, Swift, Kotlin et React Native.
           Je serais ravi de pouvoir former vos collaborateurs à ces technologies mobiles.
         </p>
         <p>
-          Grâce à mes années d'expériences en tant que CTO de startup, je peux aussi enseigner certaines technologies DevOps.
-          Par exemple, Docker et Kubernetes, ou encore Git et les pipeline d'intégration continue.
+          Grâce à mes années d'expérience en tant que CTO de startup, je peux aussi enseigner certaines technologies DevOps.
+          Par exemple, Docker et Kubernetes, ou encore Git et les pipelines d'intégration continue.
         </p>
       `,
     },
@@ -297,8 +282,8 @@ export default {
           Ou plutôt une entreprise qui souhaite former ses employés sur un sujet spécifique ?
         </p>
         <p>
-          Ces situations ont chacune leur propres défis et enjeux. 
-          Je saurais m'adapter et vous proposer un budget correspondant à vos besoin spécifique de formation.
+          Ces situations ont chacune leurs propres défis et enjeux. 
+          Je saurais m'adapter et vous proposer un budget correspondant à vos besoins spécifiques de formation.
         </p>
         <h4>Tarifs indicatifs :</h4>
         <ul>
@@ -306,70 +291,71 @@ export default {
           <li>Formations professionnelles : à partir de 700€ HT / participant</li>
         </ul>
       `,
-      callToAction: `Demander un devis gratuit`,
+      callToAction: 'Demander un devis gratuit',
     },
     experience: {
-      title: `Expériences Précédentes`,
+      title: 'Expériences Précédentes',
       callToAction: {
         text: `Vous avez besoin d'un formateur ou d'un mentor pour vos équipes ? Je peux intervenir chez vous pour enseigner le JavaScript, Git, le développement mobile et les tecnologies DevOps.`,
-        button: `Demander un devis !`,
-        fallback: `En voir plus sur LinkedIn`,
-        maltURL: `https://www.malt.fr/profile/nathanaelcherrier`,
+        button: 'Demander un devis !',
+        fallback: 'En voir plus sur LinkedIn',
+        maltURL: 'https://www.malt.fr/profile/nathanaelcherrier',
       },
-      skills: `Compétences :`,
-      duration: `{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}`,
-      fallback: `⚠️ Impossible de montrer la liste des experiences pour l'instant. Réessayer plus tard. ⚠️`,
+      skills: 'Compétences :',
+      duration:
+        '{years, plural, =0 {} =1 {1 an} other {# ans}} {months, plural, =0 {} other {# mois}}',
+      fallback: `⚠️ Impossible de montrer la liste des expériences pour l'instant. Réessayer plus tard. ⚠️`,
     },
     feedbacks: {
       fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
-      title: `Quelques avis`,
+      title: 'Quelques avis',
     },
   },
   MentorPage: {
     // title: `Un développeur sénior, serial entrepreneur à qui tu peux demander conseil`,
     title: `J'aide les développeurs à améliorer leur technique, leur carrière et leur business`,
     meta: {
-      title: `Nathanaël Cherrier – Mentor et coach pour les développeurs entrepreuneurs`,
-      desc: `Nathanaël est un ingénieur logiciel expérimenté qui coach les développeur sur leur technique, leur carrière et leur bussines`,
+      title: 'Nathanaël Cherrier – Mentor et coach pour les développeurs entrepreneurs',
+      desc: 'Nathanaël est un ingénieur logiciel expérimenté qui coache les développeurs sur leur technique, leur carrière et leur business',
     },
-    callToAction1: `Réserver un call de 30 min`,
+    callToAction1: 'Réserver un call de 30 min',
     teachingExpSection: {
       insight: `
         <p>Formateur, Développeur, Entrepreneur</p>
-        <p>Plus de 10 ans d'expériences et 3 sociétés lancées</p>
+        <p>Plus de 10 ans d'expérience et 3 sociétés lancées</p>
       `,
       text: `
         <p>
-          Au cours de ma carrière j'ai été amené à occupé beaucoup de postes même 
-          si mon expertise principale est la conception d'application web ou mobile. J'ai commencé
+          Au cours de ma carrière, j'ai été amené à occuper beaucoup de postes même 
+          si mon expertise principale est la conception d'applications web ou mobiles. J'ai commencé
           en tant que développeur junior chez un éditeur de logiciel mais j'ai également exploré 
           les ESN puis les startups où je me suis attardé au point d'en créer moi-même. 
-          Dans ces boites, j'ai été développeur, lead développeur, développeur sénior, lead technique, directeur technique (CTO), etc.
+          Dans ces boîtes, j'ai été développeur, lead développeur, développeur sénior, lead technique, directeur technique (CTO), etc.
         </p>
         <p>
-          En parallèle de mes emplois salarié, j'ai rapidement monter plusieurs types d'entreprises : 
+          En parallèle de mes emplois salariés, j'ai rapidement monté plusieurs types d'entreprises : 
           une activité de développeur freelance, des boutiques e-commerce, de la création de contenu, 
-          une marque de vétement, du marketing d'influence, de l'édition de livres,
+          une marque de vêtement, du marketing d'influence, de l'édition de livres,
           une activité de formateur indépendant, une startup tech à impact, etc.
         </p>
         <p>
-          Aujourd'hui je ne suis plus salarié. J'ai fermé des boites et abandonné des activités. 
+          Aujourd'hui je ne suis plus salarié. J'ai fermé des boîtes et abandonné des activités. 
           Je me suis concentré sur quelques activités seulement et je vis de celles-ci.
         </p>
         <p>
           C'est de <strong>cette expérience riche et variée que je fais profiter les développeurs</strong> qui ont besoin de conseil
-          que ce soit pour améliorer leur technique, réfléchir à leur carrière ou même explorer des possibilités d'emancipation grâce à l'entrepreneuriat.
+          que ce soit pour améliorer leur technique, réfléchir à leur carrière ou même explorer des possibilités d'émancipation grâce à l'entrepreneuriat.
         </p>
       `,
     },
     topicSection: {
       insight: `
-        <p>L'experience d'un développeur sénior à la demande</p>
+        <p>L'expérience d'un développeur sénior à la demande</p>
         <p>Un serial entrepreneur disponible pour discuter business et finance</p>
       `,
       text: `
         <p>
-          Une des situation les plus frustrante que j'ai connu en entreprise c'est de sentir que j'ai besoin d'un conseil pour une situation spécifique et de ne pas avoir de développeur sénior auprés de qui aller chercher ce conseil.
+          Une des situations les plus frustrantes que j'ai connues en entreprise, c'est de sentir que j'ai besoin d'un conseil pour une situation spécifique et de ne pas avoir de développeur sénior auprès de qui aller chercher ce conseil.
         </p>
         <p>
           Depuis que je suis à mon compte, cette situation arrive encore plus souvent qu'avant ! Les entrepreneurs souffrent de la solitude dans leur travail.
@@ -388,34 +374,36 @@ export default {
     },
     TJMSection: {
       insight: `
-        <p>Des séances de mentoring ponstuelles</p>
-        <p>Un suivi sur la durée jusqu'a 6 mois</p>
+        <p>Des séances de mentoring ponctuelles</p>
+        <p>Un suivi sur la durée jusqu'à 6 mois</p>
       `,
       text: `
         <p>
-          En fonction de votre situation ou des problème que vous cherchez à résoudre votre besoin en mentorat 
-          ne sera pas le même. Avez-vous besoin d'une seule séance pour repondre à une question simple 
-          ou plutot d'un suivi sur la durée ?
+          En fonction de votre situation ou des problèmes que vous cherchez à résoudre, votre besoin en mentorat 
+          ne sera pas le même. Avez-vous besoin d'une seule séance pour répondre à une question simple 
+          ou plutôt d'un suivi sur la durée ?
         </p>
         <p>
           Je propose donc une formule à la carte où il est possible de réserver 30 min en fonction 
-          de vos besoin et puis une formule "régulière" mensualisée qui permet de régulièrement se parler pour faire un suivi :
+          de vos besoins et puis une formule "régulière" mensualisée qui permet de régulièrement se parler pour faire un suivi :
         </p>
         <ul>
           <li>Mentorat à la carte : 100€ / 30 min call</li>
-          <li>Mentorat régulier : 1500€ / mois (tarif dégressif)</li>
+          <li>Mentorat régulier : 1050€ / mois (tarif dégressif)</li>
         </ul>
         <p>Même si vous pensez avoir besoin d'un mentorat régulier, la première séance doit obligatoirement être une séance à la carte.</p>
       `,
-      callToAction: `Réserver une première séance`,
+      callToAction: 'Réserver une première séance',
     },
     feedbacks: {
       fallback: `⚠️ Impossible de montrer la liste des avis pour l'instant. Réessayer plus tard. ⚠️`,
       title: `Qu'en pensent les développeurs ?`,
       callToAction: {
-        text: `Rejoingnez les développeurs satisfaits qui ont profité du mentorat avec moi.`,
-        button: `Prendre RDV pour une première séance`
-      }
+        text: 'Rejoignez les développeurs satisfaits qui ont profité du mentorat avec moi.',
+        button: 'Prendre RDV pour une première séance',
+      },
     },
-  }
+  },
 }
+
+export default fr
