@@ -396,7 +396,7 @@ export default {
         <ul>
           <li>On-demand mentoring (one session whenever you need it): €100 per session</li>
           <li>Regular mentoring (4 sessions per month for 1 to 6 months): from €250 per month</li>
-          <li>Regular++ mentoring (7 sessions per month for 1 to 6 months): from €700 per month</li>
+          <li>Regular++ mentoring (14 sessions per month for 1 to 6 months): from €700 per month</li>
         </ul>
         <p>
           Even if you think you’ll need regular mentoring, our first session together must be an on-demand session.
