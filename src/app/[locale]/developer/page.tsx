@@ -161,8 +161,11 @@ async function DeveloperPage() {
             <div className={styles.insights}>{t.rich('TJMSection.insight', rawHTMLDefaults)}</div>
             {t.rich('TJMSection.text', rawHTMLDefaults)}
             <p className={styles.actions}>
-              <Link className={'button'} href={callURL}>
+              <Link className={'button'} href={'https://mindsers.it/'}>
                 {t('TJMSection.callToAction')}
+              </Link>
+              <Link className={'button'} href={callURL}>
+                {t('TJMSection.fallbackAction')}
               </Link>
             </p>
           </div>

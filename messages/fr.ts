@@ -136,13 +136,13 @@ const fr = {
         </p>
       `,
       callToAction: "Demander pour un devis gratuit",
-      fallbackAction: "Réservcer un appel gratuit"
+      fallbackAction: "Réserver un appel gratuit"
     },
     experience: {
       title: "Expériences Précédentes",
       callToAction: {
         text: `Vous avez besoin d'une application ou d'un site web ? Je peux vous aider à construire vos prochains projets.`,
-        button: "Demander un devis gratuit",
+        button: "Réserver un appel gratuit",
         fallback: "En voir plus sur LinkedIn",
       },
       skills: "Compétences :",

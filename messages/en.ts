@@ -132,7 +132,7 @@ const en = {
       title: `Previous Experiences`,
       callToAction: {
         text: `Need a website or an application? I can help you build your next project.`,
-        button: `Get a quote!`,
+        button: `Book a free call!`,
         fallback: `See more on LinkedIn`,
         maltURL: `https://en.malt.fr/profile/nathanaelcherrier`,
       },
